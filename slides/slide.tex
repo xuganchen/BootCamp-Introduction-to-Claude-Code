@@ -1,0 +1,80 @@
+%=======================================================================
+% slide.tex
+%
+% Session 3, "AI Tools: Introduction to Claude Code"
+% Yale Master's in Asset Management (MAM) Orientation BootCamp
+% Xugan Chen, Yale School of Management
+%
+% BUILD
+% -----
+%   latexmk -pdf slide.tex          (preferred; resolves refs in one go)
+%   pdflatex slide.tex              (run twice)
+%
+% Build with pdflatex, NOT xelatex or lualatex: the preamble uses
+% fontenc[T1] + inputenc[utf8], which is a pdflatex setup.
+%
+% Any frame containing a prompt/pycode/shellout block must be declared
+% \begin{frame}[fragile].  See the header of utils/setup_teaching.tex.
+%
+% LAYOUT
+% ------
+%   utils/setup_teaching.tex  THE WHOLE PREAMBLE.  Theme, colours,
+%                             macros, code blocks, frame furniture.
+%                             The only file to edit for styling.
+%   sections/*.tex            one file per block of the session.  Each
+%                             is a plain sequence of frames with no
+%                             preamble of its own.
+%   figures/                  screenshots and plots (\graphicspath below)
+%
+% To reorder or drop a block, comment out its \input line.  Nothing in
+% sections/ depends on anything else in sections/.
+%
+%=======================================================================
+
+\documentclass[11pt,aspectratio=169]{beamer}
+
+\input{utils/setup_teaching}
+
+\graphicspath{{./figures/}}
+
+%----- TITLE PAGE ------------------------------------------------------
+\title[AI Tools: Introduction to Claude Code]{\Large AI Tools: Introduction to Claude Code}
+\author[Chen]{\normalsize \textbf{Xugan Chen}}
+% The bracketed forms below are what the footline prints: \insertshorttitle
+% on the left, \insertshortinstitute on the right. Keep them short.
+\institute[Xugan Chen (Yale)]{\normalsize \textit{Yale School of Management} \bigskip}
+\date{\small MAM Orientation BootCamp \\ August 27, 2026}
+
+\begin{document}
+
+\linespread{1.4}
+
+\begin{frame}[plain]
+\titlepage
+\end{frame}
+
+%=======================================================================
+%                              PART 1
+%=======================================================================
+\input{sections/01_intro}
+
+%=======================================================================
+%                    PART 2: THE APPLIED AM PROJECT
+%=======================================================================
+\input{sections/02_project_intro}
+\input{sections/03_step20}
+\input{sections/04_step21}
+\input{sections/05_step22}
+\input{sections/06_step23}
+
+%=======================================================================
+%                              PART 3
+%=======================================================================
+\input{sections/07_concepts}
+
+%=======================================================================
+%                              PART 4
+%=======================================================================
+\input{sections/08_demos}
+
+\end{document}

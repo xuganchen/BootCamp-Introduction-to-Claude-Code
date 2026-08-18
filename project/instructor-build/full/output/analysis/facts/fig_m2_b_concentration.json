@@ -1,0 +1,28 @@
+{
+  "kind": "fig",
+  "slug": "m2_b_concentration",
+  "title": "Borrower concentration",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "investment-panel",
+    "rows_used": 31067,
+    "rows_total": 31067,
+    "note": "Shares are fair-value-weighted; the denominator each quarter is that quarter's total position fair value, which ties to the filed total_investments_fv within 0.01%. Borrowers are grouped on the raw borrower string, which is internally consistent within a quarter but is not reconciled across quarters, so a borrower renamed between filings would be double-counted. Plotted on the full 32-quarter calendar; 2019Q3 and 2022Q1 are breaks.",
+    "share_pct": 100.0,
+    "sentence": "Computed on 31,067 of 31,067 investment-panel rows (100.0% of the window panel). Shares are fair-value-weighted; the denominator each quarter is that quarter's total position fair value, which ties to the filed total_investments_fv within 0.01%. Borrowers are grouped on the raw borrower string, which is internally consistent within a quarter but is not reconciled across quarters, so a borrower renamed between filings would be double-counted. Plotted on the full 32-quarter calendar; 2019Q3 and 2022Q1 are breaks."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "top10_share_2018Q3_pct": 25.6,
+    "top10_share_2026Q2_pct": 22.4,
+    "top25_share_2018Q3_pct": 45.8,
+    "top25_share_2026Q2_pct": 34.1,
+    "top10_share_min_pct": 18.5,
+    "top10_share_max_pct": 27.0,
+    "largest_borrower_share_2026Q2_pct": 9.7,
+    "largest_borrower_2026Q2": "Ivy Hill Asset Management, L.P",
+    "borrowers_2018Q3": 313,
+    "borrowers_2026Q2": 593,
+    "denominator": "quarter's total position fair value"
+  }
+}

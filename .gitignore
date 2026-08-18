@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[co]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# LaTeX build artifacts
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+
+# Raw SEC filings: large, public, re-downloadable. Never commit these.
+**/data/raw/
+**/raw/
+*.htm.gz

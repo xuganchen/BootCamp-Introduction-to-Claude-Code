@@ -1,0 +1,26 @@
+{
+  "kind": "fig",
+  "slug": "m2_c_fv_over_cost",
+  "title": "Aggregate mark: fair value over cost",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "investment-panel",
+    "rows_used": 31067,
+    "rows_total": 31067,
+    "note": "Aggregate mark uses every in-window position: both cost and fair_value are 0% null. Denominator each quarter is that quarter's total cost. Plotted on the full 32-quarter calendar; 2019Q3 and 2022Q1 are breaks in the line.",
+    "share_pct": 100.0,
+    "sentence": "Computed on 31,067 of 31,067 investment-panel rows (100.0% of the window panel). Aggregate mark uses every in-window position: both cost and fair_value are 0% null. Denominator each quarter is that quarter's total cost. Plotted on the full 32-quarter calendar; 2019Q3 and 2022Q1 are breaks in the line."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "fv_over_cost_2018Q3_pct": 97.8,
+    "fv_over_cost_2026Q2_pct": 98.9,
+    "fv_over_cost_min_pct": 92.8,
+    "fv_over_cost_min_quarter": "2020Q1",
+    "fv_over_cost_max_pct": 101.4,
+    "fv_over_cost_max_quarter": "2024Q1",
+    "quarters_above_100pct": 14,
+    "quarters_total": 30,
+    "denominator": "aggregate cost of all positions in the quarter"
+  }
+}

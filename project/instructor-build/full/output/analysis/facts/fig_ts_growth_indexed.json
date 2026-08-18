@@ -1,0 +1,23 @@
+{
+  "kind": "fig",
+  "slug": "ts_growth_indexed",
+  "title": "Balance sheet indexed to 100 at 2018Q3",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "quarter-panel",
+    "rows_used": 30,
+    "rows_total": 30,
+    "note": "The panel holds 30 of the 32 calendar quarters in the window: 2019Q3 and 2022Q1 are absent and are shown as breaks; no value is interpolated or bridged across them.",
+    "share_pct": 100.0,
+    "sentence": "Computed on 30 of 30 quarter-panel rows (100.0% of the window panel). The panel holds 30 of the 32 calendar quarters in the window: 2019Q3 and 2022Q1 are absent and are shown as breaks; no value is interpolated or bridged across them."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "index_base_quarter": "2018Q3 = 100",
+    "investments_fv_index_2026Q2": 261.6,
+    "total_assets_index_2026Q2": 248.9,
+    "net_assets_index_2026Q2": 189.9,
+    "investments_fv_index_2020Q2_covid": 123.4,
+    "net_assets_index_2020Q1_covid": 90.0
+  }
+}

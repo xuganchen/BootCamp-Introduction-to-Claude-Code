@@ -1,0 +1,29 @@
+{
+  "kind": "fig",
+  "slug": "m5_borrower_persistence",
+  "title": "How long a borrower stays in the book",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "investment-panel",
+    "rows_used": 31067,
+    "rows_total": 31067,
+    "note": "Spells are runs of consecutive PANEL quarters (the 30 quarters actually present), not calendar quarters. 2019Q3 and 2022Q1 are missing, so a borrower present either side of a gap is counted as continuous; the measure is therefore an upper bound on true continuous tenure. Borrower identity is the raw filing string, so a rename breaks a spell and inflates the count. Both panels bin on the LONGEST-EVER spell in the window, not on tenure as at the latest quarter: a borrower with a long early run who returned recently sits in a high band. The left panel is an equal-weighted count of names over all 1,331 borrowers ever in the window; the right panel is fair-value weighted over the 593 borrowers held in 2026Q2 only.",
+    "share_pct": 100.0,
+    "sentence": "Computed on 31,067 of 31,067 investment-panel rows (100.0% of the window panel). Spells are runs of consecutive PANEL quarters (the 30 quarters actually present), not calendar quarters. 2019Q3 and 2022Q1 are missing, so a borrower present either side of a gap is counted as continuous; the measure is therefore an upper bound on true continuous tenure. Borrower identity is the raw filing string, so a rename breaks a spell and inflates the count. Both panels bin on the LONGEST-EVER spell in the window, not on tenure as at the latest quarter: a borrower with a long early run who returned recently sits in a high band. The left panel is an equal-weighted count of names over all 1,331 borrowers ever in the window; the right panel is fair-value weighted over the 593 borrowers held in 2026Q2 only."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "n_distinct_borrowers_window": 1331,
+    "median_longest_spell_quarters": 8.0,
+    "mean_longest_spell_quarters": 9.53,
+    "share_borrowers_spell_le_2_pct": 16.6,
+    "share_borrowers_spell_ge_21_pct": 9.47,
+    "n_borrowers_full_30_quarters": 33,
+    "latest_fv_share_borrowers_since_2018q3_pct": 15.93,
+    "n_borrowers_since_2018q3_still_present": 38,
+    "n_borrowers_2018q3": 313,
+    "n_borrowers_latest": 593,
+    "latest_fv_usd_bn": 29.349,
+    "denominator": "2026Q2 total fair value for the FV shares; 1,331 distinct borrowers for the count shares"
+  }
+}

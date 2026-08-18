@@ -1,0 +1,7 @@
+investment_type,positions,share_of_positions_pct,share_of_pooled_fair_value_pct,null_reference_rate_pct,null_spread_bps_pct,null_all_in_rate_pct_pct,null_maturity_date_pct,null_principal_amount_pct
+first lien,18868,60.73,50.01,6.5,10.7,6.5,1.7,0.0
+equity,6231,20.06,14.43,96.2,100.0,96.2,99.9,100.0
+second lien,1982,6.38,16.07,5.1,10.4,5.1,0.0,0.1
+preferred,1979,6.37,7.88,45.9,93.6,45.9,94.3,100.0
+subordinated,1041,3.35,11.37,9.8,63.4,9.8,0.1,0.7
+other,966,3.11,0.24,99.8,99.9,99.8,47.5,98.7

@@ -1,0 +1,29 @@
+{
+  "kind": "tab",
+  "slug": "m1_null_share_by_column",
+  "title": "Field completeness: null share by column, in-window investment panel",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "investment-panel",
+    "rows_used": 31067,
+    "rows_total": 31067,
+    "note": "Null share is computed on every in-window row of the panel.",
+    "share_pct": 100.0,
+    "sentence": "Computed on 31,067 of 31,067 investment-panel rows (100.0% of the window panel). Null share is computed on every in-window row of the panel."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "denominator_rows": 31067,
+    "null_share_pct_of_net_assets_pct": 100.0,
+    "null_share_shares_units_pct": 81.46,
+    "null_share_spread_bps_pct": 38.4,
+    "null_share_reference_rate_pct": 29.91,
+    "null_share_all_in_rate_pct_pct": 29.91,
+    "null_share_maturity_date_pct": 28.56,
+    "null_share_principal_amount_pct": 29.52,
+    "columns_with_zero_nulls": "cik, bdc_name, period_end, accession, position_id, borrower, industry, investment_type, investment_type_raw, cost, fair_value, is_non_accrual, source_scale, source_url",
+    "industry_labels_raw_count": 68,
+    "industry_labels_normalized_count": 57,
+    "note_units": "percentages of the 31,067 in-window investment-panel rows"
+  }
+}

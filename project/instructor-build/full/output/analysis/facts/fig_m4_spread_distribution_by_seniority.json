@@ -1,0 +1,31 @@
+{
+  "kind": "fig",
+  "slug": "m4_spread_distribution_by_seniority",
+  "title": "Spread by seniority: interquartile range and median",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "investment-panel",
+    "rows_used": 19009,
+    "rows_total": 31067,
+    "note": "Debt-like positions only (21,891 rows); of those 19,009 carry a parsed spread_bps. Quantiles are fair-value weighted. Equity and preferred positions are excluded by construction, which is why they do not appear as missing spreads here.",
+    "share_pct": 61.19,
+    "sentence": "Computed on 19,009 of 31,067 investment-panel rows (61.2% of the window panel). Debt-like positions only (21,891 rows); of those 19,009 carry a parsed spread_bps. Quantiles are fair-value weighted. Equity and preferred positions are excluded by construction, which is why they do not appear as missing spreads here."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "pooled_first_lien_median_spread_bps": 565.0,
+    "pooled_first_lien_p25_p75_bps": [
+      500.0,
+      640.0
+    ],
+    "pooled_second_lien_median_spread_bps": 788.0,
+    "pooled_subordinated_median_spread_bps": 800.0,
+    "2026Q2_first_lien_median_spread_bps": 525.0,
+    "2026Q2_second_lien_median_spread_bps": 675.0,
+    "2026Q2_subordinated_median_spread_bps": 676.3,
+    "pooled_first_lien_fv_spread_coverage_pct": 93.4,
+    "pooled_subordinated_fv_spread_coverage_pct": 76.1,
+    "units": "spreads in basis points over the stated reference rate; coverage in percent of the fair value of the cell",
+    "denominator_note": "fv_coverage_pct_of_cell = FV of positions with a parsed spread / FV of that seniority bucket in that scope"
+  }
+}

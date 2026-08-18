@@ -1,0 +1,41 @@
+{
+  "kind": "fig",
+  "slug": "ts_credit_stress",
+  "title": "Credit stress: non-accrual share and aggregate fair value to cost",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "investment-panel",
+    "rows_used": 31067,
+    "rows_total": 31067,
+    "note": "The panel holds 30 of the 32 calendar quarters in the window: 2019Q3 and 2022Q1 are absent and are shown as breaks; no value is interpolated or bridged across them. Non-accrual shares are FV- and cost-weighted, not position counts. The non-accrual series is drawn on 27 of the 30 quarters: 2022Q4, 2023Q4, 2024Q4 carry exactly zero parsed non-accrual flags while their neighbours carry 13 to 22, so they are dropped rather than shown as zero. FV/cost uses all 30 quarters.",
+    "share_pct": 100.0,
+    "sentence": "Computed on 31,067 of 31,067 investment-panel rows (100.0% of the window panel). The panel holds 30 of the 32 calendar quarters in the window: 2019Q3 and 2022Q1 are absent and are shown as breaks; no value is interpolated or bridged across them. Non-accrual shares are FV- and cost-weighted, not position counts. The non-accrual series is drawn on 27 of the 30 quarters: 2022Q4, 2023Q4, 2024Q4 carry exactly zero parsed non-accrual flags while their neighbours carry 13 to 22, so they are dropped rather than shown as zero. FV/cost uses all 30 quarters."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "basis": "all in-window investment rows; cost and fair_value are 0% null",
+    "fv_cost_2019Q4_pre_covid_pct": 98.16,
+    "fv_cost_2020Q1_pct": 92.77,
+    "fv_cost_2020Q2_pct": 93.14,
+    "fv_cost_trough_pct": 92.77,
+    "fv_cost_trough_quarter": "2020Q1",
+    "fv_cost_drawdown_2019Q4_to_2020Q1_pp": 5.4,
+    "fv_cost_recovery_quarter_first_above_100": "2021Q2",
+    "fv_cost_2021Q2_pct": 100.23,
+    "fv_cost_2026Q2_pct": 98.9,
+    "unrealised_mark_2020Q1_usd_bn": -1.12,
+    "non_accrual_cost_pct_2020Q2": 4.42,
+    "non_accrual_cost_pct_peak": 5.06,
+    "non_accrual_cost_pct_peak_quarter": "2020Q3",
+    "non_accrual_fv_pct_peak": 3.18,
+    "non_accrual_fv_pct_peak_quarter": "2020Q3",
+    "non_accrual_fv_pct_2020Q2": 2.58,
+    "non_accrual_cost_pct_2026Q2": 2.38,
+    "non_accrual_fv_pct_2026Q2": 1.38,
+    "non_accrual_rows_in_window": 562,
+    "non_accrual_row_share_pct": 1.81,
+    "non_accrual_series_quarters_used": 27,
+    "non_accrual_series_quarters_dropped": "2022Q4, 2023Q4, 2024Q4",
+    "non_accrual_drop_reason": "exactly zero non-accrual flags parsed in these 10-K quarters while neighbouring quarters carry 13 to 22 flagged positions"
+  }
+}

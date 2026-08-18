@@ -1,0 +1,127 @@
+% Step 2: generalize across quarters. 7 frames, hands-on, session 1:15-1:45.
+\section{Step 2. Generalize across quarters}\subsection{}
+
+% Step 2 opener. Step table, this row tinted.
+\begin{frame}{Step 2. Generalize across quarters}
+\begin{center}
+\tabfont
+\begin{tabular}{cll}
+\toprule
+Step & What we build & The concept it forces \\
+\midrule
+0 & Naive baseline: one prompt & A passing check is only as good as its \ybb{scope} \\
+1 & Write a spec, then build & \ybb{Plan mode}, \ybb{sub-agents} for independent verification \\
+\rowcolor{yo!10}\yob{2} & \yob{Generalize across quarters} & \yob{Skills, and the tie-out as a test suite} \\
+3 & Analysis and report & Analysis as verification; \ybb{grounding} in your references \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\vs
+\begin{itemize}
+    \item Your parser is proven on \ybb{one} filing. A dataset is many.
+    \begin{itemize}
+        \item Today: generalize across quarters.
+        \item Another dimension: generalize across BDCs.
+    \end{itemize}
+    \item You package what you learned as a \ybb{skill}, then sweep the whole history.
+    \item The deliverable of this step also includes a \ybb{coverage
+          statement} that says what the panel does and does not contain.
+\end{itemize}
+\end{frame}
+
+% A script computes; a skill carries the judgment.
+\begin{frame}{A script computes. A skill carries the judgment.}
+\begin{wideitemize}
+  \item Wrong definition: \yo{``a script has the implementation, a skill has the prose.''}
+        Follow it and you rewrite 2,757 working lines for every new filer.
+\end{wideitemize}
+\takeaway{A skill is the map of (1) what is reusable, (2) what is not, and (3) how to tell the difference on an input it has not seen.}
+\begin{wideitemize}
+  \item It \ybb{points at} the pipeline and carries the boundary -- the thing that does not survive in code and has to be generalized.
+  \item Plus: how to detect which representation a filing uses, the acceptance criteria,
+        the traps with their signatures, and what it must \yob{never} do to make a check pass.
+\end{wideitemize}
+\end{frame}
+
+% The prompt that writes the skill, with the repair loop in it.
+\begin{frame}[fragile]{Prompt: package the seam, with a repair loop}
+\begin{prompt}[basicstyle=\scriptsize\ttfamily\color{white}]
+Read code/, note/trap_log.md and note/parsing_decisions.md.
+
+First, tell me which parts of this pipeline are filer-agnostic and which encode something specific to this BDC. Quote the lines.
+
+Then write .claude/skills/bdc-soi-parse/SKILL.md so that an agent facing a BDC or a quarter we have never parsed knows: what to reuse unchanged, what to extend and how, how to detect which representation a filing uses, the acceptance criteria, and each trap with the signature that detects it. It must also say how to repair itself, and what it must never do in order to make a check pass.
+
+Do not paste the engine into the skill. Point at it.
+\end{prompt}
+\end{frame}
+
+% The skill it wrote.
+\begin{frame}[fragile]{The skill}
+\begin{center}
+\includegraphics[width=0.85\textwidth]{bdc_design_pharse2-3.png}
+\end{center}
+\end{frame}
+
+% Parameterize: the same skill, a different quarter.
+\begin{frame}[fragile]{Prompt: parameterize, then sweep}
+\begin{prompt}
+/bdc-soi-parse ARCC prior 10-Q (2026-03-31)
+\end{prompt}
+\vs
+\begin{center}
+\includegraphics[width=0.85\textwidth]{bdc_design_pharse2-6.png}
+\end{center}
+\end{frame}
+
+% Sweep every filing. Coverage table and what stopped it.
+\begin{frame}[fragile]{Prompt: parameterize, then sweep}
+\begin{prompt}[basicstyle=\scriptsize\ttfamily\color{white}]
+/bdc-soi-parse every 10-K and 10-Q ARCC has filed with a period end on or after 2023-01-01. Work oldest to newest so failures cluster visibly.
+Then assemble all successful filings into a single BDC-quarter panel and check that (cik, period_end) is unique. Report what you find before fixing it.
+\end{prompt}
+\begin{itemize}
+    \item I ran it three times; each time it found new failures and fixed some of them.
+    \item Pipeline grew 2,757 to 4,009 lines (+45\%); \file{trap\_log.md} reached 491 lines.
+    \item \ybb{50 of 88 filings (57\%)}, 37,197 positions;
+    \ybb{30 of 34} from 2018 onward; \ybb{14 of 14} from 2023 onward.
+\end{itemize}
+
+\begin{center}
+\tabfont
+\begin{tabular}{lll}
+\toprule
+Pass & In panel & Note \\
+\midrule
+Baseline (step 1 parser, unchanged) & 5 of 88 & \\
+After first sweep and repair & 22 of 88 & Went backwards in time, oldest first \\
+After another pass, asking it to try again & 43 of 88 & Reached 2005; the recent hole untouched \\
+Focused on post-2018, newest first & \ybb{50 of 88} & The recent hole closed \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{frame}
+
+% Closing: what you already trust must not move.
+\begin{frame}{What you already trust must not move}
+\begin{center}\tabfont
+\begin{tabular}{lrr}
+\toprule
+Reference filing, 2026-06-30 & After step 1 & After step 2 \\
+\midrule
+Positions & 1,439 & 1,439 \\
+Distinct borrowers & 593 & 593 \\
+Sum of fair value (USD) & 29,349,300,000 & 29,349,300,000 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\vs
+\begin{wideitemize}
+  \item Byte-identical through \ybb{45 filings} of edits. It kept
+        a saved copy and diffed after every change.
+  \item It also recorded a bug it \ybb{introduced} during the backfill, and how that surfaced.
+\end{wideitemize}
+\vs
+\takeaway{When you extend a model, make sure the thing you already trust does not move.}
+\end{frame}

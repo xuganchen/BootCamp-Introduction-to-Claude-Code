@@ -1,0 +1,35 @@
+{
+  "kind": "fig",
+  "slug": "m5_industry_share_change",
+  "title": "Where the book moved: change in industry share of fair value",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "investment-panel",
+    "rows_used": 2184,
+    "rows_total": 31067,
+    "note": "Selection rule: the top 12 industries by 2026Q2 fair value, PLUS every other industry whose share moved by at least 1.0pp either way (6 added, marked * and outlined). Ranking on latest size alone would censor industries that shrank to nothing, which is exactly where the book moved. Anchored on 2019Q4, the first quarter after ARCC's 2019 taxonomy change; only 15.9% of 2018Q3 fair value carries a label still used in the latest quarter, so 2018Q3-2019Q2 is not spliced on. A second, name-only GICS rename between 2024Q3 and 2025Q1 is bridged by a 7-entry crosswalk (for example Diversified Financials to Financial Services); that mapping is an inference by the analyst, not a filing disclosure. A bar reading 'no such label' is a label that does not exist in that quarter's taxonomy, which is NOT the same as zero exposure: the exposure may sit under a different label the crosswalk does not bridge.",
+    "share_pct": 7.03,
+    "sentence": "Computed on 2,184 of 31,067 investment-panel rows (7.0% of the window panel). Selection rule: the top 12 industries by 2026Q2 fair value, PLUS every other industry whose share moved by at least 1.0pp either way (6 added, marked * and outlined). Ranking on latest size alone would censor industries that shrank to nothing, which is exactly where the book moved. Anchored on 2019Q4, the first quarter after ARCC's 2019 taxonomy change; only 15.9% of 2018Q3 fair value carries a label still used in the latest quarter, so 2018Q3-2019Q2 is not spliced on. A second, name-only GICS rename between 2024Q3 and 2025Q1 is bridged by a 7-entry crosswalk (for example Diversified Financials to Financial Services); that mapping is an inference by the analyst, not a filing disclosure. A bar reading 'no such label' is a label that does not exist in that quarter's taxonomy, which is NOT the same as zero exposure: the exposure may sit under a different label the crosswalk does not bridge."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "latest_quarter": "2026Q2",
+    "base_quarter": "2019Q4",
+    "selection_rule": "top 12 by 2026Q2 FV union movers >= 1.0pp",
+    "n_industries_plotted": 18,
+    "n_added_beyond_top12": 6,
+    "top12_share_of_latest_fv_pct": 89.48,
+    "first_quarter_fv_share_on_surviving_labels_pct": 15.95,
+    "largest_gain_industry": "Software and Services",
+    "largest_gain_pp": 9.09,
+    "largest_loss_industry": "Healthcare Equipment and Services",
+    "largest_loss_pp": -10.42,
+    "largest_loss_industry_within_top12": "Healthcare Equipment and Services",
+    "largest_loss_pp_within_top12": -10.42,
+    "largest_loss_outside_top12": "Utilities",
+    "largest_loss_outside_top12_pp": -7.08,
+    "top1_industry": "Software and Services",
+    "top1_share_latest_pct": 21.98,
+    "denominator": "each quarter's own total fair value; the 2026Q2 book is $29.35bn and the 2019Q4 book $14.43bn"
+  }
+}

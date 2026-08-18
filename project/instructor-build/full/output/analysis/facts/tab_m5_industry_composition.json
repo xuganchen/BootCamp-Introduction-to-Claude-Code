@@ -1,0 +1,30 @@
+{
+  "kind": "tab",
+  "slug": "m5_industry_composition",
+  "title": "Industry composition of the ARCC book, 2019Q4 vs 2026Q2",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "investment-panel",
+    "rows_used": 2184,
+    "rows_total": 31067,
+    "note": "1,439 2026Q2 rows and 745 2019Q4 rows. Shares are of each quarter's own total fair value.",
+    "share_pct": 7.03,
+    "sentence": "Computed on 2,184 of 31,067 investment-panel rows (7.0% of the window panel). 1,439 2026Q2 rows and 745 2019Q4 rows. Shares are of each quarter's own total fair value."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "top12_share_of_latest_fv_pct": 89.48,
+    "n_industries_latest": 24,
+    "n_industries_base": 23,
+    "n_industries_window_normalized": 57,
+    "crosswalk_entries": 7,
+    "excluded_exits": {
+      "Utilities": -7.08,
+      "Consumer Durables and Apparel": -4.11,
+      "Automobiles and Components": -3.64,
+      "Energy": -2.18,
+      "Food and Beverage": -1.25
+    },
+    "denominator": "2026Q2 total fair value $29.35bn for the latest column; 2019Q4 total fair value $14.43bn for the base column"
+  }
+}

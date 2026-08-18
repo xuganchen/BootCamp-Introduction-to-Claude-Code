@@ -1,0 +1,146 @@
+{
+  "_about": {
+    "purpose": "Ground truth for the ARCC 2026 Q2 panels, derived independently of the parser by agent B. Every figure below was obtained from the source filing and/or the XBRL companyfacts API, never from anything the parser wrote.",
+    "derived_on": "2026-08-16",
+    "filing": {
+      "ticker": "ARCC",
+      "cik": 1287750,
+      "bdc_name": "ARES CAPITAL CORP",
+      "entity_name_in_xbrl": "ARES CAPITAL CORPORATION",
+      "form_type": "10-Q",
+      "accession": "0001628280-26-050307",
+      "period_end": "2026-06-30",
+      "filing_date": "2026-07-29",
+      "fiscal_year_end": "1231",
+      "primary_doc": "arcc-20260630.htm",
+      "doc_bytes": 24846021,
+      "doc_sha256": "bfe7708d5d463375b00a28d7a3be23bdea9f6fa815560e8f92907339aecb670e"
+    },
+    "methods": {
+      "M1_html": "Rendered text of the CONSOLIDATED BALANCE SHEETS table in arcc-20260630.htm (byte offset ~2,754,342), read with lxml.html.text_content() over a 60 KB slice. Verbatim: 'CONSOLIDATED BALANCE SHEETS(in millions, except per share data) As of June 30, 2026  December 31, 2025 (unaudited) ...'.",
+      "M2_inline_xbrl": "ix:nonFraction facts embedded in arcc-20260630.htm, filtered to contexts with zero xbrldi:explicitMember dimensions and the stated instant, taking the FIRST occurrence in document order (the balance sheet is the first statement in the filing). scale and sign attributes applied. All balance-sheet facts carry scale=6.",
+      "M3_companyfacts": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001287750.json, cached at manifest.facts_path, filtered to instant facts (no 'start' key) with end == the stated date."
+    },
+    "IMPORTANT_companyfacts_gap": "The companyfacts JSON, both the cached copy and a live refetch on 2026-08-16, contains NO facts from accession 0001628280-26-050307. Its most recent accession is 0001628280-26-027688 (2026 Q1 10-Q) and its latest instant is 2026-03-31. Therefore companyfacts can independently confirm the 2025-12-31 comparative column ONLY. For 2026-06-30 the independent reference is the filing's own inline XBRL (M2), which is a different extraction path from reading the rendered table and so is still independent of the parser."
+  },
+
+  "source_scale": {
+    "value": "millions",
+    "comment": "M1: the balance-sheet caption reads '(in millions, except per share data)'. M2: every balance-sheet and Schedule of Investments ix:nonFraction fact carries scale=\"6\". All money values below are already converted to actual USD dollars, which is what plan section 1 requires of the panel."
+  },
+
+  "balance_sheet_columns": {
+    "count": 2,
+    "dates": ["2026-06-30", "2025-12-31"],
+    "comment": "M1: header reads 'As of June 30, 2026 / December 31, 2025', and the section heading at offset 2,730,691 reads 'Consolidated Balance Sheets as of June 30, 2026 (unaudited) and December 31, 2025 (audited)'. M2 independently confirms it: us-gaap:Assets appears exactly twice in an undimensioned context, at instants 2026-06-30 and 2025-12-31. The comparative date was READ, not inferred: 2026-06-30 minus one quarter would give 2026-03-31, which is wrong.",
+    "current_is_unaudited": true,
+    "prior_is_audited": true
+  },
+
+  "current": {
+    "_date": "2026-06-30",
+    "_comment": "This date equals periodOfReport exactly (plan check 6).",
+    "total_investments_fv": {
+      "value": 29349000000.0,
+      "comment": "M1 line 'Total investments at fair value (amortized cost of $29,675 and $29,250, respectively) 29,349 29,485' -> 29,349 million. M2: first undimensioned us-gaap:InvestmentOwnedAtFairValue @ 2026-06-30 = 29349000000. M3: unavailable (see IMPORTANT_companyfacts_gap)."
+    },
+    "total_investments_cost": {
+      "value": 29675000000.0,
+      "comment": "M1 parenthetical 'amortized cost of $29,675'. M2: first undimensioned us-gaap:InvestmentOwnedAtCost @ 2026-06-30 = 29675000000. This is the figure plan check 14 ties sum(investment.cost) to; the condition for check 14 IS met for this filing."
+    },
+    "total_assets": {
+      "value": 30498000000.0,
+      "comment": "M1 'Total assets $30,498'. M2 us-gaap:Assets @ 2026-06-30 = 30498000000. Cross-confirmed by us-gaap:LiabilitiesAndStockholdersEquity @ 2026-06-30 = 30498000000. M3 unavailable."
+    },
+    "total_liabilities": {
+      "value": 16607000000.0,
+      "comment": "M1 'Total liabilities 16,607'. M2 us-gaap:Liabilities @ 2026-06-30. M3 unavailable."
+    },
+    "net_assets": {
+      "value": 13891000000.0,
+      "comment": "M1 'Total stockholders' equity 13,891'. M2 us-gaap:StockholdersEquity @ 2026-06-30 (first undimensioned occurrence; later occurrences at this instant are equity-rollforward components 1 / 13,359 / 531 which sum to 13,891). M3 unavailable."
+    },
+    "nav_per_share": {
+      "value": 19.35,
+      "comment": "M1 'NET ASSET VALUE PER SHARE $19.35'. M2 us-gaap:NetAssetValuePerShare @ 2026-06-30, unit usdPerShare."
+    },
+    "shares_outstanding": {
+      "value": 718000000.0,
+      "comment": "M1 '718 common shares issued and outstanding' (in millions). M2 us-gaap:CommonStockSharesOutstanding @ 2026-06-30 = 718000000, unit shares. Check: 19.35 * 718,000,000 = 13,893,300,000 vs net_assets 13,891,000,000, rel diff 0.0166%, inside the 0.5% tolerance of plan check 10."
+    },
+    "total_debt_outstanding": {
+      "value": 15773000000.0,
+      "acceptable_alternative": 15924000000.0,
+      "comment": "M1 balance-sheet liability line 'Debt $15,773' (net of unamortized debt issuance costs and discount). M2 us-gaap:LongTermDebt @ 2026-06-30 = 15773000000. The alternative 15,924,000,000 is us-gaap:DebtInstrumentCarryingAmount @ 2026-06-30, the aggregate principal from the debt note. Plan 3.1 sources this field from 'balance sheet / notes' and allows null, so the test accepts either figure or null and reports which one the parser chose."
+    }
+  },
+
+  "prior": {
+    "_date": "2025-12-31",
+    "_comment": "Read from the comparative column header, not computed. period_end_prior_kind must be 'prior_fiscal_year_end' because fiscal_year_end is 1231 and 2025-12-31 has MMDD 1231. Gap to 2026-06-30 is 181 days, inside the [80, 380] bound of plan check 7.",
+    "day_gap_to_current": 181,
+    "period_end_prior_kind": "prior_fiscal_year_end",
+    "total_investments_fv": {
+      "value": 29485000000.0,
+      "comment": "M1 'Total investments at fair value ... 29,349 29,485' second column. M2 first undimensioned us-gaap:InvestmentOwnedAtFairValue @ 2025-12-31."
+    },
+    "total_investments_cost": {
+      "value": 29250000000.0,
+      "comment": "M1 parenthetical 'and $29,250, respectively'. M2 us-gaap:InvestmentOwnedAtCost @ 2025-12-31. Not tied out in v1: plan section 8 puts the comparative Schedule of Investments out of scope."
+    },
+    "total_assets": {
+      "value": 31235000000.0,
+      "comment": "M1 'Total assets $30,498 $31,235'. M2 us-gaap:Assets @ 2025-12-31. M3 CONFIRMS: us-gaap:Assets [USD] end=2025-12-31 val=31235000000, accn 0001287750-26-000006 (FY2025 10-K) and accn 0001628280-26-027688 (2026 Q1 10-Q, frame CY2025Q4I)."
+    },
+    "total_liabilities": {
+      "value": 16917000000.0,
+      "comment": "M1 'Total liabilities 16,607 16,917'. M2 us-gaap:Liabilities @ 2025-12-31. M3 CONFIRMS: us-gaap:Liabilities [USD] end=2025-12-31 val=16917000000, accn 0001287750-26-000006."
+    },
+    "net_assets": {
+      "value": 14318000000.0,
+      "comment": "M1 'Total stockholders' equity 13,891 14,318'. M2 us-gaap:StockholdersEquity @ 2025-12-31. M3 CONFIRMS: us-gaap:StockholdersEquity [USD] end=2025-12-31 val=14318000000, accn 0001287750-26-000006."
+    },
+    "nav_per_share": {
+      "value": 19.94,
+      "comment": "M1 'NET ASSET VALUE PER SHARE $19.35 $19.94'. M2 us-gaap:NetAssetValuePerShare @ 2025-12-31."
+    },
+    "shares_outstanding": {
+      "value": 718000000.0,
+      "comment": "M2 us-gaap:CommonStockSharesOutstanding @ 2025-12-31 = 718000000. M1 states '718 common shares issued and outstanding' once, covering both columns. Note the two dates carry the SAME share count after rounding to millions; that is genuine, not a copied column, and total_assets differs (30,498 vs 31,235) so plan check 12 is still satisfied. Check: 19.94 * 718,000,000 = 14,316,920,000 vs 14,318,000,000, rel diff 0.0075%."
+    },
+    "total_debt_outstanding": {
+      "value": 15991000000.0,
+      "acceptable_alternative": 16012000000.0,
+      "comment": "M1 'Debt $15,773 $15,991'. M2 us-gaap:LongTermDebt @ 2025-12-31 = 15991000000; the alternative is us-gaap:DebtInstrumentCarryingAmount @ 2025-12-31 = 16012000000."
+    }
+  },
+
+  "derived_identities": {
+    "current_liab_plus_na_equals_assets": "16,607,000,000 + 13,891,000,000 = 30,498,000,000, exact",
+    "prior_liab_plus_na_equals_assets": "16,917,000,000 + 14,318,000,000 = 31,235,000,000, exact",
+    "columns_rel_diff_total_assets": "2.36%, far inside the 60% bound of plan check 11",
+    "columns_rel_diff_net_assets": "2.98%, far inside the 60% bound of plan check 11"
+  },
+
+  "tie_out_targets": {
+    "sum_investment_fair_value": {
+      "value": 29349000000.0,
+      "tolerance_pct": 0.1,
+      "tolerance_abs_usd": 29349000.0,
+      "comment": "Plan check 13. The Schedule of Investments position rows must sum to the CURRENT column total, 29,349,000,000. If a parse instead sums to 29,485,000,000 it has tied to the prior column and the column map is inverted. Note the SOI is itself inline-XBRL tagged: us-gaap:InvestmentOwnedAtFairValue occurs 3,823 times in the document, 3,812 of them at instant 2026-06-30, all with scale=6, so filing values are in millions to one decimal."
+    },
+    "sum_investment_cost": {
+      "value": 29675000000.0,
+      "tolerance_pct": 0.1,
+      "tolerance_abs_usd": 29675000.0,
+      "comment": "Plan check 14. The condition (the filing reports a total cost figure) is MET for this filing, via the balance-sheet parenthetical."
+    }
+  },
+
+  "environment": {
+    "pyarrow": "installed, version 21.0.0, so the Parquet twins required by plan section 1 can be written",
+    "pandas": "2.2.3",
+    "lxml": "6.0.2",
+    "pytest": "9.1.1"
+  }
+}

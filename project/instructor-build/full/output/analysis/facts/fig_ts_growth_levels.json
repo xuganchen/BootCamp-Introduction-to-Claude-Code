@@ -1,0 +1,30 @@
+{
+  "kind": "fig",
+  "slug": "ts_growth_levels",
+  "title": "Balance sheet in levels, quarter by quarter",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "quarter-panel",
+    "rows_used": 30,
+    "rows_total": 30,
+    "note": "The panel holds 30 of the 32 calendar quarters in the window: 2019Q3 and 2022Q1 are absent and are shown as breaks; no value is interpolated or bridged across them. The growth rate is an endpoint-to-endpoint compound rate over the 7.75 years from 2018-09-30 to 2026-06-30, not an average of quarterly growth.",
+    "share_pct": 100.0,
+    "sentence": "Computed on 30 of 30 quarter-panel rows (100.0% of the window panel). The panel holds 30 of the 32 calendar quarters in the window: 2019Q3 and 2022Q1 are absent and are shown as breaks; no value is interpolated or bridged across them. The growth rate is an endpoint-to-endpoint compound rate over the 7.75 years from 2018-09-30 to 2026-06-30, not an average of quarterly growth."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "investments_fv_2018Q3_usd_bn": 11.22,
+    "investments_fv_2026Q2_usd_bn": 29.349,
+    "investments_fv_growth_pct": 161.6,
+    "cagr_years_elapsed": 7.75,
+    "cagr_endpoints": "period_end 2018-09-30 to 2026-06-30 (31 quarters)",
+    "investments_fv_cagr_pct_per_yr": 13.21,
+    "total_assets_2018Q3_usd_bn": 12.255,
+    "total_assets_2026Q2_usd_bn": 30.498,
+    "net_assets_2018Q3_usd_bn": 7.313,
+    "net_assets_2026Q2_usd_bn": 13.891,
+    "net_assets_growth_pct": 89.9,
+    "net_assets_cagr_pct_per_yr": 8.63,
+    "cagr_caveat": "endpoint-to-endpoint compound rate; the two missing quarters are interior and do not affect it, but no intra-window path is implied"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "fig",
+  "slug": "m5_borrower_concentration",
+  "title": "Borrower breadth and borrower concentration",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "investment-panel",
+    "rows_used": 31067,
+    "rows_total": 31067,
+    "note": "Borrower identity is the raw borrower string in the filing; no fuzzy matching is applied, so a renamed obligor counts as a new borrower and the borrower count is an upper bound on distinct obligors. The bars are an equal-weighted count of names and carry no size information. 2019Q3 and 2022Q1 are marked with dashed amber rules; the x axis is the panel-quarter index and nothing is interpolated across the gaps.",
+    "share_pct": 100.0,
+    "sentence": "Computed on 31,067 of 31,067 investment-panel rows (100.0% of the window panel). Borrower identity is the raw borrower string in the filing; no fuzzy matching is applied, so a renamed obligor counts as a new borrower and the borrower count is an upper bound on distinct obligors. The bars are an equal-weighted count of names and carry no size information. 2019Q3 and 2022Q1 are marked with dashed amber rules; the x axis is the panel-quarter index and nothing is interpolated across the gaps."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "n_borrowers_first": 313,
+    "first_quarter": "2018Q3",
+    "n_borrowers_latest": 593,
+    "latest_quarter": "2026Q2",
+    "top10_share_first_pct": 25.55,
+    "top10_share_latest_pct": 22.43,
+    "top10_share_max_pct": 26.97,
+    "top10_share_max_quarter": "2023Q1",
+    "hhi_borrower_first_pts": 135.8,
+    "hhi_borrower_latest_pts": 145.4,
+    "denominator": "each quarter's own total portfolio fair value; borrower counts are equal-weighted counts of distinct names"
+  }
+}

@@ -1,0 +1,473 @@
+statement,row_order,section,column,line_item,indent_px,value,value_type,unit,is_primary_block
+Consolidated Balance Sheets,1,Investments at fair value,"Jun. 30, 2026",Fair Value,0,29349.3,number,millions,True
+Consolidated Balance Sheets,1,Investments at fair value,"Dec. 31, 2025",Fair Value,0,29484.8,number,millions,True
+Consolidated Balance Sheets,2,Investments at fair value,"Jun. 30, 2026",Cash and cash equivalents,0,383.0,number,millions,True
+Consolidated Balance Sheets,2,Investments at fair value,"Dec. 31, 2025",Cash and cash equivalents,0,638.0,number,millions,True
+Consolidated Balance Sheets,3,Investments at fair value,"Jun. 30, 2026",Restricted cash,0,241.0,number,millions,True
+Consolidated Balance Sheets,3,Investments at fair value,"Dec. 31, 2025",Restricted cash,0,286.0,number,millions,True
+Consolidated Balance Sheets,4,Investments at fair value,"Jun. 30, 2026",Interest receivable,0,299.0,number,millions,True
+Consolidated Balance Sheets,4,Investments at fair value,"Dec. 31, 2025",Interest receivable,0,288.0,number,millions,True
+Consolidated Balance Sheets,5,Investments at fair value,"Jun. 30, 2026",Receivable for open trades,0,50.0,number,millions,True
+Consolidated Balance Sheets,5,Investments at fair value,"Dec. 31, 2025",Receivable for open trades,0,317.0,number,millions,True
+Consolidated Balance Sheets,6,Investments at fair value,"Jun. 30, 2026",Other assets,0,176.0,number,millions,True
+Consolidated Balance Sheets,6,Investments at fair value,"Dec. 31, 2025",Other assets,0,221.0,number,millions,True
+Consolidated Balance Sheets,7,Investments at fair value,"Jun. 30, 2026",Total assets,0,30498.0,number,millions,True
+Consolidated Balance Sheets,7,Investments at fair value,"Dec. 31, 2025",Total assets,0,31235.0,number,millions,True
+Consolidated Balance Sheets,8,LIABILITIES,"Jun. 30, 2026",Debt,0,15773.0,number,millions,True
+Consolidated Balance Sheets,8,LIABILITIES,"Dec. 31, 2025",Debt,0,15991.0,number,millions,True
+Consolidated Balance Sheets,9,LIABILITIES,"Jun. 30, 2026",Base management fee payable,0,110.0,number,millions,True
+Consolidated Balance Sheets,9,LIABILITIES,"Dec. 31, 2025",Base management fee payable,0,111.0,number,millions,True
+Consolidated Balance Sheets,10,LIABILITIES,"Jun. 30, 2026",Income based fee payable,0,84.0,number,millions,True
+Consolidated Balance Sheets,10,LIABILITIES,"Dec. 31, 2025",Income based fee payable,0,89.0,number,millions,True
+Consolidated Balance Sheets,11,LIABILITIES,"Jun. 30, 2026",Capital gains incentive fee payable,0,0.0,number,millions,True
+Consolidated Balance Sheets,11,LIABILITIES,"Dec. 31, 2025",Capital gains incentive fee payable,0,82.0,number,millions,True
+Consolidated Balance Sheets,12,LIABILITIES,"Jun. 30, 2026",Interest and facility fees payable,0,199.0,number,millions,True
+Consolidated Balance Sheets,12,LIABILITIES,"Dec. 31, 2025",Interest and facility fees payable,0,193.0,number,millions,True
+Consolidated Balance Sheets,13,LIABILITIES,"Jun. 30, 2026",Payable to participants,0,104.0,number,millions,True
+Consolidated Balance Sheets,13,LIABILITIES,"Dec. 31, 2025",Payable to participants,0,131.0,number,millions,True
+Consolidated Balance Sheets,14,LIABILITIES,"Jun. 30, 2026",Interest rate swap collateral payable,0,97.0,number,millions,True
+Consolidated Balance Sheets,14,LIABILITIES,"Dec. 31, 2025",Interest rate swap collateral payable,0,155.0,number,millions,True
+Consolidated Balance Sheets,15,LIABILITIES,"Jun. 30, 2026",Payable for open trades,0,2.0,number,millions,True
+Consolidated Balance Sheets,15,LIABILITIES,"Dec. 31, 2025",Payable for open trades,0,5.0,number,millions,True
+Consolidated Balance Sheets,16,LIABILITIES,"Jun. 30, 2026",Accounts payable and other liabilities,0,167.0,number,millions,True
+Consolidated Balance Sheets,16,LIABILITIES,"Dec. 31, 2025",Accounts payable and other liabilities,0,132.0,number,millions,True
+Consolidated Balance Sheets,17,LIABILITIES,"Jun. 30, 2026",Deferred tax liabilities,0,71.0,number,millions,True
+Consolidated Balance Sheets,17,LIABILITIES,"Dec. 31, 2025",Deferred tax liabilities,0,28.0,number,millions,True
+Consolidated Balance Sheets,18,LIABILITIES,"Jun. 30, 2026",Total liabilities,0,16607.0,number,millions,True
+Consolidated Balance Sheets,18,LIABILITIES,"Dec. 31, 2025",Total liabilities,0,16917.0,number,millions,True
+Consolidated Balance Sheets,19,STOCKHOLDERS’ EQUITY,"Jun. 30, 2026","Common stock, par value $0.001 per share, 1,000 common shares authorized; 718 common shares issued and outstanding",0,1.0,number,millions,True
+Consolidated Balance Sheets,19,STOCKHOLDERS’ EQUITY,"Dec. 31, 2025","Common stock, par value $0.001 per share, 1,000 common shares authorized; 718 common shares issued and outstanding",0,1.0,number,millions,True
+Consolidated Balance Sheets,20,STOCKHOLDERS’ EQUITY,"Jun. 30, 2026",Capital in excess of par value,0,13359.0,number,millions,True
+Consolidated Balance Sheets,20,STOCKHOLDERS’ EQUITY,"Dec. 31, 2025",Capital in excess of par value,0,13359.0,number,millions,True
+Consolidated Balance Sheets,21,STOCKHOLDERS’ EQUITY,"Jun. 30, 2026",Accumulated undistributed earnings,0,531.0,number,millions,True
+Consolidated Balance Sheets,21,STOCKHOLDERS’ EQUITY,"Dec. 31, 2025",Accumulated undistributed earnings,0,958.0,number,millions,True
+Consolidated Balance Sheets,22,STOCKHOLDERS’ EQUITY,"Jun. 30, 2026",Total stockholders’ equity,0,13891.0,number,millions,True
+Consolidated Balance Sheets,22,STOCKHOLDERS’ EQUITY,"Dec. 31, 2025",Total stockholders’ equity,0,14318.0,number,millions,True
+Consolidated Balance Sheets,23,STOCKHOLDERS’ EQUITY,"Jun. 30, 2026",Total liabilities and stockholders’ equity,0,30498.0,number,millions,True
+Consolidated Balance Sheets,23,STOCKHOLDERS’ EQUITY,"Dec. 31, 2025",Total liabilities and stockholders’ equity,0,31235.0,number,millions,True
+Consolidated Balance Sheets,24,STOCKHOLDERS’ EQUITY,"Jun. 30, 2026",NET ASSET VALUE PER SHARE (in dollars per share),0,19.35,number,millions,True
+Consolidated Balance Sheets,24,STOCKHOLDERS’ EQUITY,"Dec. 31, 2025",NET ASSET VALUE PER SHARE (in dollars per share),0,19.94,number,millions,True
+Consolidated Balance Sheets,25,Investments at fair value,"Jun. 30, 2026",Fair Value,0,24282.0,number,millions,False
+Consolidated Balance Sheets,25,Investments at fair value,"Dec. 31, 2025",Fair Value,0,24872.0,number,millions,False
+Consolidated Balance Sheets,26,Investments at fair value,"Jun. 30, 2026",Fair Value,0,571.9,number,millions,False
+Consolidated Balance Sheets,26,Investments at fair value,"Dec. 31, 2025",Fair Value,0,600.2,number,millions,False
+Consolidated Balance Sheets,27,Investments at fair value,"Jun. 30, 2026",Fair Value,0,4495.4,number,millions,False
+Consolidated Balance Sheets,27,Investments at fair value,"Dec. 31, 2025",Fair Value,0,4013.4,number,millions,False
+Consolidated Statements of Operations,1,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2026",PIK interest income,0,110.0,number,millions,True
+Consolidated Statements of Operations,1,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2025",PIK interest income,0,106.0,number,millions,True
+Consolidated Statements of Operations,2,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2026",PIK dividend income,0,127.0,number,millions,True
+Consolidated Statements of Operations,2,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2025",PIK dividend income,0,143.0,number,millions,True
+Consolidated Statements of Operations,3,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2026",Total investment income,0,768.0,number,millions,True
+Consolidated Statements of Operations,3,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2025",Total investment income,0,745.0,number,millions,True
+Consolidated Statements of Operations,3,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2026",Total investment income,0,1531.0,number,millions,True
+Consolidated Statements of Operations,3,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2025",Total investment income,0,1477.0,number,millions,True
+Consolidated Statements of Operations,4,EXPENSES:,"3 Months Ended | Jun. 30, 2026",Interest and credit facility fees,0,214.0,number,millions,True
+Consolidated Statements of Operations,4,EXPENSES:,"3 Months Ended | Jun. 30, 2025",Interest and credit facility fees,0,188.0,number,millions,True
+Consolidated Statements of Operations,4,EXPENSES:,"6 Months Ended | Jun. 30, 2026",Interest and credit facility fees,0,427.0,number,millions,True
+Consolidated Statements of Operations,4,EXPENSES:,"6 Months Ended | Jun. 30, 2025",Interest and credit facility fees,0,374.0,number,millions,True
+Consolidated Statements of Operations,5,EXPENSES:,"3 Months Ended | Jun. 30, 2026",Base management fee,0,110.0,number,millions,True
+Consolidated Statements of Operations,5,EXPENSES:,"3 Months Ended | Jun. 30, 2025",Base management fee,0,104.0,number,millions,True
+Consolidated Statements of Operations,5,EXPENSES:,"6 Months Ended | Jun. 30, 2026",Base management fee,0,221.0,number,millions,True
+Consolidated Statements of Operations,5,EXPENSES:,"6 Months Ended | Jun. 30, 2025",Base management fee,0,206.0,number,millions,True
+Consolidated Statements of Operations,6,EXPENSES:,"3 Months Ended | Jun. 30, 2026",Income based fee,0,84.0,number,millions,True
+Consolidated Statements of Operations,6,EXPENSES:,"3 Months Ended | Jun. 30, 2025",Income based fee,0,86.0,number,millions,True
+Consolidated Statements of Operations,6,EXPENSES:,"6 Months Ended | Jun. 30, 2026",Income based fee,0,168.0,number,millions,True
+Consolidated Statements of Operations,6,EXPENSES:,"6 Months Ended | Jun. 30, 2025",Income based fee,0,171.0,number,millions,True
+Consolidated Statements of Operations,7,EXPENSES:,"3 Months Ended | Jun. 30, 2026",Capital gains incentive fee,0,-21.0,number,millions,True
+Consolidated Statements of Operations,7,EXPENSES:,"3 Months Ended | Jun. 30, 2025",Capital gains incentive fee,0,4.0,number,millions,True
+Consolidated Statements of Operations,7,EXPENSES:,"6 Months Ended | Jun. 30, 2026",Capital gains incentive fee,0,-82.0,number,millions,True
+Consolidated Statements of Operations,7,EXPENSES:,"6 Months Ended | Jun. 30, 2025",Capital gains incentive fee,0,-21.0,number,millions,True
+Consolidated Statements of Operations,8,EXPENSES:,"3 Months Ended | Jun. 30, 2026",Administrative and other fees,0,4.0,number,millions,True
+Consolidated Statements of Operations,8,EXPENSES:,"3 Months Ended | Jun. 30, 2025",Administrative and other fees,0,4.0,number,millions,True
+Consolidated Statements of Operations,8,EXPENSES:,"6 Months Ended | Jun. 30, 2026",Administrative and other fees,0,8.0,number,millions,True
+Consolidated Statements of Operations,8,EXPENSES:,"6 Months Ended | Jun. 30, 2025",Administrative and other fees,0,8.0,number,millions,True
+Consolidated Statements of Operations,9,EXPENSES:,"3 Months Ended | Jun. 30, 2026",Other general and administrative,0,10.0,number,millions,True
+Consolidated Statements of Operations,9,EXPENSES:,"3 Months Ended | Jun. 30, 2025",Other general and administrative,0,9.0,number,millions,True
+Consolidated Statements of Operations,9,EXPENSES:,"6 Months Ended | Jun. 30, 2026",Other general and administrative,0,18.0,number,millions,True
+Consolidated Statements of Operations,9,EXPENSES:,"6 Months Ended | Jun. 30, 2025",Other general and administrative,0,17.0,number,millions,True
+Consolidated Statements of Operations,10,EXPENSES:,"3 Months Ended | Jun. 30, 2026",Total expenses,0,401.0,number,millions,True
+Consolidated Statements of Operations,10,EXPENSES:,"3 Months Ended | Jun. 30, 2025",Total expenses,0,395.0,number,millions,True
+Consolidated Statements of Operations,10,EXPENSES:,"6 Months Ended | Jun. 30, 2026",Total expenses,0,760.0,number,millions,True
+Consolidated Statements of Operations,10,EXPENSES:,"6 Months Ended | Jun. 30, 2025",Total expenses,0,755.0,number,millions,True
+Consolidated Statements of Operations,11,EXPENSES:,"3 Months Ended | Jun. 30, 2026",NET INVESTMENT INCOME BEFORE INCOME TAXES,0,367.0,number,millions,True
+Consolidated Statements of Operations,11,EXPENSES:,"3 Months Ended | Jun. 30, 2025",NET INVESTMENT INCOME BEFORE INCOME TAXES,0,350.0,number,millions,True
+Consolidated Statements of Operations,11,EXPENSES:,"6 Months Ended | Jun. 30, 2026",NET INVESTMENT INCOME BEFORE INCOME TAXES,0,771.0,number,millions,True
+Consolidated Statements of Operations,11,EXPENSES:,"6 Months Ended | Jun. 30, 2025",NET INVESTMENT INCOME BEFORE INCOME TAXES,0,722.0,number,millions,True
+Consolidated Statements of Operations,12,EXPENSES:,"3 Months Ended | Jun. 30, 2026","Income tax expense, including excise taxes",0,8.0,number,millions,True
+Consolidated Statements of Operations,12,EXPENSES:,"3 Months Ended | Jun. 30, 2025","Income tax expense, including excise taxes",0,8.0,number,millions,True
+Consolidated Statements of Operations,12,EXPENSES:,"6 Months Ended | Jun. 30, 2026","Income tax expense, including excise taxes",0,14.0,number,millions,True
+Consolidated Statements of Operations,12,EXPENSES:,"6 Months Ended | Jun. 30, 2025","Income tax expense, including excise taxes",0,15.0,number,millions,True
+Consolidated Statements of Operations,13,EXPENSES:,"3 Months Ended | Jun. 30, 2026",NET INVESTMENT INCOME,0,359.0,number,millions,True
+Consolidated Statements of Operations,13,EXPENSES:,"3 Months Ended | Jun. 30, 2025",NET INVESTMENT INCOME,0,342.0,number,millions,True
+Consolidated Statements of Operations,13,EXPENSES:,"6 Months Ended | Jun. 30, 2026",NET INVESTMENT INCOME,0,757.0,number,millions,True
+Consolidated Statements of Operations,13,EXPENSES:,"6 Months Ended | Jun. 30, 2025",NET INVESTMENT INCOME,0,707.0,number,millions,True
+Consolidated Statements of Operations,14,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2026",Foreign currency and other transactions,0,2.0,number,millions,True
+Consolidated Statements of Operations,14,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2025",Foreign currency and other transactions,0,-39.0,number,millions,True
+Consolidated Statements of Operations,14,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2026",Foreign currency and other transactions,0,-6.0,number,millions,True
+Consolidated Statements of Operations,14,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2025",Foreign currency and other transactions,0,-8.0,number,millions,True
+Consolidated Statements of Operations,15,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2026",Net income tax expense on net realized gains,0,0.0,number,millions,True
+Consolidated Statements of Operations,15,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2025",Net income tax expense on net realized gains,0,-44.0,number,millions,True
+Consolidated Statements of Operations,15,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2026",Net income tax expense on net realized gains,0,0.0,number,millions,True
+Consolidated Statements of Operations,15,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2025",Net income tax expense on net realized gains,0,-44.0,number,millions,True
+Consolidated Statements of Operations,16,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2026",Net realized gains (losses),0,-5.0,number,millions,True
+Consolidated Statements of Operations,16,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2025",Net realized gains (losses),0,34.0,number,millions,True
+Consolidated Statements of Operations,16,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2026",Net realized gains (losses),0,101.0,number,millions,True
+Consolidated Statements of Operations,16,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2025",Net realized gains (losses),0,-27.0,number,millions,True
+Consolidated Statements of Operations,17,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2026",Foreign currency and other transactions,0,8.0,number,millions,False
+Consolidated Statements of Operations,17,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2025",Foreign currency and other transactions,0,-10.0,number,millions,False
+Consolidated Statements of Operations,17,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2026",Foreign currency and other transactions,0,38.0,number,millions,False
+Consolidated Statements of Operations,17,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2025",Foreign currency and other transactions,0,-54.0,number,millions,False
+Consolidated Statements of Operations,18,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2026",Net change in deferred tax liabilities,0,-11.0,number,millions,True
+Consolidated Statements of Operations,18,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2025",Net change in deferred tax liabilities,0,35.0,number,millions,True
+Consolidated Statements of Operations,18,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2026",Net change in deferred tax liabilities,0,-37.0,number,millions,True
+Consolidated Statements of Operations,18,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2025",Net change in deferred tax liabilities,0,13.0,number,millions,True
+Consolidated Statements of Operations,19,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2026",Net unrealized losses,0,-183.0,number,millions,True
+Consolidated Statements of Operations,19,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2025",Net unrealized losses,0,-15.0,number,millions,True
+Consolidated Statements of Operations,19,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2026",Net unrealized losses,0,-595.0,number,millions,True
+Consolidated Statements of Operations,19,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2025",Net unrealized losses,0,-78.0,number,millions,True
+Consolidated Statements of Operations,20,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2026","Net realized and unrealized gains (losses) on investments, foreign currency and other transactions",0,-188.0,number,millions,True
+Consolidated Statements of Operations,20,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2025","Net realized and unrealized gains (losses) on investments, foreign currency and other transactions",0,19.0,number,millions,True
+Consolidated Statements of Operations,20,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2026","Net realized and unrealized gains (losses) on investments, foreign currency and other transactions",0,-494.0,number,millions,True
+Consolidated Statements of Operations,20,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2025","Net realized and unrealized gains (losses) on investments, foreign currency and other transactions",0,-105.0,number,millions,True
+Consolidated Statements of Operations,21,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2026",NET INCREASE IN STOCKHOLDERS’ EQUITY RESULTING FROM OPERATIONS,0,171.0,number,millions,True
+Consolidated Statements of Operations,21,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2025",NET INCREASE IN STOCKHOLDERS’ EQUITY RESULTING FROM OPERATIONS,0,361.0,number,millions,True
+Consolidated Statements of Operations,21,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2026",NET INCREASE IN STOCKHOLDERS’ EQUITY RESULTING FROM OPERATIONS,0,263.0,number,millions,True
+Consolidated Statements of Operations,21,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2025",NET INCREASE IN STOCKHOLDERS’ EQUITY RESULTING FROM OPERATIONS,0,602.0,number,millions,True
+Consolidated Statements of Operations,22,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2026",Basic net income per common share (in usd per share),0,0.24,number,millions,True
+Consolidated Statements of Operations,22,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2025",Basic net income per common share (in usd per share),0,0.52,number,millions,True
+Consolidated Statements of Operations,22,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2026",Basic net income per common share (in usd per share),0,0.36,number,millions,True
+Consolidated Statements of Operations,22,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2025",Basic net income per common share (in usd per share),0,0.88,number,millions,True
+Consolidated Statements of Operations,23,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2026",Diluted net income per common share (in usd per share),0,0.24,number,millions,True
+Consolidated Statements of Operations,23,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2025",Diluted net income per common share (in usd per share),0,0.52,number,millions,True
+Consolidated Statements of Operations,23,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2026",Diluted net income per common share (in usd per share),0,0.36,number,millions,True
+Consolidated Statements of Operations,23,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2025",Diluted net income per common share (in usd per share),0,0.88,number,millions,True
+Consolidated Statements of Operations,24,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2026",Basic weighted average shares of common stock outstanding (in shares),0,718.0,number,millions,True
+Consolidated Statements of Operations,24,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2025",Basic weighted average shares of common stock outstanding (in shares),0,695.0,number,millions,True
+Consolidated Statements of Operations,24,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2026",Basic weighted average shares of common stock outstanding (in shares),0,718.0,number,millions,True
+Consolidated Statements of Operations,24,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2025",Basic weighted average shares of common stock outstanding (in shares),0,686.0,number,millions,True
+Consolidated Statements of Operations,25,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2026",Diluted weighted average shares of common stock outstanding (in shares),0,718.0,number,millions,True
+Consolidated Statements of Operations,25,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2025",Diluted weighted average shares of common stock outstanding (in shares),0,695.0,number,millions,True
+Consolidated Statements of Operations,25,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2026",Diluted weighted average shares of common stock outstanding (in shares),0,718.0,number,millions,True
+Consolidated Statements of Operations,25,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2025",Diluted weighted average shares of common stock outstanding (in shares),0,686.0,number,millions,True
+Consolidated Statements of Operations,26,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2026",Interest income (excluding payment-in-kind (“PIK”) interest income),0,437.0,number,millions,True
+Consolidated Statements of Operations,26,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2025",Interest income (excluding payment-in-kind (“PIK”) interest income),0,433.0,number,millions,True
+Consolidated Statements of Operations,26,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2026",Interest income (excluding payment-in-kind (“PIK”) interest income),0,876.0,number,millions,True
+Consolidated Statements of Operations,26,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2025",Interest income (excluding payment-in-kind (“PIK”) interest income),0,864.0,number,millions,True
+Consolidated Statements of Operations,27,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2026",PIK interest income,0,51.0,number,millions,True
+Consolidated Statements of Operations,27,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2025",PIK interest income,0,47.0,number,millions,True
+Consolidated Statements of Operations,27,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2026",PIK interest income,0,96.0,number,millions,False
+Consolidated Statements of Operations,27,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2025",PIK interest income,0,87.0,number,millions,False
+Consolidated Statements of Operations,28,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2026",Capital structuring service fees,0,39.0,number,millions,True
+Consolidated Statements of Operations,28,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2025",Capital structuring service fees,0,33.0,number,millions,True
+Consolidated Statements of Operations,28,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2026",Capital structuring service fees,0,76.0,number,millions,True
+Consolidated Statements of Operations,28,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2025",Capital structuring service fees,0,76.0,number,millions,True
+Consolidated Statements of Operations,29,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2026",Dividend income (excluding PIK dividend income),0,13.0,number,millions,True
+Consolidated Statements of Operations,29,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2025",Dividend income (excluding PIK dividend income),0,8.0,number,millions,True
+Consolidated Statements of Operations,29,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2026",Dividend income (excluding PIK dividend income),0,25.0,number,millions,True
+Consolidated Statements of Operations,29,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2025",Dividend income (excluding PIK dividend income),0,11.0,number,millions,True
+Consolidated Statements of Operations,30,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2026",PIK dividend income,0,63.0,number,millions,True
+Consolidated Statements of Operations,30,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2025",PIK dividend income,0,75.0,number,millions,True
+Consolidated Statements of Operations,30,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2026",PIK dividend income,0,127.0,number,millions,False
+Consolidated Statements of Operations,30,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2025",PIK dividend income,0,141.0,number,millions,False
+Consolidated Statements of Operations,31,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2026",Other income,0,17.0,number,millions,True
+Consolidated Statements of Operations,31,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2025",Other income,0,18.0,number,millions,True
+Consolidated Statements of Operations,31,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2026",Other income,0,34.0,number,millions,True
+Consolidated Statements of Operations,31,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2025",Other income,0,34.0,number,millions,True
+Consolidated Statements of Operations,32,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2026",Total investment income,0,620.0,number,millions,False
+Consolidated Statements of Operations,32,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2025",Total investment income,0,614.0,number,millions,False
+Consolidated Statements of Operations,32,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2026",Total investment income,0,1234.0,number,millions,False
+Consolidated Statements of Operations,32,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2025",Total investment income,0,1213.0,number,millions,False
+Consolidated Statements of Operations,33,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2026",Net realized gains (losses):,0,-7.0,number,millions,True
+Consolidated Statements of Operations,33,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2025",Net realized gains (losses):,0,228.0,number,millions,True
+Consolidated Statements of Operations,33,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2026",Net realized gains (losses):,0,94.0,number,millions,True
+Consolidated Statements of Operations,33,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2025",Net realized gains (losses):,0,128.0,number,millions,True
+Consolidated Statements of Operations,34,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2026",Net unrealized gains (losses):,0,-145.0,number,millions,True
+Consolidated Statements of Operations,34,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2025",Net unrealized gains (losses):,0,-114.0,number,millions,True
+Consolidated Statements of Operations,34,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2026",Net unrealized gains (losses):,0,-485.0,number,millions,True
+Consolidated Statements of Operations,34,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2025",Net unrealized gains (losses):,0,-81.0,number,millions,True
+Consolidated Statements of Operations,35,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2026",Interest income (excluding payment-in-kind (“PIK”) interest income),0,3.0,number,millions,False
+Consolidated Statements of Operations,35,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2025",Interest income (excluding payment-in-kind (“PIK”) interest income),0,4.0,number,millions,False
+Consolidated Statements of Operations,35,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2026",Interest income (excluding payment-in-kind (“PIK”) interest income),0,6.0,number,millions,False
+Consolidated Statements of Operations,35,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2025",Interest income (excluding payment-in-kind (“PIK”) interest income),0,9.0,number,millions,False
+Consolidated Statements of Operations,36,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2026",PIK interest income,0,4.0,number,millions,False
+Consolidated Statements of Operations,36,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2025",PIK interest income,0,4.0,number,millions,False
+Consolidated Statements of Operations,36,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2026",PIK interest income,0,8.0,number,millions,False
+Consolidated Statements of Operations,36,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2025",PIK interest income,0,9.0,number,millions,False
+Consolidated Statements of Operations,37,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2026",Capital structuring service fees,0,0.4,number,millions,False
+Consolidated Statements of Operations,38,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2026",Other income,0,0.3,number,millions,False
+Consolidated Statements of Operations,39,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2026",Total investment income,0,7.0,number,millions,False
+Consolidated Statements of Operations,39,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2025",Total investment income,0,8.0,number,millions,False
+Consolidated Statements of Operations,39,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2026",Total investment income,0,14.0,number,millions,False
+Consolidated Statements of Operations,39,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2025",Total investment income,0,18.0,number,millions,False
+Consolidated Statements of Operations,40,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2026",Net realized gains (losses):,0,0.0,number,millions,False
+Consolidated Statements of Operations,40,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2025",Net realized gains (losses):,0,0.0,number,millions,False
+Consolidated Statements of Operations,40,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2026",Net realized gains (losses):,0,0.4,number,millions,False
+Consolidated Statements of Operations,40,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2025",Net realized gains (losses):,0,8.0,number,millions,False
+Consolidated Statements of Operations,41,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2026",Net unrealized gains (losses):,0,-20.0,number,millions,False
+Consolidated Statements of Operations,41,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2025",Net unrealized gains (losses):,0,-22.0,number,millions,False
+Consolidated Statements of Operations,41,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2026",Net unrealized gains (losses):,0,-46.1,number,millions,False
+Consolidated Statements of Operations,41,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2025",Net unrealized gains (losses):,0,-50.0,number,millions,False
+Consolidated Statements of Operations,42,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2026",Interest income (excluding payment-in-kind (“PIK”) interest income),0,59.0,number,millions,False
+Consolidated Statements of Operations,42,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2025",Interest income (excluding payment-in-kind (“PIK”) interest income),0,40.0,number,millions,False
+Consolidated Statements of Operations,42,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2026",Interest income (excluding payment-in-kind (“PIK”) interest income),0,115.0,number,millions,False
+Consolidated Statements of Operations,42,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2025",Interest income (excluding payment-in-kind (“PIK”) interest income),0,80.0,number,millions,False
+Consolidated Statements of Operations,43,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2026",PIK interest income,0,3.0,number,millions,False
+Consolidated Statements of Operations,43,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2025",PIK interest income,0,5.0,number,millions,False
+Consolidated Statements of Operations,43,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2026",PIK interest income,0,6.0,number,millions,False
+Consolidated Statements of Operations,43,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2025",PIK interest income,0,10.0,number,millions,False
+Consolidated Statements of Operations,44,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2026",Capital structuring service fees,0,1.0,number,millions,False
+Consolidated Statements of Operations,44,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2025",Capital structuring service fees,0,1.0,number,millions,False
+Consolidated Statements of Operations,44,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2026",Capital structuring service fees,0,3.2,number,millions,False
+Consolidated Statements of Operations,44,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2025",Capital structuring service fees,0,4.0,number,millions,False
+Consolidated Statements of Operations,45,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2026",Dividend income (excluding PIK dividend income),0,76.0,number,millions,False
+Consolidated Statements of Operations,45,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2025",Dividend income (excluding PIK dividend income),0,74.0,number,millions,False
+Consolidated Statements of Operations,45,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2026",Dividend income (excluding PIK dividend income),0,156.0,number,millions,False
+Consolidated Statements of Operations,45,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2025",Dividend income (excluding PIK dividend income),0,147.0,number,millions,False
+Consolidated Statements of Operations,46,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2026",PIK dividend income,0,0.0,number,millions,False
+Consolidated Statements of Operations,46,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2025",PIK dividend income,0,1.0,number,millions,False
+Consolidated Statements of Operations,46,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2026",PIK dividend income,0,0.0,number,millions,False
+Consolidated Statements of Operations,46,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2025",PIK dividend income,0,2.0,number,millions,False
+Consolidated Statements of Operations,47,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2026",Other income,0,2.0,number,millions,False
+Consolidated Statements of Operations,47,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2025",Other income,0,2.0,number,millions,False
+Consolidated Statements of Operations,47,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2026",Other income,0,3.0,number,millions,False
+Consolidated Statements of Operations,47,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2025",Other income,0,3.0,number,millions,False
+Consolidated Statements of Operations,48,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2026",Total investment income,0,141.0,number,millions,False
+Consolidated Statements of Operations,48,INVESTMENT INCOME:,"3 Months Ended | Jun. 30, 2025",Total investment income,0,123.0,number,millions,False
+Consolidated Statements of Operations,48,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2026",Total investment income,0,283.0,number,millions,False
+Consolidated Statements of Operations,48,INVESTMENT INCOME:,"6 Months Ended | Jun. 30, 2025",Total investment income,0,246.0,number,millions,False
+Consolidated Statements of Operations,49,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2026",Net realized gains (losses):,0,0.0,number,millions,False
+Consolidated Statements of Operations,49,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2025",Net realized gains (losses):,0,-111.0,number,millions,False
+Consolidated Statements of Operations,49,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2026",Net realized gains (losses):,0,12.6,number,millions,False
+Consolidated Statements of Operations,49,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2025",Net realized gains (losses):,0,-111.0,number,millions,False
+Consolidated Statements of Operations,50,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2026",Net unrealized gains (losses):,0,-15.0,number,millions,False
+Consolidated Statements of Operations,50,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","3 Months Ended | Jun. 30, 2025",Net unrealized gains (losses):,0,96.0,number,millions,False
+Consolidated Statements of Operations,50,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2026",Net unrealized gains (losses):,0,-65.5,number,millions,False
+Consolidated Statements of Operations,50,"REALIZED AND UNREALIZED GAINS (LOSSES) ON INVESTMENTS, FOREIGN CURRENCY AND OTHER TRANSACTIONS:","6 Months Ended | Jun. 30, 2025",Net unrealized gains (losses):,0,94.0,number,millions,False
+Consolidated Statements of Stockholders Equity,1,,Common Stock,"Beginning balance (in shares) at Dec. 31, 2024",0,672000000.0,number,millions,True
+Consolidated Statements of Stockholders Equity,2,,Total,"Beginning balance at Dec. 31, 2024",0,13355.0,number,millions,True
+Consolidated Statements of Stockholders Equity,2,,Common Stock,"Beginning balance at Dec. 31, 2024",0,1.0,number,millions,True
+Consolidated Statements of Stockholders Equity,2,,Capital in Excess of Par Value,"Beginning balance at Dec. 31, 2024",0,12502.0,number,millions,True
+Consolidated Statements of Stockholders Equity,2,,Accumulated Undistributed (Overdistributed) Earnings,"Beginning balance at Dec. 31, 2024",0,852.0,number,millions,True
+Consolidated Statements of Stockholders Equity,3,Increase (Decrease) in Stockholders' Equity [Roll Forward],Common Stock,Issuances of common stock (net of offering and underwriting costs) (in shares),0,17000000.0,number,millions,True
+Consolidated Statements of Stockholders Equity,4,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,Issuances of common stock (net of offering and underwriting costs),0,384.0,number,millions,True
+Consolidated Statements of Stockholders Equity,4,Increase (Decrease) in Stockholders' Equity [Roll Forward],Capital in Excess of Par Value,Issuances of common stock (net of offering and underwriting costs),0,384.0,number,millions,True
+Consolidated Statements of Stockholders Equity,5,Increase (Decrease) in Stockholders' Equity [Roll Forward],Common Stock,Shares issued in connection with dividend reinvestment plan (in shares),0,1000000.0,number,millions,True
+Consolidated Statements of Stockholders Equity,6,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,Shares issued in connection with dividend reinvestment plan,0,20.0,number,millions,True
+Consolidated Statements of Stockholders Equity,6,Increase (Decrease) in Stockholders' Equity [Roll Forward],Capital in Excess of Par Value,Shares issued in connection with dividend reinvestment plan,0,20.0,number,millions,True
+Consolidated Statements of Stockholders Equity,7,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,Net investment income,0,365.0,number,millions,True
+Consolidated Statements of Stockholders Equity,7,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,Net investment income,0,365.0,number,millions,True
+Consolidated Statements of Stockholders Equity,8,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,"Net realized (losses) gains on investments, foreign currency, extinguishment of debt and other transactions",0,-61.0,number,millions,True
+Consolidated Statements of Stockholders Equity,8,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,"Net realized (losses) gains on investments, foreign currency, extinguishment of debt and other transactions",0,-61.0,number,millions,True
+Consolidated Statements of Stockholders Equity,9,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,"Net unrealized (losses) gains on investments, foreign currency and other transactions",0,-63.0,number,millions,True
+Consolidated Statements of Stockholders Equity,9,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,"Net unrealized (losses) gains on investments, foreign currency and other transactions",0,-63.0,number,millions,True
+Consolidated Statements of Stockholders Equity,10,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,Dividends declared and payable,0,-328.0,number,millions,True
+Consolidated Statements of Stockholders Equity,10,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,Dividends declared and payable,0,-328.0,number,millions,True
+Consolidated Statements of Stockholders Equity,11,Increase (Decrease) in Stockholders' Equity [Roll Forward],Common Stock,"Ending balance (in shares) at Mar. 31, 2025",0,690000000.0,number,millions,True
+Consolidated Statements of Stockholders Equity,12,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,"Ending balance at Mar. 31, 2025",0,13672.0,number,millions,True
+Consolidated Statements of Stockholders Equity,12,Increase (Decrease) in Stockholders' Equity [Roll Forward],Common Stock,"Ending balance at Mar. 31, 2025",0,1.0,number,millions,True
+Consolidated Statements of Stockholders Equity,12,Increase (Decrease) in Stockholders' Equity [Roll Forward],Capital in Excess of Par Value,"Ending balance at Mar. 31, 2025",0,12906.0,number,millions,True
+Consolidated Statements of Stockholders Equity,12,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,"Ending balance at Mar. 31, 2025",0,765.0,number,millions,True
+Consolidated Statements of Stockholders Equity,13,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,Cash dividends declared (in usd per share),0,0.48,number,millions,True
+Consolidated Statements of Stockholders Equity,14,Increase (Decrease) in Stockholders' Equity [Roll Forward],Common Stock,"Beginning balance (in shares) at Dec. 31, 2024",0,672000000.0,number,millions,False
+Consolidated Statements of Stockholders Equity,15,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,"Beginning balance at Dec. 31, 2024",0,13355.0,number,millions,False
+Consolidated Statements of Stockholders Equity,15,Increase (Decrease) in Stockholders' Equity [Roll Forward],Common Stock,"Beginning balance at Dec. 31, 2024",0,1.0,number,millions,False
+Consolidated Statements of Stockholders Equity,15,Increase (Decrease) in Stockholders' Equity [Roll Forward],Capital in Excess of Par Value,"Beginning balance at Dec. 31, 2024",0,12502.0,number,millions,False
+Consolidated Statements of Stockholders Equity,15,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,"Beginning balance at Dec. 31, 2024",0,852.0,number,millions,False
+Consolidated Statements of Stockholders Equity,16,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,Shares issued in connection with dividend reinvestment plan (in shares),0,1800000.0,number,millions,True
+Consolidated Statements of Stockholders Equity,17,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,Net investment income,0,707.0,number,millions,False
+Consolidated Statements of Stockholders Equity,18,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,"Net unrealized (losses) gains on investments, foreign currency and other transactions",0,-78.0,number,millions,False
+Consolidated Statements of Stockholders Equity,19,Increase (Decrease) in Stockholders' Equity [Roll Forward],Common Stock,"Ending balance (in shares) at Jun. 30, 2025",0,706000000.0,number,millions,True
+Consolidated Statements of Stockholders Equity,20,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,"Ending balance at Jun. 30, 2025",0,14034.0,number,millions,True
+Consolidated Statements of Stockholders Equity,20,Increase (Decrease) in Stockholders' Equity [Roll Forward],Common Stock,"Ending balance at Jun. 30, 2025",0,1.0,number,millions,True
+Consolidated Statements of Stockholders Equity,20,Increase (Decrease) in Stockholders' Equity [Roll Forward],Capital in Excess of Par Value,"Ending balance at Jun. 30, 2025",0,13244.0,number,millions,True
+Consolidated Statements of Stockholders Equity,20,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,"Ending balance at Jun. 30, 2025",0,789.0,number,millions,True
+Consolidated Statements of Stockholders Equity,21,Increase (Decrease) in Stockholders' Equity [Roll Forward],Common Stock,"Beginning balance (in shares) at Mar. 31, 2025",0,690000000.0,number,millions,True
+Consolidated Statements of Stockholders Equity,22,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,"Beginning balance at Mar. 31, 2025",0,13672.0,number,millions,True
+Consolidated Statements of Stockholders Equity,22,Increase (Decrease) in Stockholders' Equity [Roll Forward],Common Stock,"Beginning balance at Mar. 31, 2025",0,1.0,number,millions,True
+Consolidated Statements of Stockholders Equity,22,Increase (Decrease) in Stockholders' Equity [Roll Forward],Capital in Excess of Par Value,"Beginning balance at Mar. 31, 2025",0,12906.0,number,millions,True
+Consolidated Statements of Stockholders Equity,22,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,"Beginning balance at Mar. 31, 2025",0,765.0,number,millions,True
+Consolidated Statements of Stockholders Equity,23,Increase (Decrease) in Stockholders' Equity [Roll Forward],Common Stock,Issuances of common stock (net of offering and underwriting costs) (in shares),0,15000000.0,number,millions,False
+Consolidated Statements of Stockholders Equity,24,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,Issuances of common stock (net of offering and underwriting costs),0,318.0,number,millions,False
+Consolidated Statements of Stockholders Equity,24,Increase (Decrease) in Stockholders' Equity [Roll Forward],Capital in Excess of Par Value,Issuances of common stock (net of offering and underwriting costs),0,318.0,number,millions,False
+Consolidated Statements of Stockholders Equity,25,Increase (Decrease) in Stockholders' Equity [Roll Forward],Common Stock,Shares issued in connection with dividend reinvestment plan (in shares),0,1000000.0,number,millions,False
+Consolidated Statements of Stockholders Equity,26,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,Shares issued in connection with dividend reinvestment plan,0,20.0,number,millions,False
+Consolidated Statements of Stockholders Equity,26,Increase (Decrease) in Stockholders' Equity [Roll Forward],Capital in Excess of Par Value,Shares issued in connection with dividend reinvestment plan,0,20.0,number,millions,False
+Consolidated Statements of Stockholders Equity,27,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,Net investment income,0,342.0,number,millions,False
+Consolidated Statements of Stockholders Equity,27,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,Net investment income,0,342.0,number,millions,False
+Consolidated Statements of Stockholders Equity,28,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,"Net realized (losses) gains on investments, foreign currency, extinguishment of debt and other transactions",0,34.0,number,millions,False
+Consolidated Statements of Stockholders Equity,28,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,"Net realized (losses) gains on investments, foreign currency, extinguishment of debt and other transactions",0,34.0,number,millions,False
+Consolidated Statements of Stockholders Equity,29,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,"Net unrealized (losses) gains on investments, foreign currency and other transactions",0,-15.0,number,millions,False
+Consolidated Statements of Stockholders Equity,29,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,"Net unrealized (losses) gains on investments, foreign currency and other transactions",0,-15.0,number,millions,False
+Consolidated Statements of Stockholders Equity,30,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,Dividends declared and payable,0,-337.0,number,millions,False
+Consolidated Statements of Stockholders Equity,30,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,Dividends declared and payable,0,-337.0,number,millions,False
+Consolidated Statements of Stockholders Equity,31,Increase (Decrease) in Stockholders' Equity [Roll Forward],Common Stock,"Ending balance (in shares) at Jun. 30, 2025",0,706000000.0,number,millions,False
+Consolidated Statements of Stockholders Equity,32,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,"Ending balance at Jun. 30, 2025",0,14034.0,number,millions,False
+Consolidated Statements of Stockholders Equity,32,Increase (Decrease) in Stockholders' Equity [Roll Forward],Common Stock,"Ending balance at Jun. 30, 2025",0,1.0,number,millions,False
+Consolidated Statements of Stockholders Equity,32,Increase (Decrease) in Stockholders' Equity [Roll Forward],Capital in Excess of Par Value,"Ending balance at Jun. 30, 2025",0,13244.0,number,millions,False
+Consolidated Statements of Stockholders Equity,32,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,"Ending balance at Jun. 30, 2025",0,789.0,number,millions,False
+Consolidated Statements of Stockholders Equity,33,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,Cash dividends declared (in usd per share),0,0.48,number,millions,False
+Consolidated Statements of Stockholders Equity,34,Increase (Decrease) in Stockholders' Equity [Roll Forward],Common Stock,Issuances of common stock (net of offering and underwriting costs) (in shares),0,9000000.0,number,millions,False
+Consolidated Statements of Stockholders Equity,35,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,Issuances of common stock (net of offering and underwriting costs),0,204.0,number,millions,False
+Consolidated Statements of Stockholders Equity,35,Increase (Decrease) in Stockholders' Equity [Roll Forward],Capital in Excess of Par Value,Issuances of common stock (net of offering and underwriting costs),0,204.0,number,millions,False
+Consolidated Statements of Stockholders Equity,36,Increase (Decrease) in Stockholders' Equity [Roll Forward],Common Stock,Shares issued in connection with dividend reinvestment plan (in shares),0,1000000.0,number,millions,False
+Consolidated Statements of Stockholders Equity,37,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,Shares issued in connection with dividend reinvestment plan,0,22.0,number,millions,False
+Consolidated Statements of Stockholders Equity,37,Increase (Decrease) in Stockholders' Equity [Roll Forward],Capital in Excess of Par Value,Shares issued in connection with dividend reinvestment plan,0,22.0,number,millions,False
+Consolidated Statements of Stockholders Equity,38,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,Net investment income,0,338.0,number,millions,False
+Consolidated Statements of Stockholders Equity,38,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,Net investment income,0,338.0,number,millions,False
+Consolidated Statements of Stockholders Equity,39,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,"Net realized (losses) gains on investments, foreign currency, extinguishment of debt and other transactions",0,162.0,number,millions,False
+Consolidated Statements of Stockholders Equity,39,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,"Net realized (losses) gains on investments, foreign currency, extinguishment of debt and other transactions",0,162.0,number,millions,False
+Consolidated Statements of Stockholders Equity,40,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,"Net unrealized (losses) gains on investments, foreign currency and other transactions",0,-96.0,number,millions,False
+Consolidated Statements of Stockholders Equity,40,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,"Net unrealized (losses) gains on investments, foreign currency and other transactions",0,-96.0,number,millions,False
+Consolidated Statements of Stockholders Equity,41,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,Dividends declared and payable,0,-342.0,number,millions,False
+Consolidated Statements of Stockholders Equity,41,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,Dividends declared and payable,0,-342.0,number,millions,False
+Consolidated Statements of Stockholders Equity,42,Increase (Decrease) in Stockholders' Equity [Roll Forward],Common Stock,"Ending balance (in shares) at Sep. 30, 2025",0,716000000.0,number,millions,True
+Consolidated Statements of Stockholders Equity,43,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,"Ending balance at Sep. 30, 2025",0,14322.0,number,millions,True
+Consolidated Statements of Stockholders Equity,43,Increase (Decrease) in Stockholders' Equity [Roll Forward],Common Stock,"Ending balance at Sep. 30, 2025",0,1.0,number,millions,True
+Consolidated Statements of Stockholders Equity,43,Increase (Decrease) in Stockholders' Equity [Roll Forward],Capital in Excess of Par Value,"Ending balance at Sep. 30, 2025",0,13470.0,number,millions,True
+Consolidated Statements of Stockholders Equity,43,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,"Ending balance at Sep. 30, 2025",0,851.0,number,millions,True
+Consolidated Statements of Stockholders Equity,44,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,Cash dividends declared (in usd per share),0,0.48,number,millions,False
+Consolidated Statements of Stockholders Equity,45,Increase (Decrease) in Stockholders' Equity [Roll Forward],Common Stock,Issuances of common stock (net of offering and underwriting costs) (in shares),0,1000000.0,number,millions,False
+Consolidated Statements of Stockholders Equity,46,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,Issuances of common stock (net of offering and underwriting costs),0,22.0,number,millions,False
+Consolidated Statements of Stockholders Equity,46,Increase (Decrease) in Stockholders' Equity [Roll Forward],Capital in Excess of Par Value,Issuances of common stock (net of offering and underwriting costs),0,22.0,number,millions,False
+Consolidated Statements of Stockholders Equity,47,Increase (Decrease) in Stockholders' Equity [Roll Forward],Common Stock,Shares issued in connection with dividend reinvestment plan (in shares),0,1000000.0,number,millions,False
+Consolidated Statements of Stockholders Equity,48,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,Shares issued in connection with dividend reinvestment plan,0,25.0,number,millions,False
+Consolidated Statements of Stockholders Equity,48,Increase (Decrease) in Stockholders' Equity [Roll Forward],Capital in Excess of Par Value,Shares issued in connection with dividend reinvestment plan,0,25.0,number,millions,False
+Consolidated Statements of Stockholders Equity,49,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,Net investment income,0,370.0,number,millions,False
+Consolidated Statements of Stockholders Equity,49,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,Net investment income,0,370.0,number,millions,False
+Consolidated Statements of Stockholders Equity,50,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,"Net realized (losses) gains on investments, foreign currency, extinguishment of debt and other transactions",0,-155.0,number,millions,False
+Consolidated Statements of Stockholders Equity,50,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,"Net realized (losses) gains on investments, foreign currency, extinguishment of debt and other transactions",0,-155.0,number,millions,False
+Consolidated Statements of Stockholders Equity,51,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,"Net unrealized (losses) gains on investments, foreign currency and other transactions",0,78.0,number,millions,False
+Consolidated Statements of Stockholders Equity,51,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,"Net unrealized (losses) gains on investments, foreign currency and other transactions",0,78.0,number,millions,False
+Consolidated Statements of Stockholders Equity,52,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,Dividends declared and payable,0,-344.0,number,millions,False
+Consolidated Statements of Stockholders Equity,52,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,Dividends declared and payable,0,-344.0,number,millions,False
+Consolidated Statements of Stockholders Equity,53,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,Tax reclassification of stockholders’ equity in accordance with GAAP,0,0.0,number,millions,True
+Consolidated Statements of Stockholders Equity,53,Increase (Decrease) in Stockholders' Equity [Roll Forward],Capital in Excess of Par Value,Tax reclassification of stockholders’ equity in accordance with GAAP,0,-158.0,number,millions,True
+Consolidated Statements of Stockholders Equity,53,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,Tax reclassification of stockholders’ equity in accordance with GAAP,0,158.0,number,millions,True
+Consolidated Statements of Stockholders Equity,54,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,"Ending balance (in shares) at Dec. 31, 2025",0,718000000.0,number,millions,True
+Consolidated Statements of Stockholders Equity,54,Increase (Decrease) in Stockholders' Equity [Roll Forward],Common Stock,"Ending balance (in shares) at Dec. 31, 2025",0,718000000.0,number,millions,True
+Consolidated Statements of Stockholders Equity,55,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,"Ending balance at Dec. 31, 2025",0,14318.0,number,millions,True
+Consolidated Statements of Stockholders Equity,55,Increase (Decrease) in Stockholders' Equity [Roll Forward],Common Stock,"Ending balance at Dec. 31, 2025",0,1.0,number,millions,True
+Consolidated Statements of Stockholders Equity,55,Increase (Decrease) in Stockholders' Equity [Roll Forward],Capital in Excess of Par Value,"Ending balance at Dec. 31, 2025",0,13359.0,number,millions,True
+Consolidated Statements of Stockholders Equity,55,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,"Ending balance at Dec. 31, 2025",0,958.0,number,millions,True
+Consolidated Statements of Stockholders Equity,56,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,Cash dividends declared (in usd per share),0,0.48,number,millions,False
+Consolidated Statements of Stockholders Equity,57,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,Net investment income,0,398.0,number,millions,False
+Consolidated Statements of Stockholders Equity,57,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,Net investment income,0,398.0,number,millions,False
+Consolidated Statements of Stockholders Equity,58,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,"Net realized (losses) gains on investments, foreign currency, extinguishment of debt and other transactions",0,106.0,number,millions,False
+Consolidated Statements of Stockholders Equity,58,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,"Net realized (losses) gains on investments, foreign currency, extinguishment of debt and other transactions",0,106.0,number,millions,False
+Consolidated Statements of Stockholders Equity,59,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,"Net unrealized (losses) gains on investments, foreign currency and other transactions",0,-412.0,number,millions,False
+Consolidated Statements of Stockholders Equity,59,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,"Net unrealized (losses) gains on investments, foreign currency and other transactions",0,-412.0,number,millions,False
+Consolidated Statements of Stockholders Equity,60,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,Dividends declared and payable,0,-345.0,number,millions,False
+Consolidated Statements of Stockholders Equity,60,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,Dividends declared and payable,0,-345.0,number,millions,False
+Consolidated Statements of Stockholders Equity,61,Increase (Decrease) in Stockholders' Equity [Roll Forward],Common Stock,"Ending balance (in shares) at Mar. 31, 2026",0,718000000.0,number,millions,True
+Consolidated Statements of Stockholders Equity,62,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,"Ending balance at Mar. 31, 2026",0,14065.0,number,millions,True
+Consolidated Statements of Stockholders Equity,62,Increase (Decrease) in Stockholders' Equity [Roll Forward],Common Stock,"Ending balance at Mar. 31, 2026",0,1.0,number,millions,True
+Consolidated Statements of Stockholders Equity,62,Increase (Decrease) in Stockholders' Equity [Roll Forward],Capital in Excess of Par Value,"Ending balance at Mar. 31, 2026",0,13359.0,number,millions,True
+Consolidated Statements of Stockholders Equity,62,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,"Ending balance at Mar. 31, 2026",0,705.0,number,millions,True
+Consolidated Statements of Stockholders Equity,63,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,Cash dividends declared (in usd per share),0,0.48,number,millions,False
+Consolidated Statements of Stockholders Equity,64,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,"Beginning balance (in shares) at Dec. 31, 2025",0,718000000.0,number,millions,True
+Consolidated Statements of Stockholders Equity,64,Increase (Decrease) in Stockholders' Equity [Roll Forward],Common Stock,"Beginning balance (in shares) at Dec. 31, 2025",0,718000000.0,number,millions,True
+Consolidated Statements of Stockholders Equity,65,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,"Beginning balance at Dec. 31, 2025",0,14318.0,number,millions,True
+Consolidated Statements of Stockholders Equity,65,Increase (Decrease) in Stockholders' Equity [Roll Forward],Common Stock,"Beginning balance at Dec. 31, 2025",0,1.0,number,millions,True
+Consolidated Statements of Stockholders Equity,65,Increase (Decrease) in Stockholders' Equity [Roll Forward],Capital in Excess of Par Value,"Beginning balance at Dec. 31, 2025",0,13359.0,number,millions,True
+Consolidated Statements of Stockholders Equity,65,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,"Beginning balance at Dec. 31, 2025",0,958.0,number,millions,True
+Consolidated Statements of Stockholders Equity,66,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,Shares issued in connection with dividend reinvestment plan (in shares),0,0.0,number,millions,False
+Consolidated Statements of Stockholders Equity,67,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,Net investment income,0,757.0,number,millions,False
+Consolidated Statements of Stockholders Equity,68,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,"Net unrealized (losses) gains on investments, foreign currency and other transactions",0,-595.0,number,millions,False
+Consolidated Statements of Stockholders Equity,69,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,"Ending balance (in shares) at Jun. 30, 2026",0,718000000.0,number,millions,True
+Consolidated Statements of Stockholders Equity,69,Increase (Decrease) in Stockholders' Equity [Roll Forward],Common Stock,"Ending balance (in shares) at Jun. 30, 2026",0,718000000.0,number,millions,True
+Consolidated Statements of Stockholders Equity,70,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,"Ending balance at Jun. 30, 2026",0,13891.0,number,millions,True
+Consolidated Statements of Stockholders Equity,70,Increase (Decrease) in Stockholders' Equity [Roll Forward],Common Stock,"Ending balance at Jun. 30, 2026",0,1.0,number,millions,True
+Consolidated Statements of Stockholders Equity,70,Increase (Decrease) in Stockholders' Equity [Roll Forward],Capital in Excess of Par Value,"Ending balance at Jun. 30, 2026",0,13359.0,number,millions,True
+Consolidated Statements of Stockholders Equity,70,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,"Ending balance at Jun. 30, 2026",0,531.0,number,millions,True
+Consolidated Statements of Stockholders Equity,71,Increase (Decrease) in Stockholders' Equity [Roll Forward],Common Stock,"Beginning balance (in shares) at Mar. 31, 2026",0,718000000.0,number,millions,True
+Consolidated Statements of Stockholders Equity,72,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,"Beginning balance at Mar. 31, 2026",0,14065.0,number,millions,True
+Consolidated Statements of Stockholders Equity,72,Increase (Decrease) in Stockholders' Equity [Roll Forward],Common Stock,"Beginning balance at Mar. 31, 2026",0,1.0,number,millions,True
+Consolidated Statements of Stockholders Equity,72,Increase (Decrease) in Stockholders' Equity [Roll Forward],Capital in Excess of Par Value,"Beginning balance at Mar. 31, 2026",0,13359.0,number,millions,True
+Consolidated Statements of Stockholders Equity,72,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,"Beginning balance at Mar. 31, 2026",0,705.0,number,millions,True
+Consolidated Statements of Stockholders Equity,73,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,Net investment income,0,359.0,number,millions,False
+Consolidated Statements of Stockholders Equity,73,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,Net investment income,0,359.0,number,millions,False
+Consolidated Statements of Stockholders Equity,74,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,"Net realized (losses) gains on investments, foreign currency, extinguishment of debt and other transactions",0,-5.0,number,millions,False
+Consolidated Statements of Stockholders Equity,74,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,"Net realized (losses) gains on investments, foreign currency, extinguishment of debt and other transactions",0,-5.0,number,millions,False
+Consolidated Statements of Stockholders Equity,75,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,"Net unrealized (losses) gains on investments, foreign currency and other transactions",0,-183.0,number,millions,False
+Consolidated Statements of Stockholders Equity,75,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,"Net unrealized (losses) gains on investments, foreign currency and other transactions",0,-183.0,number,millions,False
+Consolidated Statements of Stockholders Equity,76,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,Dividends declared and payable,0,-345.0,number,millions,False
+Consolidated Statements of Stockholders Equity,76,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,Dividends declared and payable,0,-345.0,number,millions,False
+Consolidated Statements of Stockholders Equity,77,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,"Ending balance (in shares) at Jun. 30, 2026",0,718000000.0,number,millions,False
+Consolidated Statements of Stockholders Equity,77,Increase (Decrease) in Stockholders' Equity [Roll Forward],Common Stock,"Ending balance (in shares) at Jun. 30, 2026",0,718000000.0,number,millions,False
+Consolidated Statements of Stockholders Equity,78,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,"Ending balance at Jun. 30, 2026",0,13891.0,number,millions,False
+Consolidated Statements of Stockholders Equity,78,Increase (Decrease) in Stockholders' Equity [Roll Forward],Common Stock,"Ending balance at Jun. 30, 2026",0,1.0,number,millions,False
+Consolidated Statements of Stockholders Equity,78,Increase (Decrease) in Stockholders' Equity [Roll Forward],Capital in Excess of Par Value,"Ending balance at Jun. 30, 2026",0,13359.0,number,millions,False
+Consolidated Statements of Stockholders Equity,78,Increase (Decrease) in Stockholders' Equity [Roll Forward],Accumulated Undistributed (Overdistributed) Earnings,"Ending balance at Jun. 30, 2026",0,531.0,number,millions,False
+Consolidated Statements of Stockholders Equity,79,Increase (Decrease) in Stockholders' Equity [Roll Forward],Total,Cash dividends declared (in usd per share),0,0.48,number,millions,False
+Consolidated Statements of Cash Flows,1,OPERATING ACTIVITIES:,"6 Months Ended | Jun. 30, 2026",Net increase in stockholders’ equity resulting from operations,0,263.0,number,millions,True
+Consolidated Statements of Cash Flows,1,OPERATING ACTIVITIES:,"6 Months Ended | Jun. 30, 2025",Net increase in stockholders’ equity resulting from operations,0,602.0,number,millions,True
+Consolidated Statements of Cash Flows,2,Adjustments to reconcile net increase in stockholders’ equity resulting from operations:,"6 Months Ended | Jun. 30, 2026","Net realized (gains) losses on investments, foreign currency and other transactions",0,-101.0,number,millions,True
+Consolidated Statements of Cash Flows,2,Adjustments to reconcile net increase in stockholders’ equity resulting from operations:,"6 Months Ended | Jun. 30, 2025","Net realized (gains) losses on investments, foreign currency and other transactions",0,27.0,number,millions,True
+Consolidated Statements of Cash Flows,3,Adjustments to reconcile net increase in stockholders’ equity resulting from operations:,"6 Months Ended | Jun. 30, 2026","Net unrealized losses on investments, foreign currency and other transactions",0,595.0,number,millions,True
+Consolidated Statements of Cash Flows,3,Adjustments to reconcile net increase in stockholders’ equity resulting from operations:,"6 Months Ended | Jun. 30, 2025","Net unrealized losses on investments, foreign currency and other transactions",0,78.0,number,millions,True
+Consolidated Statements of Cash Flows,4,Adjustments to reconcile net increase in stockholders’ equity resulting from operations:,"6 Months Ended | Jun. 30, 2026",Net gain on interest rate swaps accounted for as hedge instruments and the related hedged items,0,0.0,number,millions,True
+Consolidated Statements of Cash Flows,4,Adjustments to reconcile net increase in stockholders’ equity resulting from operations:,"6 Months Ended | Jun. 30, 2025",Net gain on interest rate swaps accounted for as hedge instruments and the related hedged items,0,-2.0,number,millions,True
+Consolidated Statements of Cash Flows,5,Adjustments to reconcile net increase in stockholders’ equity resulting from operations:,"6 Months Ended | Jun. 30, 2026",Net accretion of discount on investments,0,-8.0,number,millions,True
+Consolidated Statements of Cash Flows,5,Adjustments to reconcile net increase in stockholders’ equity resulting from operations:,"6 Months Ended | Jun. 30, 2025",Net accretion of discount on investments,0,-8.0,number,millions,True
+Consolidated Statements of Cash Flows,6,Adjustments to reconcile net increase in stockholders’ equity resulting from operations:,"6 Months Ended | Jun. 30, 2026",PIK interest,0,-110.0,number,millions,True
+Consolidated Statements of Cash Flows,6,Adjustments to reconcile net increase in stockholders’ equity resulting from operations:,"6 Months Ended | Jun. 30, 2025",PIK interest,0,-106.0,number,millions,True
+Consolidated Statements of Cash Flows,7,Adjustments to reconcile net increase in stockholders’ equity resulting from operations:,"6 Months Ended | Jun. 30, 2026",Collections of PIK interest,0,70.0,number,millions,True
+Consolidated Statements of Cash Flows,7,Adjustments to reconcile net increase in stockholders’ equity resulting from operations:,"6 Months Ended | Jun. 30, 2025",Collections of PIK interest,0,41.0,number,millions,True
+Consolidated Statements of Cash Flows,8,Adjustments to reconcile net increase in stockholders’ equity resulting from operations:,"6 Months Ended | Jun. 30, 2026",PIK dividends,0,-127.0,number,millions,True
+Consolidated Statements of Cash Flows,8,Adjustments to reconcile net increase in stockholders’ equity resulting from operations:,"6 Months Ended | Jun. 30, 2025",PIK dividends,0,-143.0,number,millions,True
+Consolidated Statements of Cash Flows,9,Adjustments to reconcile net increase in stockholders’ equity resulting from operations:,"6 Months Ended | Jun. 30, 2026",Collections of PIK dividends,0,50.0,number,millions,True
+Consolidated Statements of Cash Flows,9,Adjustments to reconcile net increase in stockholders’ equity resulting from operations:,"6 Months Ended | Jun. 30, 2025",Collections of PIK dividends,0,52.0,number,millions,True
+Consolidated Statements of Cash Flows,10,Adjustments to reconcile net increase in stockholders’ equity resulting from operations:,"6 Months Ended | Jun. 30, 2026",Amortization of debt issuance costs,0,17.0,number,millions,True
+Consolidated Statements of Cash Flows,10,Adjustments to reconcile net increase in stockholders’ equity resulting from operations:,"6 Months Ended | Jun. 30, 2025",Amortization of debt issuance costs,0,18.0,number,millions,True
+Consolidated Statements of Cash Flows,11,Adjustments to reconcile net increase in stockholders’ equity resulting from operations:,"6 Months Ended | Jun. 30, 2026",Net amortization of discount/premium on notes payable,0,3.0,number,millions,True
+Consolidated Statements of Cash Flows,11,Adjustments to reconcile net increase in stockholders’ equity resulting from operations:,"6 Months Ended | Jun. 30, 2025",Net amortization of discount/premium on notes payable,0,-2.0,number,millions,True
+Consolidated Statements of Cash Flows,12,Adjustments to reconcile net increase in stockholders’ equity resulting from operations:,"6 Months Ended | Jun. 30, 2026",Proceeds from sales and repayments of investments and other transactions,0,6368.0,number,millions,True
+Consolidated Statements of Cash Flows,12,Adjustments to reconcile net increase in stockholders’ equity resulting from operations:,"6 Months Ended | Jun. 30, 2025",Proceeds from sales and repayments of investments and other transactions,0,4709.0,number,millions,True
+Consolidated Statements of Cash Flows,13,Adjustments to reconcile net increase in stockholders’ equity resulting from operations:,"6 Months Ended | Jun. 30, 2026",Purchases of investments,0,-6295.0,number,millions,True
+Consolidated Statements of Cash Flows,13,Adjustments to reconcile net increase in stockholders’ equity resulting from operations:,"6 Months Ended | Jun. 30, 2025",Purchases of investments,0,-5755.0,number,millions,True
+Consolidated Statements of Cash Flows,14,Changes in operating assets and liabilities:,"6 Months Ended | Jun. 30, 2026",Interest receivable,0,-11.0,number,millions,True
+Consolidated Statements of Cash Flows,14,Changes in operating assets and liabilities:,"6 Months Ended | Jun. 30, 2025",Interest receivable,0,11.0,number,millions,True
+Consolidated Statements of Cash Flows,15,Changes in operating assets and liabilities:,"6 Months Ended | Jun. 30, 2026",Other assets,0,11.0,number,millions,True
+Consolidated Statements of Cash Flows,15,Changes in operating assets and liabilities:,"6 Months Ended | Jun. 30, 2025",Other assets,0,-27.0,number,millions,True
+Consolidated Statements of Cash Flows,16,Changes in operating assets and liabilities:,"6 Months Ended | Jun. 30, 2026",Base management fee payable,0,-1.0,number,millions,True
+Consolidated Statements of Cash Flows,16,Changes in operating assets and liabilities:,"6 Months Ended | Jun. 30, 2025",Base management fee payable,0,4.0,number,millions,True
+Consolidated Statements of Cash Flows,17,Changes in operating assets and liabilities:,"6 Months Ended | Jun. 30, 2026",Income based fee payable,0,-5.0,number,millions,True
+Consolidated Statements of Cash Flows,17,Changes in operating assets and liabilities:,"6 Months Ended | Jun. 30, 2025",Income based fee payable,0,-5.0,number,millions,True
+Consolidated Statements of Cash Flows,18,Changes in operating assets and liabilities:,"6 Months Ended | Jun. 30, 2026",Capital gains incentive fee payable,0,-82.0,number,millions,True
+Consolidated Statements of Cash Flows,18,Changes in operating assets and liabilities:,"6 Months Ended | Jun. 30, 2025",Capital gains incentive fee payable,0,-21.0,number,millions,True
+Consolidated Statements of Cash Flows,19,Changes in operating assets and liabilities:,"6 Months Ended | Jun. 30, 2026",Interest and facility fees payable,0,6.0,number,millions,True
+Consolidated Statements of Cash Flows,19,Changes in operating assets and liabilities:,"6 Months Ended | Jun. 30, 2025",Interest and facility fees payable,0,23.0,number,millions,True
+Consolidated Statements of Cash Flows,20,Changes in operating assets and liabilities:,"6 Months Ended | Jun. 30, 2026",Payable to participants,0,-27.0,number,millions,True
+Consolidated Statements of Cash Flows,20,Changes in operating assets and liabilities:,"6 Months Ended | Jun. 30, 2025",Payable to participants,0,-89.0,number,millions,True
+Consolidated Statements of Cash Flows,21,Changes in operating assets and liabilities:,"6 Months Ended | Jun. 30, 2026",Interest rate swap collateral payable,0,-58.0,number,millions,True
+Consolidated Statements of Cash Flows,21,Changes in operating assets and liabilities:,"6 Months Ended | Jun. 30, 2025",Interest rate swap collateral payable,0,81.0,number,millions,True
+Consolidated Statements of Cash Flows,22,Changes in operating assets and liabilities:,"6 Months Ended | Jun. 30, 2026",Accounts payable and other liabilities,0,-38.0,number,millions,True
+Consolidated Statements of Cash Flows,22,Changes in operating assets and liabilities:,"6 Months Ended | Jun. 30, 2025",Accounts payable and other liabilities,0,-5.0,number,millions,True
+Consolidated Statements of Cash Flows,23,Changes in operating assets and liabilities:,"6 Months Ended | Jun. 30, 2026",Net cash provided by (used in) operating activities,0,520.0,number,millions,True
+Consolidated Statements of Cash Flows,23,Changes in operating assets and liabilities:,"6 Months Ended | Jun. 30, 2025",Net cash provided by (used in) operating activities,0,-517.0,number,millions,True
+Consolidated Statements of Cash Flows,24,FINANCING ACTIVITIES:,"6 Months Ended | Jun. 30, 2026",Borrowings on debt,0,6982.0,number,millions,True
+Consolidated Statements of Cash Flows,24,FINANCING ACTIVITIES:,"6 Months Ended | Jun. 30, 2025",Borrowings on debt,0,4603.0,number,millions,True
+Consolidated Statements of Cash Flows,25,FINANCING ACTIVITIES:,"6 Months Ended | Jun. 30, 2026",Repayments and repurchases of debt,0,-7083.0,number,millions,True
+Consolidated Statements of Cash Flows,25,FINANCING ACTIVITIES:,"6 Months Ended | Jun. 30, 2025",Repayments and repurchases of debt,0,-4297.0,number,millions,True
+Consolidated Statements of Cash Flows,26,FINANCING ACTIVITIES:,"6 Months Ended | Jun. 30, 2026",Debt issuance costs,0,-29.0,number,millions,True
+Consolidated Statements of Cash Flows,26,FINANCING ACTIVITIES:,"6 Months Ended | Jun. 30, 2025",Debt issuance costs,0,-30.0,number,millions,True
+Consolidated Statements of Cash Flows,27,FINANCING ACTIVITIES:,"6 Months Ended | Jun. 30, 2026",Net proceeds from issuance of common stock,0,0.0,number,millions,True
+Consolidated Statements of Cash Flows,27,FINANCING ACTIVITIES:,"6 Months Ended | Jun. 30, 2025",Net proceeds from issuance of common stock,0,702.0,number,millions,True
+Consolidated Statements of Cash Flows,28,FINANCING ACTIVITIES:,"6 Months Ended | Jun. 30, 2026",Dividends paid,0,-690.0,number,millions,True
+Consolidated Statements of Cash Flows,28,FINANCING ACTIVITIES:,"6 Months Ended | Jun. 30, 2025",Dividends paid,0,-625.0,number,millions,True
+Consolidated Statements of Cash Flows,29,FINANCING ACTIVITIES:,"6 Months Ended | Jun. 30, 2026","Secured borrowings, net",0,0.0,number,millions,True
+Consolidated Statements of Cash Flows,29,FINANCING ACTIVITIES:,"6 Months Ended | Jun. 30, 2025","Secured borrowings, net",0,-32.0,number,millions,True
+Consolidated Statements of Cash Flows,30,FINANCING ACTIVITIES:,"6 Months Ended | Jun. 30, 2026",Net cash (used in) provided by financing activities,0,-820.0,number,millions,True
+Consolidated Statements of Cash Flows,30,FINANCING ACTIVITIES:,"6 Months Ended | Jun. 30, 2025",Net cash (used in) provided by financing activities,0,321.0,number,millions,True
+Consolidated Statements of Cash Flows,31,FINANCING ACTIVITIES:,"6 Months Ended | Jun. 30, 2026","CHANGE IN CASH, CASH EQUIVALENTS AND RESTRICTED CASH",0,-300.0,number,millions,True
+Consolidated Statements of Cash Flows,31,FINANCING ACTIVITIES:,"6 Months Ended | Jun. 30, 2025","CHANGE IN CASH, CASH EQUIVALENTS AND RESTRICTED CASH",0,-196.0,number,millions,True
+Consolidated Statements of Cash Flows,32,FINANCING ACTIVITIES:,"6 Months Ended | Jun. 30, 2026","CASH, CASH EQUIVALENTS AND RESTRICTED CASH, BEGINNING OF PERIOD",0,924.0,number,millions,True
+Consolidated Statements of Cash Flows,32,FINANCING ACTIVITIES:,"6 Months Ended | Jun. 30, 2025","CASH, CASH EQUIVALENTS AND RESTRICTED CASH, BEGINNING OF PERIOD",0,860.0,number,millions,True
+Consolidated Statements of Cash Flows,33,FINANCING ACTIVITIES:,"6 Months Ended | Jun. 30, 2026","CASH, CASH EQUIVALENTS AND RESTRICTED CASH, END OF PERIOD",0,624.0,number,millions,True
+Consolidated Statements of Cash Flows,33,FINANCING ACTIVITIES:,"6 Months Ended | Jun. 30, 2025","CASH, CASH EQUIVALENTS AND RESTRICTED CASH, END OF PERIOD",0,664.0,number,millions,True
+Consolidated Statements of Cash Flows,34,Supplemental Information:,"6 Months Ended | Jun. 30, 2026",Interest paid during the period,0,424.0,number,millions,True
+Consolidated Statements of Cash Flows,34,Supplemental Information:,"6 Months Ended | Jun. 30, 2025",Interest paid during the period,0,339.0,number,millions,True
+Consolidated Statements of Cash Flows,35,Supplemental Information:,"6 Months Ended | Jun. 30, 2026","Taxes, including excise taxes, paid during the period",0,40.0,number,millions,True
+Consolidated Statements of Cash Flows,35,Supplemental Information:,"6 Months Ended | Jun. 30, 2025","Taxes, including excise taxes, paid during the period",0,38.0,number,millions,True
+Consolidated Statements of Cash Flows,36,Supplemental Information:,"6 Months Ended | Jun. 30, 2026",Dividends declared and payable during the period,0,690.0,number,millions,True
+Consolidated Statements of Cash Flows,36,Supplemental Information:,"6 Months Ended | Jun. 30, 2025",Dividends declared and payable during the period,0,665.0,number,millions,True

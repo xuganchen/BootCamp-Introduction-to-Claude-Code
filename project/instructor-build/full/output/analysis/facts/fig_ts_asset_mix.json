@@ -1,0 +1,33 @@
+{
+  "kind": "fig",
+  "slug": "ts_asset_mix",
+  "title": "Asset mix drift: fair-value share by investment type",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "investment-panel",
+    "rows_used": 31067,
+    "rows_total": 31067,
+    "note": "The panel holds 30 of the 32 calendar quarters in the window: 2019Q3 and 2022Q1 are absent and are shown as breaks; no value is interpolated or bridged across them. Shares are FV-weighted, not position counts.",
+    "share_pct": 100.0,
+    "sentence": "Computed on 31,067 of 31,067 investment-panel rows (100.0% of the window panel). The panel holds 30 of the 32 calendar quarters in the window: 2019Q3 and 2022Q1 are absent and are shown as breaks; no value is interpolated or bridged across them. Shares are FV-weighted, not position counts."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "basis": "FV share of the whole investment panel, by investment_type",
+    "first_lien_share_2018Q3_pct": 44.1,
+    "first_lien_share_2026Q2_pct": 59.1,
+    "first_lien_change_pp": 14.9,
+    "second_lien_share_2018Q3_pct": 29.9,
+    "second_lien_share_2026Q2_pct": 4.4,
+    "subordinated_share_2018Q3_pct": 13.3,
+    "subordinated_share_2026Q2_pct": 13.4,
+    "equity_share_2018Q3_pct": 9.0,
+    "equity_share_2026Q2_pct": 15.4,
+    "senior_secured_first_plus_second_2018Q3_pct": 74.0,
+    "senior_secured_first_plus_second_2026Q2_pct": 63.5,
+    "positions_2026Q2_total_n": 1439,
+    "positions_2026Q2_first_lien_n": 965,
+    "first_lien_row_share_2026Q2_pct": 67.1,
+    "investment_type_labels_covered": "first lien, second lien, subordinated, preferred, equity, other"
+  }
+}

@@ -1,0 +1,84 @@
+Introduction to Claude Code -- Yale MAM Orientation BootCamp
+Copyright (c) 2026 Xugan Chen
+
+Everything in this repository is licensed CC BY 4.0: the slides and their LaTeX
+source, the syllabus, the prompts, the panels, and the instructor's build,
+including its code, tests and notes.
+
+Full terms: https://creativecommons.org/licenses/by/4.0/legalcode
+Summary:    https://creativecommons.org/licenses/by/4.0/
+
+You may share and adapt this material, including commercially, provided you give
+credit, link to the licence, and indicate what you changed. A sufficient
+attribution:
+
+    Adapted from "Introduction to Claude Code" by Xugan Chen (Yale MAM
+    Orientation BootCamp, 2026), CC BY 4.0.
+    https://github.com/xuganchen/BootCamp-Introduction-to-Claude-Code
+
+
+===============================================================================
+DISCLAIMER
+===============================================================================
+
+Everything here is provided as is, without warranty of any kind, express or
+implied. This covers the code, the data panels, the report, the notes and the
+slides alike.
+
+Everything under project/instructor-build/ -- the code, the tests, the notes,
+the panels and the 53-page report -- was produced by an AI agent and published
+as a record of what that workflow produces, bugs included. No human analyst
+wrote or reviewed it. It is not software to depend on and not analysis to rely
+on. One field in the panels is knowingly wrong and the report inherits it;
+project/README.md and project/instructor-build/README.md say which.
+
+Nothing here is investment advice, a recommendation, or an offer. The teaching
+material discusses Ares Capital Corporation because its SEC filings are public
+and hard to parse, for no other reason. Nothing here is endorsed by, affiliated
+with, or reviewed by Ares Capital Corporation, the SEC, or Yale University.
+
+
+===============================================================================
+THIRD-PARTY  --  not covered by the licence above
+===============================================================================
+
+Reproduced for teaching under fair use. These remain the property of their
+owners and should not be assumed redistributable. Remove or replace them before
+reusing the deck commercially.
+
+    slides/figures/gbrain1.png, gbrain2.png, gbrain3.png
+        GBrain, by Garry Tan.  https://github.com/garrytan/gbrain
+
+    slides/figures/nanoclaw.png
+        NanoClaw project page.  https://github.com/nanocoai/nanoclaw
+
+    slides/figures/context_window1.jpg, context_window2.png
+        "A Series on Claude Code", Paul Goldsmith-Pinkham.
+        https://paulgp.substack.com/
+
+    slides/figures/claude_code.png
+        The Claude Code interface. Anthropic marks and UI.
+
+    slides/figures/ARCC_example.png
+        Ares Capital Corporation's SEC filing, as filed on EDGAR.
+
+    The tool ladder table in slides/sections/01_intro.tex
+        Adapted from Kyle Jensen. Attributed on the slide.
+
+
+===============================================================================
+DATA
+===============================================================================
+
+project/output/*.csv is derived from Ares Capital Corporation's 10-K and 10-Q
+filings on SEC EDGAR. Those filings are public records, freely redistributable,
+and each row carries its own source_url. The licensed work here is the schema,
+the parsing decisions and the coverage choices.
+
+
+===============================================================================
+BUILDS ON
+===============================================================================
+
+Paul Goldsmith-Pinkham, "A Series on Claude Code"
+    https://paulgp.substack.com/

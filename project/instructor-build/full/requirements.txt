@@ -1,0 +1,9 @@
+# BDC dataset pipeline - Python 3.11+
+# Install:  python3 -m pip install -r requirements.txt
+# Run:      python3 code/run_all.py
+
+requests>=2.31        # EDGAR HTTP, throttled and cached in bdc_09_utils
+lxml>=5.0             # HTML parsing of the ~25 MB inline-XBRL filing
+pandas>=2.1           # panel assembly and CSV/Parquet IO
+pyarrow>=14.0         # optional: Parquet twins of the two panels
+pytest>=8.0           # the verification gate (bdc_08_checks.py / tests/)

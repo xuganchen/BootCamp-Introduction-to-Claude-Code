@@ -1,0 +1,7 @@
+scope,seniority,positions,positions_with_spread,median_spread_bps,p25_spread_bps,p75_spread_bps,iqr_bps,fv_with_spread_usd_mm,fv_coverage_pct_of_cell,fv_coverage_pct_of_debt_book
+pooled 2018Q3-2026Q2,first lien,18868,16853,565.0,500.0,640.0,140.0,288246.1,93.42,60.32
+pooled 2018Q3-2026Q2,second lien,1982,1775,788.0,700.0,850.0,150.0,92912.9,93.7,19.44
+pooled 2018Q3-2026Q2,subordinated,1041,381,800.0,750.0,800.0,50.0,53366.0,76.07,11.17
+latest quarter (2026Q2),first lien,965,883,525.0,475.0,575.0,100.0,16606.6,95.81,73.65
+latest quarter (2026Q2),second lien,25,18,675.0,633.89,775.0,141.11,1090.2,84.28,4.84
+latest quarter (2026Q2),subordinated,53,31,676.33,650.0,784.58,134.58,3191.5,81.37,14.15

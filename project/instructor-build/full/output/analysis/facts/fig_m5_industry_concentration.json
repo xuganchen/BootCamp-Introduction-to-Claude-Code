@@ -1,0 +1,27 @@
+{
+  "kind": "fig",
+  "slug": "m5_industry_concentration",
+  "title": "Industry concentration through time",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "investment-panel",
+    "rows_used": 31067,
+    "rows_total": 31067,
+    "note": "2019Q3 and 2022Q1 are absent from the panel and are drawn with a dashed amber rule; the x axis is the panel-quarter index, so the line spans the gap without any value being interpolated. The dotted grey line marks the 2019 industry-taxonomy change. THE LEVEL IS NOT COMPARABLE ACROSS THAT LINE: the bucket count falls from 27 labels in 2019Q2 to 23 in 2019Q4, yet the measured HHI moves -116 points across the same break, because the re-bucketing split as well as merged sectors. Read the pre-2019Q4 segment and the post-2019Q4 segment as two separate series, not as one trend. A second, name-only GICS rename between 2024Q3 and 2025Q1 leaves the bucket count broadly unchanged (23 to 22) and so does not move these series.",
+    "share_pct": 100.0,
+    "sentence": "Computed on 31,067 of 31,067 investment-panel rows (100.0% of the window panel). 2019Q3 and 2022Q1 are absent from the panel and are drawn with a dashed amber rule; the x axis is the panel-quarter index, so the line spans the gap without any value being interpolated. The dotted grey line marks the 2019 industry-taxonomy change. THE LEVEL IS NOT COMPARABLE ACROSS THAT LINE: the bucket count falls from 27 labels in 2019Q2 to 23 in 2019Q4, yet the measured HHI moves -116 points across the same break, because the re-bucketing split as well as merged sectors. Read the pre-2019Q4 segment and the post-2019Q4 segment as two separate series, not as one trend. A second, name-only GICS rename between 2024Q3 and 2025Q1 leaves the bucket count broadly unchanged (23 to 22) and so does not move these series."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "hhi_latest_pts": 1028.8,
+    "hhi_2019q4_pts": 935.9,
+    "hhi_min_pts": 843.2,
+    "hhi_min_quarter": "2021Q1",
+    "hhi_max_pts": 1161.1,
+    "hhi_max_quarter": "2024Q3",
+    "top5_share_latest_pct": 61.56,
+    "top5_share_2019q4_pct": 55.76,
+    "n_industries_latest": 24,
+    "denominator": "each quarter's own total portfolio fair value"
+  }
+}

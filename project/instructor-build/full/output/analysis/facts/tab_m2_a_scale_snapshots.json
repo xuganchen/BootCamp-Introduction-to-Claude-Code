@@ -1,0 +1,36 @@
+{
+  "kind": "tab",
+  "slug": "m2_a_scale_snapshots",
+  "title": "Portfolio scale at three snapshots",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "quarter-panel",
+    "rows_used": 3,
+    "rows_total": 30,
+    "note": "Three snapshot quarters out of the 30 in-window quarters. Position and borrower counts come from the 31,067-row investment panel restricted to those same three quarters. NAV per share is derived as net_assets / shares_outstanding because the filed nav_per_share field is 90% null in this panel.",
+    "share_pct": 10.0,
+    "sentence": "Computed on 3 of 30 quarter-panel rows (10.0% of the window panel). Three snapshot quarters out of the 30 in-window quarters. Position and borrower counts come from the 31,067-row investment panel restricted to those same three quarters. NAV per share is derived as net_assets / shares_outstanding because the filed nav_per_share field is 90% null in this panel."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "total_investments_fv_2018Q3_usd_bn": 11.22,
+    "total_investments_fv_2026Q2_usd_bn": 29.35,
+    "total_investments_fv_pct_change_2018Q3_2026Q2": 161.6,
+    "net_assets_2026Q2_usd_bn": 13.89,
+    "net_assets_pct_change_2018Q3_2026Q2": 89.9,
+    "nav_per_share_2018Q3_usd_derived": 17.17,
+    "nav_per_share_2026Q2_usd_derived": 19.35,
+    "nav_per_share_pct_change_2018Q3_2026Q2": 12.7,
+    "position_count_2018Q3": 770,
+    "position_count_2026Q2": 1439,
+    "distinct_borrowers_2018Q3": 313,
+    "distinct_borrowers_2026Q2": 593,
+    "shares_outstanding_pct_change_2018Q3_2026Q2": 68.5,
+    "snapshot_quarters": [
+      "2018Q3",
+      "2022Q3",
+      "2026Q2"
+    ],
+    "units_note": "usd_bn = billions of US dollars; mm = millions of shares; pct_change in percent"
+  }
+}

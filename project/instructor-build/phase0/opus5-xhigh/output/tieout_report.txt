@@ -1,0 +1,96 @@
+ARCC Form 10-Q parse - tie-out report
+Ares Capital Corporation | CIK 0001287750 | accession 0001628280-26-050307
+All figures in whole USD.
+==============================================================================
+
+As of 2025-12-31
+------------------------------------------------------------------------------
+  investment lines parsed                         1,408
+  distinct portfolio companies                      580
+  issuer subtotal rows printed                      380
+  lines covered by an issuer subtotal             1,208
+  lines with no issuer subtotal                     200
+
+  A. sum of parsed lines vs printed Total Investments
+       amortized cost, parsed       29,249,900,000
+       amortized cost, printed      29,249,900,000
+       difference                                0
+       fair value, parsed           29,484,800,000
+       fair value, printed          29,484,800,000
+       difference                                0
+
+  B. every issuer subtotal vs the block of lines printed above it
+       subtotals checked                        380
+       subtotals that disagree                    0
+       amortized cost               29,249,900,000   diff                  0
+       fair value                   29,484,800,000   diff                  0
+
+  C. schedule of investments vs consolidated balance sheet
+       balance sheet, fair value    29,485,000,000
+       SOI total, fair value        29,484,800,000
+       difference                          200,000
+       balance sheet, cost          29,250,000,000
+       SOI total, cost              29,249,900,000
+       difference                          100,000
+
+  D. affiliation split: parsed lines vs balance sheet buckets
+       non_controlled_non_affiliated       24,871,200,000 vs    24,872,000,000   diff           -800,000
+       affiliated                             600,200,000 vs       600,000,000   diff            200,000
+       controlled                           4,013,400,000 vs     4,013,000,000   diff            400,000
+       sum of buckets                      29,485,000,000
+
+
+As of 2026-06-30
+------------------------------------------------------------------------------
+  investment lines parsed                         1,439
+  distinct portfolio companies                      593
+  issuer subtotal rows printed                      394
+  lines covered by an issuer subtotal             1,239
+  lines with no issuer subtotal                     200
+
+  A. sum of parsed lines vs printed Total Investments
+       amortized cost, parsed       29,674,600,000
+       amortized cost, printed      29,674,600,000
+       difference                                0
+       fair value, parsed           29,349,300,000
+       fair value, printed          29,349,300,000
+       difference                                0
+
+  B. every issuer subtotal vs the block of lines printed above it
+       subtotals checked                        394
+       subtotals that disagree                    0
+       amortized cost               29,674,600,000   diff                  0
+       fair value                   29,349,300,000   diff                  0
+
+  C. schedule of investments vs consolidated balance sheet
+       balance sheet, fair value    29,349,000,000
+       SOI total, fair value        29,349,300,000
+       difference                         -300,000
+       balance sheet, cost          29,675,000,000
+       SOI total, cost              29,674,600,000
+       difference                          400,000
+
+  D. affiliation split: parsed lines vs balance sheet buckets
+       non_controlled_non_affiliated       24,282,800,000 vs    24,282,000,000   diff            800,000
+       affiliated                             571,600,000 vs       572,000,000   diff           -400,000
+       controlled                           4,494,900,000 vs     4,495,000,000   diff           -100,000
+       sum of buckets                      29,349,000,000
+
+
+Cross-statement checks
+------------------------------------------------------------------------------
+  2025-12-31  total investments / stockholders' equity: 205.93%  printed 205.93%
+  2026-06-30  total investments / stockholders' equity: 211.28%  printed 211.32%
+  cash + restricted cash movement: -300,000,000  cash flow statement: -300,000,000  diff 0
+
+Data quality
+------------------------------------------------------------------------------
+  coupon_pct             n= 1846  min=    3.61  max=   16.00  outside [0,40]: 0
+  pik_pct                n=  369  min=    0.25  max=   20.00  outside [0,40]: 0
+  spread_pct             n= 1838  min=    0.75  max=   12.15  outside [0,25]: 0
+  pct_of_shares_owned    n=   30  min=    0.42  max=  100.00  outside [0,100]: 0
+  portfolio_company      missing: 0
+  investment_type        missing: 0
+  industry               missing: 0
+  amortized_cost_usd     missing: 0
+  fair_value_usd         missing: 0

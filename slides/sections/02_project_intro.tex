@@ -1,0 +1,66 @@
+% Part 2 opener: the applied AM project. Divider plus 3 frames, ~6 minutes.
+\section{The Project}\subsection{}
+
+% Part 2 divider.
+\begin{transitionframe}
+Part 2. Building a private credit dataset from raw SEC filings
+\end{transitionframe}
+
+% Motivation: why private credit, and why BDCs.
+\begin{frame}{Why private credit, and why BDCs}
+\begin{wideitemize}
+  \item Private credit is the \ybb{fastest-growing corner of asset management}.
+  \item \ybb{BDC filings are its only public window.} A BDC lends to middle-market borrowers and must disclose \yb{every position, every quarter}.
+  \item \ybb{The filing grades your work.} The positions foot to the balance sheet, so you can check the agent against an audited number.
+\end{wideitemize}
+\takeaway{A real AM dataset, with a ground truth to check it against, free and public.}
+\end{frame}
+
+% The document itself. Figures measured on ARCC's 2026 Q2 10-Q.
+\begin{frame}{Investment position data from raw SEC filings}
+\begin{itemize}
+  \item A position-by-position table of \ybb{every loan the fund holds}: borrower,
+        industry, lien seniority, spread, maturity, cost, fair value.
+  \item Filed quarterly inside the 10-K and 10-Q, back roughly two decades.
+  \item Example -- ARCC's 2026 Q2 10-Q: \ybb{24.8 MB, 275 HTML tables, $\sim$6 million tokens}.
+        \yob{You cannot paste this into a chat window.}
+\end{itemize}
+\vspace{-0.3em}
+\begin{center}
+\includegraphics[width=0.9\textwidth]{ARCC_example.png}
+\end{center}
+\end{frame}
+
+% What each student builds: the two panels, and the four steps.
+\begin{frame}{Building a private credit dataset from SEC filings}
+
+\begin{itemize}
+  \item \ybb{Panel A -- BDC-quarter}
+  \begin{itemize}
+      \item One row per BDC per quarter: \yb{fund-level financial statements}.
+      \item NAV, leverage, portfolio yield, portfolio size, non-accruals, etc.
+  \end{itemize}
+  \item \ybb{Panel B -- BDC-quarter-investment}
+  \begin{itemize}
+      \item One row per investment position per quarter: \yb{deal-level terms}.
+      \item Borrower, loan type, seniority, spread, maturity, cost, fair value, etc.
+  \end{itemize}
+  \item \ybb{Pick your own BDC} (a large one is easiest), window
+        \ybb{2023-01-01 to now}.
+\end{itemize}
+
+\begin{center}
+\tabfont
+\begin{tabular}{cll}
+\toprule
+Step & What we build & The concept it forces \\
+\midrule
+0 & Naive baseline: one prompt & A passing check is only as good as its \ybb{scope} \\
+1 & Write a spec, then build & \ybb{Plan mode}, \ybb{sub-agents} for independent verification \\
+2 & Generalize across quarters & \ybb{Skills}, and the tie-out as a test suite \\
+3 & Analysis and report & Analysis as verification; \ybb{grounding} in your references \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\end{frame}

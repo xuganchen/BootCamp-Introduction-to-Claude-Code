@@ -1,0 +1,25 @@
+{
+  "kind": "fig",
+  "slug": "m2_a_nav_per_share",
+  "title": "NAV per share, derived",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "quarter-panel",
+    "rows_used": 30,
+    "rows_total": 30,
+    "note": "Derived as net_assets / shares_outstanding for all 30 in-window quarters; the filed nav_per_share field is populated in only 3 of them. Plotted on the full 32-quarter calendar, so 2019Q3 and 2022Q1 are breaks in the line, not interpolated points.",
+    "share_pct": 100.0,
+    "sentence": "Computed on 30 of 30 quarter-panel rows (100.0% of the window panel). Derived as net_assets / shares_outstanding for all 30 in-window quarters; the filed nav_per_share field is populated in only 3 of them. Plotted on the full 32-quarter calendar, so 2019Q3 and 2022Q1 are breaks in the line, not interpolated points."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "nav_per_share_2018Q3_usd": 17.17,
+    "nav_per_share_min_usd": 15.56,
+    "nav_per_share_min_quarter": "2020Q1",
+    "nav_per_share_max_usd": 20.0,
+    "nav_per_share_max_quarter": "2025Q3",
+    "nav_per_share_2026Q2_usd": 19.35,
+    "filed_nav_per_share_quarters_populated": 3,
+    "quarters": 30
+  }
+}

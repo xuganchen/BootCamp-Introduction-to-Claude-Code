@@ -1,0 +1,150 @@
+% =============================================================================
+%  Syllabus: AI Tools -- Introduction to Claude Code
+%  Yale Master's in Asset Management Orientation BootCamp, Session 3
+%
+%  Preamble trimmed from the paper template (syllabus.tex) down to what a
+%  one-page syllabus needs. Each package below is used; nothing speculative.
+%    geometry  - 1in margins
+%    booktabs  - rules for the "at a glance" table
+%    enumitem  - tighter list spacing
+%    xcolor    - Yale blue (defined in the template) for title/headings/links
+%    hyperref  - clickable email and URLs
+%    xurl      - allow long URLs to break across lines
+%    sectsty   - heading sizes/color (kept from the template's style)
+% =============================================================================
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{xurl}
+\usepackage{sectsty}
+
+% --- Page geometry ---
+\geometry{left=1in,right=1in,top=1in,bottom=1in}
+
+% --- Yale blue (kept from the template) used for title, headings, and links ---
+\definecolor{yaleblue}{HTML}{00356b}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=yaleblue,
+    urlcolor=yaleblue
+}
+
+% --- Heading sizes/color (kept from the template's sectsty style) ---
+\sectionfont{\fontsize{15}{15}\selectfont\bfseries}
+\subsectionfont{\fontsize{12}{12}\selectfont\bfseries}
+
+% --- Block-paragraph layout for a clean syllabus look ---
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5\baselineskip}
+\setlist{topsep=2pt,itemsep=2pt,parsep=0pt}
+
+\begin{document}
+
+% ----------  Header ---------------------------------------------------------------------------------
+\begin{center}
+    {\LARGE\bfseries
+    Master's in Asset Management Orientation BootCamp\\
+    \medskip
+    AI Tools: Introduction to Claude Code
+    }
+\end{center}
+
+\vspace{0.25\baselineskip}
+
+
+% ---------- Session Information ---------------------------------------------------------------------
+\section*{Session Information}
+
+
+\begin{tabular}{@{}ll@{}}
+Instructor: & Xugan Chen \\
+Email: & \href{mailto:xugan.chen@yale.edu}{xugan.chen@yale.edu} \\
+Meeting time / location: & TBD. \\
+Duration: & 3 hours, one 10-minute break \\
+\end{tabular}
+
+Course materials: \url{https://github.com/xuganchen/BootCamp-Introduction-to-Claude-Code}
+
+% ---------- Overview ---------------------------------------------------------------------------------
+\section*{Overview}
+
+This is a hands-on, finance-applied working session that introduces students to AI-assisted workflows for finance and data analysis. The goal is to move students from "I have Claude Code installed" to "I can delegate a bounded asset-management task to it and verify the result is correct."
+
+The session builds on the pre-work (DataCamp modules and the Paul Goldsmith-Pinkham series). It opens with a short introduction to AI-assisted workflows and Claude Code, then turns to an in-class mini-project that applies agentic coding to a real asset-management task: building a private credit dataset from raw SEC filings and analyzing it. The project runs in four steps, and each step introduces the concept it needs (plan mode and sub-agents, skills, RAGs) at the point the work demands it, rather than as a separate lecture. From there we generalize those patterns beyond the project and cover AI safety. It closes with a few advanced-usage examples of my own to show what is possible beyond the basics.
+
+% ---------- Prerequisite ------------------------------------------------------------------------------
+\section*{Prerequisite}
+
+Have Claude Code installed and ready before the session: we will work and experiment on the mini-project described below together. For install details, see \href{https://paulgp.substack.com/p/getting-started-with-claude-code}{Getting Started with Claude Code} in Paul Goldsmith-Pinkham's series.
+
+% ---------- Session outline -------------------------------------------------------------------------
+\section*{Session Outline}
+
+\subsection*{1. Introduction}
+\begin{itemize}
+  \item Framing: how to apply AI, specifically Claude Code, in a daily finance research workflow.
+  \item The core loop: giving instructions, reviewing changes, and iterating -- and why reviewing is the hard part.
+  \item Basics: setup, tokens, and the context window.
+\end{itemize}
+
+\subsection*{2. Applied AM Project: Building a Private Credit Dataset from SEC Filings}
+An in-class mini-project that builds a private credit research dataset from raw SEC filings. Each student picks one publicly traded business development company (BDC) and constructs two panels from its 10-K and 10-Q filings.
+\begin{itemize}
+  \item \textbf{Dataset:} SEC EDGAR filings. Free, public, and requiring no credentials or licensing. You pick your own BDC, and parse from 2023-01-01 onward. A reference panel is released at Step 3, so the analysis works regardless of how far your own parser gets.
+  \item \textbf{Deliverable, identical for everyone:} a \emph{BDC-quarter} panel (fund level: NAV, leverage, yield, non-accruals, portfolio size) and a \emph{BDC-quarter-investment} panel (position level: borrower, seniority, spread, maturity, cost, fair value), both built from the Schedule of Investments.
+\end{itemize}
+The project runs in four steps. Each step introduces the concept it needs, at the point the work demands it.
+\begin{itemize}
+  \item \textbf{Step 0. Naive baseline.} One short prompt, run three times across models and effort levels. All three invent a balance-sheet tie-out unasked and pass it, the three schemas cannot be pooled, and one of them is broken in a way its own passing check cannot see. \emph{Concept:} a passing check is only as good as its scope, and you did not choose that scope.
+  \item \textbf{Step 1. Write a spec, then build.} Replace the one-liner with a real specification (objective, deliverables, folder structure, schema, acceptance criteria) and let the agent run. \emph{Concepts:} plan mode; sub-agents used for independent verification, where one writes the parser and a second writes the test without seeing it.
+  \item \textbf{Step 2. Generalize across quarters.} Turn the working parser into a reusable skill and run it across every quarter the BDC has filed, using the tie-out as an automated test that shows exactly where it broke. \emph{Concepts:} skills; coverage as the deliverable.
+  \item \textbf{Step 3. Analysis and reporting.} Sample coverage, summary statistics, time series, deal terms, and cross section, written up in a style you supply rather than one the model invents. \emph{Concepts:} grounding; analysis as a verification layer of its own.
+\end{itemize}
+\emph{Why this dataset:} private credit is the fastest-growing corner of asset management, BDC filings are its only public window, and the filing verifies your own work. The Schedule of Investments must foot to the balance sheet, so the document tells you whether your parse is right.
+
+\subsection*{3. More Useful Concepts}
+With the project having made the difficulties concrete, we generalize beyond it.
+\begin{itemize}
+  \item \textbf{Working tips:} 
+  \begin{enumerate}
+    \item plan before acting; 
+    \item be specific; 
+    \item always have a backup; 
+    \item manage your context window; 
+    \item always have a way to verify outputs; 
+    \item ask the model to take notes; 
+    \item be replicable; 
+    \item stay organized with your code, data, and notes.
+  \end{enumerate}
+  \item \textbf{Transfer:} the same plan mode, skills, and retrieval patterns applied to other work, such as writing, literature review, and exam preparation.
+  \item \textbf{AI safety:} permissions and dev containers as the real alternative.
+\end{itemize}
+
+\subsection*{4. Advanced Usage Examples}
+A sense of what is possible beyond the basics:
+\begin{itemize}
+  \item \textbf{Personalized ``brain'':} indexed retrieval over a corpus you own (GBrain, \url{https://github.com/garrytan/gbrain}).
+  \item \textbf{Personal database management:} \emph{TravelTab}, a self-hosted Amtrak ticket tracker that auto-imports tickets from email, exports structured records to a searchable dashboard, syncs to a calendar, and watches fares on a schedule.
+  \item \textbf{The same stack in another domain:} \emph{PetTab}, a pet-health logger built on TravelTab's architecture, with an agent embedded in the product that answers questions over a read-only snapshot of the database.
+  \item \textbf{An agent with an address:} an agent in a Linux container, reached from WhatsApp, Slack, Telegram or email (NanoClaw, \url{https://github.com/nanocoai/nanoclaw}).
+\end{itemize}
+
+% ---------- Resources --------------------------------------------------------------------------------
+\section*{Resources}
+Additional resources are collected on the instructor's website
+(\url{https://www.xuganchen.com/public-goods\#working-with-ai-tools-for-economicsfinance-research}),
+including:
+\begin{itemize}
+  \item \href{https://www.youtube.com/watch?v=gb9v5ze0zhU}{Using LLMs with Cursor: Modern AI for Economics Research by Benjamin Golub, Markus Academy}
+  \item \href{https://paulgp.substack.com}{A Series on Claude Code by Paul Goldsmith-Pinkham}
+  \item \href{https://thinkingwithagents.github.io}{Thinking with Agents by UVM Economics BootCamp}
+  \item \href{https://www.deeplearning.ai/short-courses/agent-skills-with-anthropic/}{Agent Skills with Anthropic by DeepLearning.AI}
+  \item \href{https://github.com/anthropics/financial-services}{Finance Skill Plugins by Anthropic}
+\end{itemize}
+
+\end{document}

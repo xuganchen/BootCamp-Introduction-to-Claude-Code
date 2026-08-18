@@ -1,0 +1,40 @@
+{
+  "kind": "fig",
+  "slug": "m5_marks_by_industry",
+  "title": "Cross-section of marks: fair value against cost by industry",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "investment-panel",
+    "rows_used": 1163,
+    "rows_total": 31067,
+    "note": "2026Q2 only, top 12 industries by fair value (these 12 hold 89.5% of priced fair value in the quarter). 97 of 1,439 positions in the quarter report zero or missing cost and are excluded from every ratio, including the whole-book line; they carry $17.6mm (0.06% of book fair value), so the line is a whole-book mark for practical purposes. The dot is FV-weighted and the bar is an EQUAL-WEIGHTED position-level IQR: the two answer different questions and need not agree. Industry n is shown on each label because several IQRs rest on very few positions.",
+    "share_pct": 3.74,
+    "sentence": "Computed on 1,163 of 31,067 investment-panel rows (3.7% of the window panel). 2026Q2 only, top 12 industries by fair value (these 12 hold 89.5% of priced fair value in the quarter). 97 of 1,439 positions in the quarter report zero or missing cost and are excluded from every ratio, including the whole-book line; they carry $17.6mm (0.06% of book fair value), so the line is a whole-book mark for practical purposes. The dot is FV-weighted and the bar is an EQUAL-WEIGHTED position-level IQR: the two answer different questions and need not agree. Industry n is shown on each label because several IQRs rest on very few positions."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "latest_quarter": "2026Q2",
+    "book_fv_over_cost_x": 0.9884,
+    "highest_mark_industry": "Sports, Media and Entertainment",
+    "highest_mark_x": 1.0978,
+    "lowest_mark_industry": "Healthcare Equipment and Services",
+    "lowest_mark_x": 0.8832,
+    "highest_mark_n": 55,
+    "lowest_mark_n": 137,
+    "widest_iqr_industry": "Investment Funds and Vehicles",
+    "widest_iqr_x": 0.5788,
+    "widest_iqr_n": 10,
+    "narrowest_iqr_industry": "Financial Services",
+    "narrowest_iqr_x": 0.0,
+    "narrowest_iqr_n": 95,
+    "narrowest_iqr_at_cost_share_pct": 65.26,
+    "narrowest_iqr_note": "interquartile range is exactly 0.0x because the majority of that industry's positions are marked at cost",
+    "iqr_weighting": "equal-weighted across positions; the dot is FV-weighted",
+    "share_positions_marked_at_cost_pct": 47.69,
+    "n_priced_positions": 1342,
+    "positions_excluded_zero_or_missing_cost": 97,
+    "excluded_fv_usd_mm": 17.6,
+    "excluded_fv_share_of_book_pct": 0.06,
+    "denominator": "aggregate reported cost of the positions in each industry with strictly positive cost; the at-cost share is out of the 1,342 priced positions in 2026Q2"
+  }
+}

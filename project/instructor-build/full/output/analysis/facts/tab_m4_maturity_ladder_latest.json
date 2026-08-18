@@ -1,0 +1,33 @@
+{
+  "kind": "tab",
+  "slug": "m4_maturity_ladder_latest",
+  "title": "Maturity ladder of the debt book, 2026Q2",
+  "period": "2026Q2",
+  "coverage": {
+    "basis": "investment-panel",
+    "rows_used": 1039,
+    "rows_total": 31067,
+    "note": "2026Q2 debt-like positions with a parsed forward maturity date only (1,039 positions, $22.537bn, 99.95% of that quarter's $22.548bn debt-book fair value).",
+    "share_pct": 3.34,
+    "sentence": "Computed on 1,039 of 31,067 investment-panel rows (3.3% of the window panel). 2026Q2 debt-like positions with a parsed forward maturity date only (1,039 positions, $22.537bn, 99.95% of that quarter's $22.548bn debt-book fair value)."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "wa_years_to_maturity_2018Q3": 5.23,
+    "wa_years_to_maturity_2026Q2": 4.68,
+    "wa_years_to_maturity_max": 5.58,
+    "wa_years_to_maturity_max_quarter": "2019Q2",
+    "wa_years_to_maturity_min": 4.68,
+    "wa_years_to_maturity_min_quarter": "2026Q2",
+    "pct_fv_maturing_within_1y_2026Q2": 2.2,
+    "pct_fv_maturing_within_3y_2026Q2": 20.3,
+    "pct_fv_maturing_within_5y_2026Q2": 56.8,
+    "debt_book_fv_usd_bn_2026Q2": 22.55,
+    "dated_debt_book_fv_usd_bn_2026Q2": 22.537,
+    "maturity_fv_coverage_pct_2026Q2": 99.95,
+    "positions_excluded_no_maturity_date": 325,
+    "positions_excluded_past_maturity": 178,
+    "units": "years; percent of the dated debt-book fair value in that quarter; USD bn",
+    "denominator_note": "maturity shares are computed on the fair value of debt-like positions with a parsed, non-negative tenor in that quarter, not on the whole book"
+  }
+}

@@ -1,0 +1,262 @@
+% Step 0: the naive baseline. 14 frames, DEMO not lab, session 0:20-0:35.
+\section{Step 0. The naive baseline}\subsection{}
+
+% Step 0 opener. Step table, this row tinted.
+\begin{frame}{Step 0. The naive baseline}
+\begin{center}
+\tabfont
+\begin{tabular}{cll}
+\toprule
+Step & What we build & The concept it forces \\
+\midrule
+\rowcolor{yo!10}\yob{0} & \yob{Naive baseline: one prompt} & \yob{A passing check is only as good as its scope} \\
+1 & Write a spec, then build & \ybb{Plan mode}, \ybb{sub-agents} for independent verification \\
+2 & Generalize across quarters & \ybb{Skills}, and the tie-out as a test suite \\
+3 & Analysis and report & Analysis as verification; \ybb{grounding} in your references \\
+\bottomrule
+\end{tabular}
+\end{center}
+ 
+\vs
+\begin{itemize}
+    \item I will walk through my own output in detail; you do not need to type anything.
+    \item It took $\sim$15 to 20 minutes to finish this one simple prompt.
+    \item I experimented with three different models: Opus 5 at xhigh effort, Opus 5 at medium effort, and Sonnet 5 at medium effort.
+\end{itemize}
+\end{frame}
+
+% The prompt, verbatim.
+\begin{frame}[fragile]{Start with the laziest possible prompt}
+\begin{prompt}
+Find a large publicly traded BDC, download its most recent 10-Q from SEC EDGAR, and parse the financial statements and the schedule of investments into two structural tables I can analyze.
+\end{prompt}
+\vs
+\begin{wideitemize}
+  \item Not in it: a ticker, a schema, a file format, a column list.
+  \item Not in it: \yob{any word about verifying anything.}
+\end{wideitemize}
+\end{frame}
+
+% It chose the BDC and the filing on its own.
+\begin{frame}{It picked its own target}
+\begin{columns}
+\begin{column}{0.6\textwidth}
+\begin{center}
+\includegraphics[width=\textwidth]{bdc_design_pharse0-1.png}
+\end{center}
+\end{column}
+\begin{column}{0.4\textwidth}
+\begin{itemize}
+  \item \ybb{Ares Capital (ARCC)}, reasoned from the words ``large publicly
+        traded BDC''. 
+  \item Its \ybb{most recent 10-Q}, quarter ended 2026-06-30: a 24.8 MB
+        inline-XBRL document.
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+% It inspects the document before parsing it.
+\begin{frame}{It reads the document before parsing it}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{center}
+\includegraphics[width=\textwidth]{bdc_design_pharse0-2.png}
+\end{center}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+  \item It did not open with a regex. It \ybb{surveyed the filing} first: how many
+        tables, where the schedule starts, how the columns repeat.
+  \item Then it chose the \ybb{XBRL tags} over the rendered tables -- a real
+        judgment call, made unprompted, and the right one for a 2026 filing.
+  \item ``\ybb{Look before you act}'' costs the agent a couple of minutes here, and
+        it is the reason the parse works at all.
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+% What one sentence produced.
+\begin{frame}{What came back, from one sentence}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{center}
+\includegraphics[width=\textwidth]{bdc_design_pharse0-10.png}
+\end{center}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+  \item Two tables: 435 statement facts; \ybb{2,847} investment rows
+        (1,439 at 2026-06-30, 1,408 at 2025-12-31).
+  \item Plus a footnote legend, a subtotals file, a README, and a
+        \ybb{re-runnable parser} -- 803 lines of it.
+  \item Clean CSVs you could hand to an analyst. \ybb{Twenty-two minutes,
+        one sentence of instruction.}
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+% It invented a tie-out nobody asked for.
+\begin{frame}{Nobody asked for verification. It built one.}
+\begin{center}
+\tabfont
+\begin{tabular}{p{8cm}ll}
+\toprule
+Check, each against a number the filing prints & 2026-06-30 & 2025-12-31 \\
+\midrule
+A. parsed lines vs printed Total Investments & exact & exact \\
+B. each issuer subtotal vs the lines above it & 394/394 agree & 380/380 agree \\
+C. schedule total vs balance sheet & within \$0.4m & within \$0.2m \\
+D. affiliation split vs the three balance sheet buckets & within \$0.8m & within \$0.8m \\
+E. investments / equity vs the printed \% of net assets & 211.28 vs 211.32 & 205.93 vs 205.93 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\vs
+The word ``verify'' appears \ybb{nowhere} in the prompt, and it invented
+a balance-sheet tie-out anyway. Remember that \ybb{it} chose the check, because
+that is where this ends up.
+\end{frame}
+
+% The 948 percent coupon: the filing is wrong, not the agent.
+\begin{frame}[fragile]{948.00\% coupon -- and the filing is wrong, not the agent}
+\begin{columns}
+\begin{column}{0.4\textwidth}
+\begin{center}
+\includegraphics[width=\textwidth]{bdc_design_pharse0-7.png}
+\end{center}
+\end{column}
+\begin{column}{0.6\textwidth}
+\begin{itemize}
+  \item \yob{It also found an obvious bug}: Adonis Bidco shows a coupon of 948.00\%.
+  \item Then it dug in: three of the 1,846 coupon facts (Adonis Bidco, Covert HoldCo, Mountaineer Merger) are tagged \file{scale="0"} where every other rate carries \file{scale="-2"}. Taking the XBRL value at face value turns a 9.48\% coupon into 948\%.
+  \item The mis-tagging is \yob{ARCC's, sitting live at SEC}. 
+  \item The agent noticed it, worked around it, and wrote it down.
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+% Set up the reversal. This is genuinely good work.
+\begin{frame}{This is genuinely good. Hold that thought.}
+\begin{wideitemize}
+  \item One sentence in. A working parser, two clean tables, a documented
+        source-data bug, and a verification report out.
+  \item \ybb{Every claim it made about its own output was true.}
+  \item If you stopped here you would think the lesson was ``the prompt can be
+        lazy''.
+\end{wideitemize}
+\end{frame}
+
+% The three-run experiment: same prompt, three configurations.
+\begin{frame}{Same prompt, three times}
+\begin{wideitemize}
+  \item Identical prompt, identical filing, three configurations:
+  \begin{itemize}
+    \item Opus 5 at xhigh effort (max > xhigh > high > medium > low)
+    \item Opus 5 at medium effort
+    \item Sonnet 5 at medium effort (Fable 5 > Opus 5 > Sonnet 5)
+  \end{itemize}
+  \item Nothing else differs. No extra instruction, no follow-up, no correction.
+  \item This is the experiment sixty of you run every time you all point the same
+        tool at the same task: \yob{same instruction, different machine and model.}
+\end{wideitemize}
+\takeaway{Question: what do you expect to differ -- and what do you expect to stay the same?}
+\end{frame}
+
+% All three passed their own check.
+\begin{frame}{Three configurations, three successes}
+\tabfont
+\begin{center}
+\begin{tabular}{p{5cm}p{8.0cm}}
+\toprule
+Behavior & Opus 5 xhigh, Opus 5 medium, Sonnet 5 medium \\
+\midrule
+Chose the target & ARCC, all three \\
+Chose the representation & inline XBRL tags, not rendered tables, all three \\
+Parsed both periods & yes, all three \\
+Rows at 2026-06-30 & 1,439, exactly, all three \\
+Invented a balance-sheet tie-out & yes, all three, unasked \\
+Tie-out result & passes both dates, 0.001\%, all three \\
+\bottomrule
+\end{tabular}
+\end{center}
+\takeaway{This is robust behavior, not a lucky run.}
+\end{frame}
+
+% Three schemas that cannot be pooled.
+\begin{frame}{Three right answers with no shared vocabulary}
+\tabfont
+\begin{center}
+\begin{tabular}{llll}
+\toprule
+ & Opus 5 xhigh & Opus 5 medium & Sonnet 5 medium \\
+\midrule
+Columns & 44 & 22 & 26 \\
+Company field & \file{portfolio\_company} & \file{issuer} & \file{issuer} \\
+Fair value field & \file{fair\_value\_usd} & \file{fair\_value} & \file{fair\_value\_usd} \\
+Type field & \file{investment\_type} & \file{instrument} & \file{investment\_type} \\
+Verification shipped as & \file{tieout\_report.txt} & separate script & inside the parser \\
+Parser & 803 lines, 1 file & 526 lines, 2 files & 504 lines, 2 files \\
+\bottomrule
+\end{tabular}
+\end{center}
+\takeaway{There are sixty of you in this room -- that is sixty correct, incompatible datasets and no pooled panel.}
+\end{frame}
+
+% Row counts, and what the 1,409 means.
+\begin{frame}{Count the rows. What does the 1,409 mean?}
+\tabfont
+\begin{center}
+\begin{tabular}{llrrr}
+\toprule
+Run & date & rows & distinct companies & investment type is empty? \\
+\midrule
+Opus 5 xhigh & 2026-06-30 & 1,439 & 593 & 0 \\
+Opus 5 xhigh & 2025-12-31 & 1,408 & 580 & 0 \\
+Opus 5 medium & 2026-06-30 & 1,439 & 605 & 8 \\
+\yob{Opus 5 medium} & \yob{2025-12-31} & \yob{1,409} & \yob{1,409} & \yob{1,409} \\
+Sonnet 5 medium & 2026-06-30 & 1,439 & 593 & 0 \\
+Sonnet 5 medium & 2025-12-31 & 1,409 & 580 & 1 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\vs
+\takeaway{Why does Opus 5 medium have 1,409 distinct companies, but all of them have an empty investment type field?}
+\end{frame}
+
+% The failure, in the data.
+\begin{frame}[fragile]{Every row became its own borrower}
+\ybb{Opus 5 medium}, at 2025-12-31:
+\begin{shellout}
+issuer                                                                               investment_type
+Automotive Keys Group, LLC and Automotive Keys Investor, LLC, Class A common units              -
+Automotive Keys Group, LLC and Automotive Keys Investor, LLC, First lien senior secured loan    -
+\end{shellout}
+\ybb{Opus 5 xhigh}, the same rows:
+\begin{shellout}
+portfolio_company                                                  investment_type
+Automotive Keys Group, LLC and Automotive Keys Investor, LLC       Class A common units
+Automotive Keys Group, LLC and Automotive Keys Investor, LLC       First lien senior secured loan
+\end{shellout}
+\begin{itemize}
+    \item The problem: the instrument type text has been concatenated into the borrower name. It parsed the current period correctly and the comparative period wrongly.
+    \item \yob{And it ties out to the balance sheet exactly, on both dates.} The check was measuring \ybb{dollars} while the thing that broke was \yob{structure}. 
+\end{itemize}
+\end{frame}
+
+% Effort, not model tier. Closes Step 0.
+\begin{frame}{The broken one is Opus. Sonnet at the same effort is clean.}
+\begin{wideitemize}
+  \item \ybb{Sonnet 5 at medium effort is clean}: 593 and 580 distinct companies,
+        one null type field, a third of xhigh's authoring budget.
+  \item Model tier and reasoning effort \yob{did not predict correctness} here.
+  \item What the extra effort bought was \ybb{coverage}, not correctness: 44 columns
+        vs 26, 14 decoded footnote flags, a subtotals file, a legend file.
+  \item Richer and more auditable. Not more right on the dollars, which all three
+        got right.
+\end{wideitemize}
+\takeaway{``Use the biggest model'' is not the lesson. Verification you designed is.}
+\end{frame}

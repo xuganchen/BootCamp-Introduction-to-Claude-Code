@@ -1,0 +1,3 @@
+non_accrual,positions,fair_value_usd_mm,cost_usd_mm,fv_over_cost,positions_with_parsed_spread
+False,7376.0,166711.6,169502.7,0.9835,7019.0
+True,156.0,2122.7,3635.3,0.5839,0.0

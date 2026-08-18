@@ -1,0 +1,28 @@
+{
+  "kind": "tab",
+  "slug": "m2_f_missingness",
+  "title": "Missingness by field and by position type",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "investment-panel",
+    "rows_used": 31067,
+    "rows_total": 31067,
+    "note": "All in-window positions. Denominators: 31,067 positions overall, 8,210 equity or preferred positions, 21,891 debt-like (first lien, second lien, subordinated) positions.",
+    "share_pct": 100.0,
+    "sentence": "Computed on 31,067 of 31,067 investment-panel rows (100.0% of the window panel). All in-window positions. Denominators: 31,067 positions overall, 8,210 equity or preferred positions, 21,891 debt-like (first lien, second lien, subordinated) positions."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "raw_industry_labels": 68,
+    "normalized_industry_labels": 57,
+    "all_in_rate_null_share_pct": 29.9,
+    "all_in_rate_null_share_within_equity_preferred_pct": 84.1,
+    "all_in_rate_null_share_within_debt_like_pct": 6.5,
+    "maturity_null_share_within_equity_preferred_pct": 98.5,
+    "maturity_null_share_within_debt_like_pct": 1.5,
+    "pct_of_net_assets_null_share_pct": 100.0,
+    "equity_and_preferred_positions": 8210,
+    "debt_like_positions": 21891,
+    "in_window_positions": 31067
+  }
+}

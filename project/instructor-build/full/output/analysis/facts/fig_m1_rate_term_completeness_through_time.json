@@ -1,0 +1,39 @@
+{
+  "kind": "fig",
+  "slug": "m1_rate_term_completeness_through_time",
+  "title": "Completeness of the four rate and term fields, quarter by quarter",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "investment-panel",
+    "rows_used": 31067,
+    "rows_total": 31067,
+    "note": "Each point is a within-quarter non-null share; the denominator is that quarter's own position count. 2019Q3 and 2022Q1 are gaps.",
+    "share_pct": 100.0,
+    "sentence": "Computed on 31,067 of 31,067 investment-panel rows (100.0% of the window panel). Each point is a within-quarter non-null share; the denominator is that quarter's own position count. 2019Q3 and 2022Q1 are gaps."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "denominator": "positions in each quarter (varies by quarter)",
+    "completeness_reference_rate_2018Q3_pct": 63.4,
+    "completeness_reference_rate_2026Q2_pct": 72.1,
+    "completeness_reference_rate_change_pp": 8.7,
+    "completeness_reference_rate_min_pct": 63.4,
+    "completeness_reference_rate_min_quarter": "2018Q3",
+    "completeness_spread_bps_2018Q3_pct": 59.1,
+    "completeness_spread_bps_2026Q2_pct": 64.9,
+    "completeness_spread_bps_change_pp": 5.8,
+    "completeness_spread_bps_min_pct": 51.4,
+    "completeness_spread_bps_min_quarter": "2021Q2",
+    "completeness_all_in_rate_pct_2018Q3_pct": 63.4,
+    "completeness_all_in_rate_pct_2026Q2_pct": 72.1,
+    "completeness_all_in_rate_pct_change_pp": 8.7,
+    "completeness_all_in_rate_pct_min_pct": 63.4,
+    "completeness_all_in_rate_pct_min_quarter": "2018Q3",
+    "completeness_maturity_date_2018Q3_pct": 67.7,
+    "completeness_maturity_date_2026Q2_pct": 74.4,
+    "completeness_maturity_date_change_pp": 6.8,
+    "completeness_maturity_date_min_pct": 62.8,
+    "completeness_maturity_date_min_quarter": "2021Q2",
+    "note_units": "percentage points; each series is the non-null share of that field within that quarter's position rows"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "fig",
+  "slug": "m1_filing_coverage",
+  "title": "Filing coverage: parsed quarters vs the calendar",
+  "period": "2018Q1-2026Q2 calendar grid",
+  "coverage": {
+    "basis": "quarter-panel",
+    "rows_used": 30,
+    "rows_total": 30,
+    "note": "30 of 34 calendar quarters in 2018Q1-2026Q2 are present. Absent: 2018Q1, 2018Q2, 2019Q3, 2022Q1. Absent quarters are shown as gaps and are never interpolated.",
+    "share_pct": 100.0,
+    "sentence": "Computed on 30 of 30 quarter-panel rows (100.0% of the window panel). 30 of 34 calendar quarters in 2018Q1-2026Q2 are present. Absent: 2018Q1, 2018Q2, 2019Q3, 2022Q1. Absent quarters are shown as gaps and are never interpolated."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "calendar_quarters_2018Q1_2026Q2_count": 34,
+    "quarters_present_count": 30,
+    "quarters_absent_count": 4,
+    "quarters_absent_list": "2018Q1, 2018Q2, 2019Q3, 2022Q1",
+    "in_window_quarters_first": "2018Q3",
+    "in_window_quarters_last": "2026Q2",
+    "note_units": "counts of calendar quarters; denominator is the 34 calendar quarters from 2018Q1 to 2026Q2"
+  }
+}

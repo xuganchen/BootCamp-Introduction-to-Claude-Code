@@ -1,0 +1,20 @@
+{
+  "kind": "tab",
+  "slug": "m5_nonaccrual_by_industry",
+  "title": "Non-accrual exposure by industry, pooled 2018Q3-2026Q2",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "investment-panel",
+    "rows_used": 432,
+    "rows_total": 31067,
+    "note": "Top 12 industries by pooled non-accrual cost: 432 of the 562 non-accrual rows in the window, carrying 85.04% of pooled non-accrual cost, spread over 30 industries that ever show a non-accrual.",
+    "share_pct": 1.39,
+    "sentence": "Computed on 432 of 31,067 investment-panel rows (1.4% of the window panel). Top 12 industries by pooled non-accrual cost: 432 of the 562 non-accrual rows in the window, carrying 85.04% of pooled non-accrual cost, spread over 30 industries that ever show a non-accrual."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "n_industries_with_nonaccruals": 30,
+    "pooled_na_cost_usd_bn": 11.636,
+    "top12_share_of_pooled_na_cost_pct": 85.04
+  }
+}

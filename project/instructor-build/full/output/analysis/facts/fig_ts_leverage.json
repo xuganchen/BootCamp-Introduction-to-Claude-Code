@@ -1,0 +1,29 @@
+{
+  "kind": "fig",
+  "slug": "ts_leverage",
+  "title": "Leverage: debt to net assets and debt to total assets",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "quarter-panel",
+    "rows_used": 30,
+    "rows_total": 30,
+    "note": "The panel holds 30 of the 32 calendar quarters in the window: 2019Q3 and 2022Q1 are absent and are shown as breaks; no value is interpolated or bridged across them. Debt is total_debt_outstanding as reported on the balance sheet; it is not adjusted for cash.",
+    "share_pct": 100.0,
+    "sentence": "Computed on 30 of 30 quarter-panel rows (100.0% of the window panel). The panel holds 30 of the 32 calendar quarters in the window: 2019Q3 and 2022Q1 are absent and are shown as breaks; no value is interpolated or bridged across them. Debt is total_debt_outstanding as reported on the balance sheet; it is not adjusted for cash."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "debt_net_assets_2018Q3_x": 0.622,
+    "debt_net_assets_2026Q2_x": 1.135,
+    "debt_net_assets_peak_x": 1.278,
+    "debt_net_assets_peak_quarter": "2022Q4",
+    "debt_net_assets_2020Q1_covid_x": 1.242,
+    "debt_net_assets_2020Q2_x": 1.106,
+    "debt_total_assets_2018Q3_pct": 37.1,
+    "debt_total_assets_2026Q2_pct": 51.7,
+    "debt_total_assets_2020Q1_pct": 51.7,
+    "first_quarter_debt_net_assets_above_1x": "2020Q1",
+    "quarters_above_1x_of_30": 24,
+    "denominator": "quarter-panel balance sheet, 30 quarters"
+  }
+}

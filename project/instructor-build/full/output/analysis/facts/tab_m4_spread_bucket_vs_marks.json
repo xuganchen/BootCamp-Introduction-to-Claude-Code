@@ -1,0 +1,47 @@
+{
+  "kind": "tab",
+  "slug": "m4_spread_bucket_vs_marks",
+  "title": "Marks by spread bucket, latest 8 quarters",
+  "period": "2024Q3-2026Q2",
+  "coverage": {
+    "basis": "investment-panel",
+    "rows_used": 7019,
+    "rows_total": 31067,
+    "note": "Debt-like positions in the latest 8 quarters (2024Q3-2026Q2) with a parsed spread and positive cost. Buckets are equal-count quantile cuts on spread_bps; ties at round spread levels collapse the requested 10 cuts into 9 buckets, each holding roughly a tenth of positions and NOT a tenth of fair value. FV/cost inside each bucket is fair-value weighted. Fair-value sums are pooled over 8 quarter ends, so a position held throughout is counted 8 times. Non-accrual positions are absent here by construction: only 0 of 156 non-accrual debt positions in this window carry a parsed spread, so a bucket cut on spread cannot contain them.",
+    "share_pct": 22.59,
+    "sentence": "Computed on 7,019 of 31,067 investment-panel rows (22.6% of the window panel). Debt-like positions in the latest 8 quarters (2024Q3-2026Q2) with a parsed spread and positive cost. Buckets are equal-count quantile cuts on spread_bps; ties at round spread levels collapse the requested 10 cuts into 9 buckets, each holding roughly a tenth of positions and NOT a tenth of fair value. FV/cost inside each bucket is fair-value weighted. Fair-value sums are pooled over 8 quarter ends, so a position held throughout is counted 8 times. Non-accrual positions are absent here by construction: only 0 of 156 non-accrual debt positions in this window carry a parsed spread, so a bucket cut on spread cannot contain them."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "risk_window_quarters": "2024Q3-2026Q2",
+    "tightest_bucket_spread_range_bps": [
+      75.0,
+      450.0
+    ],
+    "widest_bucket_spread_range_bps": [
+      725.0,
+      1215.0
+    ],
+    "tightest_bucket_fv_over_cost": 0.9834,
+    "widest_bucket_fv_over_cost": 0.9764,
+    "fv_over_cost_gap_tightest_minus_widest_pp": 0.7,
+    "n_spread_buckets": 9,
+    "worst_marked_bucket": 7,
+    "worst_marked_bucket_spread_range_bps": "600-625",
+    "worst_marked_bucket_fv_over_cost": 0.9704,
+    "best_marked_bucket": 5,
+    "best_marked_bucket_fv_over_cost": 0.9967,
+    "spread_vs_fv_over_cost_rank_corr": -0.583,
+    "non_accrual_debt_positions_last8q": 156,
+    "non_accrual_debt_positions_last8q_with_parsed_spread": 0,
+    "non_accrual_debt_positions_window": 562,
+    "non_accrual_debt_positions_window_with_parsed_spread": 3,
+    "accruing_fv_over_cost_last8q": 0.9835,
+    "non_accrual_fv_over_cost_last8q": 0.5839,
+    "non_accrual_fv_usd_mm_last8q": 2122.7,
+    "units": "bps; FV/cost as a ratio (1.00 = marked at cost); counts in positions; USD mm",
+    "denominator_note": "each bucket's FV/cost = sum(fair_value)/sum(cost) within that bucket, pooled over the 8 quarters",
+    "non_accrual_data_caveat": "Only 3 of 562 non-accrual debt positions across 2018Q3-2026Q2 (0 of 156 in the latest 8 quarters) carry a parsed spread, because the filing replaces the rate footnote with the non-accrual marker. A non-accrual share computed inside spread buckets is therefore mechanically zero and is not reported as an economic result.",
+    "causality_caveat": "Descriptive association only. Spread is set at origination and marks are set later, so this is not evidence that spread causes impairment; credit quality drives both."
+  }
+}

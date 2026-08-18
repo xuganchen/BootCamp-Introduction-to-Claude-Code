@@ -1,0 +1,36 @@
+{
+  "kind": "fig",
+  "slug": "ts_rate_mix",
+  "title": "Reference-rate mix of the debt book, weighted by fair value",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "investment-panel, debt-like positions",
+    "rows_used": 21891,
+    "rows_total": 31067,
+    "note": "The panel holds 30 of the 32 calendar quarters in the window: 2019Q3 and 2022Q1 are absent and are shown as breaks; no value is interpolated or bridged across them. Debt-like rows are 70.5% of in-window panel rows and 77.5% of in-window panel fair value; the shares plotted are fair-value shares, never position counts. 'Unclassified' is positions with no reference_rate parsed from the filing (6.5% of debt-book rows); they are kept in the denominator, not dropped.",
+    "share_pct": 70.46,
+    "sentence": "Computed on 21,891 of 31,067 investment-panel, debt-like positions rows (70.5% of the window panel). The panel holds 30 of the 32 calendar quarters in the window: 2019Q3 and 2022Q1 are absent and are shown as breaks; no value is interpolated or bridged across them. Debt-like rows are 70.5% of in-window panel rows and 77.5% of in-window panel fair value; the shares plotted are fair-value shares, never position counts. 'Unclassified' is positions with no reference_rate parsed from the filing (6.5% of debt-book rows); they are kept in the denominator, not dropped."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "basis": "FV-weighted share of the debt book (first lien, second lien, subordinated)",
+    "crossover_quarter_sofr_exceeds_libor": "2023Q2",
+    "sofr_share_at_crossover_pct": 72.0,
+    "libor_share_at_crossover_pct": 18.4,
+    "sofr_share_prior_quarter_pct": 35.8,
+    "libor_share_prior_quarter_pct": 54.7,
+    "prior_quarter": "2023Q1",
+    "first_quarter_with_any_sofr": "2022Q2",
+    "last_quarter_with_any_libor": "2023Q3",
+    "libor_share_2018Q3_pct": 89.6,
+    "sofr_share_2026Q2_pct": 88.2,
+    "libor_share_2026Q2_pct": 0.0,
+    "unclassified_share_2018Q3_pct": 0.8,
+    "unclassified_share_2026Q2_pct": 1.8,
+    "debt_book_fv_share_of_panel_fv_pct": 77.5,
+    "debt_book_rows": 21891,
+    "debt_book_row_share_of_panel_pct": 70.5,
+    "raw_reference_rate_labels_n": 17,
+    "reference_rate_null_share_of_debt_rows_pct": 6.5
+  }
+}

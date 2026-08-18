@@ -1,0 +1,42 @@
+% Part 3: more useful concepts. Divider plus 3 frames, session 2:08-2:36.
+\section{Part 3. More useful concepts}\subsection{}
+
+% Part 3 divider.
+\begin{transitionframe}
+Part 3. More useful concepts
+\end{transitionframe}
+
+% The eight working tips, as one list.
+\begin{frame}{Working tips}
+\begin{enumerate}
+    \item Plan before acting.
+    \item Be specific.
+    \item Always have a backup.
+    \item Manage your context window.
+    \item Always have a way to verify outputs.
+    \item Ask the LLM to take notes.
+    \item Be replicable: 22 minutes to author, 2 seconds to run.
+    \item Stay organized with your code, data, and notes.
+\end{enumerate}
+\end{frame}
+
+% Permissions, honestly.
+\begin{frame}{AI safety: honestly, you will grant most permissions}
+\begin{wideitemize}
+    \item Every step today asked for file writes, shell access and network access. It is unrealistic to approve every single permission every time.
+    \item The best you can do is to allow-list broadly and stop reading.
+    \item Which is tip 3 again, for a different reason: \ybb{always have a backup.}
+    \item Mine is GitHub for code and Dropbox for data, and my own agents run on \ybb{a separate Mac Mini} -- a machine with limited access to my data that I can wipe.
+    \item The real question is not ``what may it do'' but \ybb{``what can it reach''}.
+\end{wideitemize}
+\end{frame}
+
+% Dev containers: what isolation buys and what it does not.
+\begin{frame}{Dev containers are the real alternative}
+\begin{wideitemize}
+    \item Cost: Docker, a config file, and a slower first run. Windows needs WSL2.
+    \item Isolation is about \ybb{what is reachable}. It says nothing about what the
+        agent does with what it can reach.
+    \item See ``\#7 Permissions, Sandboxes, and Autonomous Agents'' in \emph{A Series on Claude Code}, by Paul Goldsmith-Pinkham.
+\end{wideitemize}
+\end{frame}

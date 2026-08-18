@@ -1,0 +1,22 @@
+{
+  "kind": "fig",
+  "slug": "m2_a_scale_timeseries",
+  "title": "Balance-sheet scale, ARCC",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "quarter-panel",
+    "rows_used": 30,
+    "rows_total": 30,
+    "note": "The x axis is the full 32-quarter calendar. 2019Q3 and 2022Q1 are missing from the panel and appear as breaks in every line; they are never interpolated.",
+    "share_pct": 100.0,
+    "sentence": "Computed on 30 of 30 quarter-panel rows (100.0% of the window panel). The x axis is the full 32-quarter calendar. 2019Q3 and 2022Q1 are missing from the panel and appear as breaks in every line; they are never interpolated."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "total_assets_2026Q2_usd_bn": 30.5,
+    "total_assets_2018Q3_usd_bn": 12.26,
+    "debt_to_net_assets_2026Q2_x": 1.14,
+    "debt_to_net_assets_2018Q3_x": 0.62,
+    "quarters_plotted": 30
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "fig",
+  "slug": "m1_missingness_by_investment_type",
+  "title": "Missingness is structural: nulls concentrate in equity and preferred",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "investment-panel",
+    "rows_used": 31067,
+    "rows_total": 31067,
+    "note": "Every in-window position row is classified into exactly one investment type.",
+    "share_pct": 100.0,
+    "sentence": "Computed on 31,067 of 31,067 investment-panel rows (100.0% of the window panel). Every in-window position row is classified into exactly one investment type."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "denominator_rows": 31067,
+    "equity_positions": 6231,
+    "equity_null_spread_bps_pct": 100.0,
+    "equity_null_all_in_rate_pct": 96.2,
+    "equity_null_maturity_date_pct": 99.9,
+    "preferred_positions": 1979,
+    "preferred_null_spread_bps_pct": 93.6,
+    "preferred_null_maturity_date_pct": 94.3,
+    "first_lien_positions": 18868,
+    "first_lien_null_spread_bps_pct": 10.7,
+    "first_lien_null_maturity_date_pct": 1.7,
+    "debt_like_positions": 21891,
+    "debt_like_null_spread_bps_pct": 13.2,
+    "non_debt_share_of_all_spread_nulls_pct": 75.8,
+    "note_units": "null percentages are within-investment-type shares (denominator = that type's own position count); share_of_pooled_fair_value_pct is weighted by fair value pooled across all 30 quarter-ends, not a single-date portfolio share"
+  }
+}

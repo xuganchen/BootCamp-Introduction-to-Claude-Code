@@ -1,0 +1,37 @@
+{
+  "kind": "tab",
+  "slug": "m2_c_mark_by_quarter",
+  "title": "Cost versus fair value by quarter",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "investment-panel",
+    "rows_used": 28432,
+    "rows_total": 31067,
+    "note": "2,635 in-window positions carry a zero cost basis (unfunded commitments and undrawn revolvers) and are excluded because FV/cost is undefined for them; no position has a negative cost. Position shares are equal-weight; fair-value shares are fair-value-weighted, with each quarter's included fair value as the denominator. 989 of the included positions are marked at exactly zero fair value and therefore fall in the below-70% band by construction; they lift the position-count tail far more than the fair-value tail, which is why the two lines diverge in the deep tail.",
+    "share_pct": 91.52,
+    "sentence": "Computed on 28,432 of 31,067 investment-panel rows (91.5% of the window panel). 2,635 in-window positions carry a zero cost basis (unfunded commitments and undrawn revolvers) and are excluded because FV/cost is undefined for them; no position has a negative cost. Position shares are equal-weight; fair-value shares are fair-value-weighted, with each quarter's included fair value as the denominator. 989 of the included positions are marked at exactly zero fair value and therefore fall in the below-70% band by construction; they lift the position-count tail far more than the fair-value tail, which is why the two lines diverge in the deep tail."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "fv_over_cost_2018Q3_pct": 97.8,
+    "fv_over_cost_2026Q2_pct": 98.9,
+    "fv_over_cost_min_pct": 92.8,
+    "fv_over_cost_min_quarter": "2020Q1",
+    "fv_over_cost_max_pct": 101.4,
+    "fv_over_cost_max_quarter": "2024Q1",
+    "quarters_above_100pct": 14,
+    "quarters_total": 30,
+    "denominator": "aggregate cost of all positions in the quarter",
+    "positions_with_positive_cost": 28432,
+    "positions_excluded_nonpositive_cost": 2635,
+    "share_fv_below_90_2020Q2_pct": 16.0,
+    "share_positions_below_90_2020Q2_pct": 23.6,
+    "share_fv_below_90_2026Q2_pct": 8.2,
+    "share_positions_below_90_2026Q2_pct": 14.8,
+    "share_fv_below_70_2026Q2_pct": 2.7,
+    "share_positions_below_70_2026Q2_pct": 7.5,
+    "share_fv_below_90_max_pct": 16.0,
+    "share_fv_below_90_max_quarter": "2020Q2",
+    "positions_marked_at_zero_fair_value": 989
+  }
+}

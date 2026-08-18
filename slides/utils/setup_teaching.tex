@@ -1,0 +1,376 @@
+%=======================================================================
+% setup_teaching.tex -- the entire preamble for this deck.
+%
+% Session 3, "AI Tools: Introduction to Claude Code"
+% Yale MAM Orientation BootCamp
+%
+% slide.tex inputs this file and nothing else. Everything the deck needs
+% is here: theme, colours, text macros, code blocks, frame furniture.
+%
+% Build with pdflatex. fontenc[T1] + inputenc[utf8] is a pdflatex setup;
+% xelatex and lualatex want fontspec instead.
+%
+% THE ONE TRAP
+% ------------
+% Any frame containing a prompt / pycode / shellout block MUST be
+% declared
+%
+%     \begin{frame}[fragile]{Title}
+%
+% Without [fragile], beamer scans the frame body before listings can
+% claim it, the \end{...} is never seen, and the run dies pages later
+% with "Text dropped after begin of listing" followed by an emergency
+% stop pointing at the end of the file rather than at your frame. This
+% is the most likely way to break this deck.
+%
+% House style: ASCII punctuation. Write "--" for a dash and "'" for an
+% apostrophe. Both render identically to their Unicode forms and survive
+% being copied into a terminal. UTF-8 compiles fine, so an accented
+% author name is not a problem.
+%=======================================================================
+
+
+%=======================================================================
+% 1. Theme and packages
+%=======================================================================
+% Add a package here only when a frame needs it, with a comment saying
+% which one. The list is short on purpose.
+
+\usetheme{Szeged}
+\usecolortheme{seahorse}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage{lmodern}          % scalable Latin Modern. Supplies the
+                              % monospace face the listings blocks use:
+                              % lato has no mono, and without lmodern
+                              % the code blocks fall back to bitmap cmtt
+\usepackage[default]{lato}    % text font, matching the research decks
+
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{booktabs}         % \toprule \midrule \bottomrule
+\usepackage{colortbl}         % \rowcolor, to tint one row of a table
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{tikz}             % box-and-arrow diagrams; see \flowbox below
+\usetikzlibrary{arrows.meta,positioning}
+\usepackage{hyperref}
+\usepackage{pgfpages}         % required by \setbeameroption below
+
+% Speaker notes. This deck ships with notes hidden. To write them, put
+% \note{...} after a frame and switch the option. Presenting from a
+% laptop with an external screen wants the third form.
+\setbeameroption{hide notes}
+%\setbeameroption{show only notes}
+%\setbeameroption{show notes on second screen=right}
+
+
+%=======================================================================
+% 2. Colours and text macros
+%=======================================================================
+
+\definecolor{yaleblue}{HTML}{00356b}
+\definecolor{ylb}{HTML}{286dc0}
+\definecolor{yo}{HTML}{bd5319}
+\definecolor{lightgray}{HTML}{d3d3d3}
+
+% Emphasis, in descending order of how much attention it claims:
+%   \ybb  Yale blue bold  -- main emphasis. The finding on a slide.
+%   \ylbb light blue bold -- secondary emphasis.
+%   \yob  orange bold     -- warnings, and the thing that broke.
+\newcommand\yb[1]{{\color{yaleblue} #1}}
+\newcommand\ybb[1]{{\color{yaleblue} \textbf{#1}}}
+\newcommand\ylb[1]{{\color{ylb} #1}}
+\newcommand\ylbb[1]{{\color{ylb} \textbf{#1}}}
+\newcommand\yo[1]{{\color{yo} #1}}
+\newcommand\yob[1]{{\color{yo} \textbf{#1}}}
+
+% \blue, \red and \green are left undefined on purpose. The MAM course
+% decks in slides/misc define those names with different colours, so a
+% frame copied in from one of them fails loudly with "Undefined control
+% sequence" rather than quietly drawing the wrong colour. Use the Yale
+% macros above.
+
+
+%=======================================================================
+% 3. Beamer appearance
+%=======================================================================
+
+\setbeamercolor{structure}{fg=white}
+\setbeamercolor{title}{fg=yaleblue,bg=white}
+\setbeamercolor{frametitle}{fg=yaleblue,bg=white}
+\setbeamercolor{button}{bg=yaleblue!10,fg=yaleblue}
+
+\setbeamerfont{frametitle}{size=\fontsize{14pt}{12pt}}
+\setbeamertemplate{frametitle}[default][center]
+\addtobeamertemplate{frametitle}{\vspace*{0cm}}{\vspace*{-0.5cm}}
+
+\setbeamertemplate{itemize items}[default]
+\setbeamercolor{itemize item}{fg=ylb,bg=white}
+\setbeamercolor{itemize subitem}{fg=ylb,bg=white}
+\setbeamercolor{itemize subsubitem}{fg=ylb,bg=white}
+\setbeamertemplate{itemize subitem}[triangle]
+\setbeamertemplate{itemize subsubitem}[triangle]
+
+\setbeamertemplate{enumerate items}[default]
+\setbeamercolor{enumerate item}{fg=ylb,bg=white}
+\setbeamercolor{enumerate subitem}{fg=ylb,bg=white}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamersize{text margin left=0.5cm,text margin right=0.5cm}
+
+% Tighter display maths.
+\makeatletter
+\g@addto@macro\normalsize{
+  \setlength\abovedisplayskip{5pt}
+  \setlength\belowdisplayskip{5pt}
+  \setlength\abovedisplayshortskip{5pt}
+  \setlength\belowdisplayshortskip{5pt}
+}
+\makeatother
+
+\setbeamertemplate{section page}{
+  \begin{centering}
+  \fontsize{20}{16} {\color{yaleblue} \textsc{\insertsection}} \par
+  \end{centering}
+}
+
+%----------------------------------------------------------------------
+% 3a. No navigation bar across the top
+%----------------------------------------------------------------------
+% Szeged puts a miniature table of contents in the headline: a row of
+% section names with a progress dot per frame. It is blanked here. Over
+% 86 frames the dots compress to unreadable pinheads, the bar costs
+% about a centimetre of vertical space on every slide, and none of it
+% reads from the back of a lecture hall.
+%
+% To put it back, delete this one line.
+\setbeamertemplate{headline}{}
+
+% The footline carries the position information instead: short title on
+% the left, institute and then the frame number on the right.
+% Keep the frame number if you restyle this -- it is what lets someone
+% in row 12 ask about "slide 47".
+%
+% The left half prints \insertshorttitle (the bracketed argument of
+% \title) and the right half \insertshortinstitute (the bracketed
+% argument of \institute), so both are set in slide.tex, not here.
+\setbeamercolor{footline}{fg=yaleblue}
+\setbeamerfont{footline}{size=\fontsize{6.5pt}{8pt}}
+\setbeamertemplate{footline}{%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.55\paperwidth,ht=2.4ex,dp=1.2ex,leftskip=.3cm]%
+      {footline}\usebeamerfont{footline}\insertshorttitle
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.45\paperwidth,ht=2.4ex,dp=1.2ex,rightskip=.3cm]%
+      {footline}\usebeamerfont{footline}\hfill
+      \insertshortinstitute{} \quad \insertframenumber{} / \inserttotalframenumber
+    \end{beamercolorbox}%
+  }%
+  \vskip0pt%
+}
+
+
+%=======================================================================
+% 4. Code, prompts and terminal output
+%=======================================================================
+% White monospace on a cobalt block. Remember [fragile] on any frame
+% that uses these; see the file header.
+
+\definecolor{cobalt}{RGB}{0, 34, 64}
+\definecolor{bluecomments}{RGB}{0, 103, 231}
+\definecolor{colnum}{RGB}{251, 94, 133}
+\definecolor{stringgreen}{RGB}{35, 185, 23}
+
+% LST1: the default. "language=" is empty on purpose. This deck shows
+% Python, shell and plain English prompts in the same style of block,
+% and keyword highlighting applied to an English sentence looks like a
+% rendering bug.
+\lstdefinestyle{LST1}{
+    language=,
+    basicstyle=\scriptsize\ttfamily\color{white},
+    commentstyle=\color{bluecomments},
+    stringstyle=\color{stringgreen},
+    numberstyle=\color{colnum},
+    literate={~}{$\sim$}{1},
+    backgroundcolor=\color{cobalt},
+    showspaces=false,
+    showstringspaces=false,
+    linewidth=\linewidth,
+    breaklines=true,
+    breakatwhitespace=true,
+    columns=fullflexible,
+    keepspaces=true,
+    escapeinside={(*@}{@*)}
+}
+
+% LST_fn: the same block one size up, for a short prompt that is the
+% entire point of its slide and must read from the back row.
+\lstdefinestyle{LST_fn}{
+    language=,
+    basicstyle=\footnotesize\ttfamily\color{white},
+    commentstyle=\color{bluecomments},
+    stringstyle=\color{stringgreen},
+    numberstyle=\color{colnum},
+    literate={~}{$\sim$}{1},
+    backgroundcolor=\color{cobalt},
+    showspaces=false,
+    showstringspaces=false,
+    linewidth=\linewidth,
+    breaklines=true,
+    breakatwhitespace=true,
+    columns=fullflexible,
+    keepspaces=true,
+    escapeinside={(*@}{@*)}
+}
+
+% LSTpy: Python, for the few slides showing real source.
+\lstdefinestyle{LSTpy}{
+    language=Python,
+    basicstyle=\scriptsize\ttfamily\color{white},
+    keywordstyle=\color{ylb}\bfseries,
+    commentstyle=\color{bluecomments},
+    stringstyle=\color{stringgreen},
+    backgroundcolor=\color{cobalt},
+    showspaces=false,
+    showstringspaces=false,
+    linewidth=\linewidth,
+    breaklines=true,
+    breakatwhitespace=true,
+    columns=fullflexible,
+    keepspaces=true,
+    escapeinside={(*@}{@*)}
+}
+
+\lstset{style=LST1}
+
+% \begin{prompt} ... \end{prompt}
+% A prompt as it was actually run. Every prompt in this deck is quoted
+% verbatim; the same text is in ../project/prompts/. Do not paraphrase
+% one on a slide: the point of showing it is that those exact words did
+% the work.
+\lstnewenvironment{prompt}[1][]
+  {\lstset{style=LST_fn,#1}}
+  {}
+
+% \begin{pycode}   -- Python source
+% \begin{shellout} -- terminal or agent output
+%
+% Named pycode and shellout because beamer already claims the names
+% "code" and "output"; \lstnewenvironment refuses to clobber an
+% existing environment.
+\lstnewenvironment{pycode}[1][]
+  {\lstset{style=LSTpy,#1}}
+  {}
+\lstnewenvironment{shellout}[1][]
+  {\lstset{style=LST1,#1}}
+  {}
+
+
+%=======================================================================
+% 5. Frame furniture
+%=======================================================================
+
+% Looser lists. Prefer wideitemize on lecture frames; beamer's default
+% spacing packs bullets too tightly to scan from a distance.
+\newenvironment{wideitemize}{\itemize\addtolength{\itemsep}{8pt}}{\enditemize}
+\newenvironment{wideenumerate}{\enumerate\addtolength{\itemsep}{8pt}}{\endenumerate}
+
+% A part divider: nothing but the part title, large, Yale blue, centred
+% on a white slide.  Used once at the top of each of the four parts so
+% the room always knows where it is in three hours.
+%
+% The body is centred both ways, so write only the title inside:
+%
+%     \begin{transitionframe}
+%     Part 2: Building a private credit dataset
+%     \end{transitionframe}
+%
+% Sizing is set here (\Large, bold) -- do not re-size inside the body,
+% or the four dividers stop matching each other.
+\newenvironment{transitionframe}{
+  \setbeamercolor{background canvas}{bg=white}
+  \setbeamercolor{normal text}{fg=yaleblue}
+  \usebeamercolor[fg]{normal text}
+  \centering
+  \begin{frame}[plain]
+  \vfill
+  \leftskip=1.2cm \rightskip=1.2cm \parindent=0pt
+  \centering
+  \huge\bfseries}{
+  \par\vfill
+  \end{frame}
+}
+
+% \takeaway{...} -- the one sentence a slide exists to deliver, as a
+% tinted full-width band. At most one per frame, and deliberately not on
+% every frame: if every slide has one, none of them land.
+\newcommand{\takeaway}[1]{%
+  \vspace{0.3em}%
+  \begin{beamercolorbox}[wd=\textwidth,sep=6pt,rounded=true]{button}%
+  \small #1%
+  \end{beamercolorbox}%
+}
+
+% \source{...} -- provenance line at the foot of the frame, deliberately
+% quiet. Every frame stating a measured number carries one, naming the
+% memo the number came from. This is not decoration: the deck argues
+% that unsourced numbers are the problem it is teaching about.
+\newcommand{\source}[1]{%
+  \vfill{\scriptsize\color{gray} #1\par}}
+
+% \capture{height fraction}{what to shoot} -- a dashed grey box standing in
+% for a screenshot that has not been taken yet.  It renders in the PDF on
+% purpose, so a missing capture is visible when the deck is reviewed rather
+% than silently absent.  To fill it, replace the whole \capture call with
+%     \begin{center}\includegraphics[width=...]{file}\end{center}
+% Nothing else on the frame needs to change.
+\newcommand{\capture}[2]{%
+  \begin{center}
+  \begin{tikzpicture}
+    \node[draw=lightgray, dashed, line width=0.8pt, rounded corners=3pt,
+          fill=lightgray!12, text=gray, align=center, font=\small,
+          text width=0.78\textwidth, minimum height=#1\textheight]
+         {capture needed: #2};
+  \end{tikzpicture}
+  \end{center}}
+
+%----------------------------------------------------------------------
+% 5a. Box-and-arrow diagrams
+%----------------------------------------------------------------------
+% Three tikz node styles for flow diagrams:
+%   flowbox       a neutral step, or one the tool takes
+%   flowbox_you   a step you take -- filled Yale blue
+%   flowbox_warn  the thing that went wrong -- orange
+% The deck uses the colour difference to carry an argument, so pick the
+% style by meaning, not by position. Draw arrows with [flowarrow].
+%
+%   \begin{tikzpicture}[node distance=4mm]
+%     \node[flowbox_you] (a) {instruct};
+%     \node[flowbox, right=of a] (b) {it acts};
+%     \draw[flowarrow] (a) -- (b);
+%   \end{tikzpicture}
+%
+% Box width is fixed so a row of them reads as one strip. Change
+% text width= here, not per diagram.
+\tikzset{
+  flowbox/.style={
+    draw=yaleblue!40, line width=0.6pt, rounded corners=2pt,
+    fill=yaleblue!5, text=yaleblue!80!black,
+    align=center, font=\small,
+    text width=2.55cm, inner sep=5pt, minimum height=1.15cm},
+  flowbox_you/.style={
+    flowbox, fill=yaleblue, draw=yaleblue, text=white, font=\small\bfseries},
+  flowbox_warn/.style={
+    flowbox, fill=yo!8, draw=yo!50, text=yo},
+  flowarrow/.style={
+    -{Stealth[length=2.4mm]}, line width=0.9pt, color=yaleblue!70},
+  flowlabel/.style={font=\scriptsize, text=yo, align=center},
+}
+
+\newcommand{\tabfont}{\fontsize{9}{10}\selectfont}  % shrink a wide table
+\newcommand{\file}[1]{{\ttfamily\small #1}}          % file and field names
+\newcommand{\vs}{\vspace{0.5em}}

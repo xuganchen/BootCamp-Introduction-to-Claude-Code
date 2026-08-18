@@ -1,0 +1,30 @@
+{
+  "kind": "tab",
+  "slug": "m5_top15_positions_latest",
+  "title": "Largest 15 positions by fair value, 2026Q2",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "investment-panel",
+    "rows_used": 15,
+    "rows_total": 31067,
+    "note": "The window share above rounds to 0.0% by construction: this is a top-15 cut of one quarter. The meaningful coverage is 15 of the 1,439 positions held in 2026Q2 (1.0% of that quarter's rows), which carry 23.73% of its fair value. Rows are single positions, not borrower aggregates, so one borrower can appear more than once and a borrower's total exposure is larger than any single row shown.",
+    "share_pct": 0.05,
+    "sentence": "Computed on 15 of 31,067 investment-panel rows (0.0% of the window panel). The window share above rounds to 0.0% by construction: this is a top-15 cut of one quarter. The meaningful coverage is 15 of the 1,439 positions held in 2026Q2 (1.0% of that quarter's rows), which carry 23.73% of its fair value. Rows are single positions, not borrower aggregates, so one borrower can appear more than once and a borrower's total exposure is larger than any single row shown."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "latest_quarter": "2026Q2",
+    "book_fv_usd_bn": 29.349,
+    "top15_fv_usd_bn": 6.964,
+    "top15_share_of_book_pct": 23.73,
+    "largest_position_borrower": "Ivy Hill Asset Management, L.P",
+    "largest_position_fv_usd_mm": 1896.8,
+    "largest_position_share_pct": 6.46,
+    "largest_position_type": "equity",
+    "largest_borrower_all_positions_n": 2,
+    "largest_borrower_all_positions_share_pct": 9.69,
+    "n_positions_latest": 1439,
+    "n_borrowers_latest": 593,
+    "denominator": "2026Q2 total fair value $29.349bn"
+  }
+}

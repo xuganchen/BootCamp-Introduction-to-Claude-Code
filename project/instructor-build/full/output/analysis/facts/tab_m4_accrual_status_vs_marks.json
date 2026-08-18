@@ -1,0 +1,26 @@
+{
+  "kind": "tab",
+  "slug": "m4_accrual_status_vs_marks",
+  "title": "Marks by accrual status, latest 8 quarters",
+  "period": "2024Q3-2026Q2",
+  "coverage": {
+    "basis": "investment-panel",
+    "rows_used": 7532,
+    "rows_total": 31067,
+    "note": "All debt-like positions with positive cost in 2024Q3-2026Q2, split by accrual status. This is the terms-vs-risk cut the spread buckets cannot deliver, because non-accrual positions lose their parsed spread in the filing.",
+    "share_pct": 24.24,
+    "sentence": "Computed on 7,532 of 31,067 investment-panel rows (24.2% of the window panel). All debt-like positions with positive cost in 2024Q3-2026Q2, split by accrual status. This is the terms-vs-risk cut the spread buckets cannot deliver, because non-accrual positions lose their parsed spread in the filing."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "risk_window_quarters": "2024Q3-2026Q2",
+    "accruing_fv_over_cost_last8q": 0.9835,
+    "non_accrual_fv_over_cost_last8q": 0.5839,
+    "non_accrual_fv_usd_mm_last8q": 2122.7,
+    "non_accrual_debt_positions_last8q": 156,
+    "non_accrual_debt_positions_last8q_with_parsed_spread": 0,
+    "non_accrual_data_caveat": "Only 3 of 562 non-accrual debt positions across 2018Q3-2026Q2 (0 of 156 in the latest 8 quarters) carry a parsed spread, because the filing replaces the rate footnote with the non-accrual marker. A non-accrual share computed inside spread buckets is therefore mechanically zero and is not reported as an economic result.",
+    "units": "FV/cost ratio; positions; USD mm",
+    "denominator_note": "FV/cost = sum(fair_value)/sum(cost) within each accrual-status group, pooled over the 8 quarters"
+  }
+}

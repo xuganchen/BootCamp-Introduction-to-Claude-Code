@@ -1,0 +1,25 @@
+**Largest 15 positions by fair value, 2026Q2**
+
+*Period covered: 2018Q3-2026Q2. Computed on 15 of 31,067 investment-panel rows (0.0% of the window panel). The window share above rounds to 0.0% by construction: this is a top-15 cut of one quarter. The meaningful coverage is 15 of the 1,439 positions held in 2026Q2 (1.0% of that quarter's rows), which carry 23.73% of its fair value. Rows are single positions, not borrower aggregates, so one borrower can appear more than once and a borrower's total exposure is larger than any single row shown.*
+
+| Borrower                                                                                           | Industry (normalized)                                 | Type         |   Fair value ($mm) |   FV share of book (%) |   FV / cost (x) | Non-accrual   |
+|:---------------------------------------------------------------------------------------------------|:------------------------------------------------------|:-------------|-------------------:|-----------------------:|----------------:|:--------------|
+| Ivy Hill Asset Management, L.P                                                                     | Financial Services                                    | equity       |           1,896.80 |                   6.46 |            1.12 | no            |
+| Senior Direct Lending Program, LLC                                                                 | Investment Funds and Vehicles                         | subordinated |           1,153.70 |                   3.93 |            1.01 | no            |
+| Ivy Hill Asset Management, L.P                                                                     | Financial Services                                    | subordinated |             946.00 |                   3.22 |            1.00 | no            |
+| Denali Intermediate Holdings, Inc. and Denali Parent Holdings, L.P                                 | Commercial and Professional Services                  | first lien   |             359.60 |                   1.23 |            0.95 | no            |
+| AthenaHealth Group Inc., Minerva Holdco, Inc. and BCPE Co-Invest (A), LP                           | Healthcare Equipment and Services                     | preferred    |             317.80 |                   1.08 |            1.00 | no            |
+| FEH Group, LLC                                                                                     | Sports, Media and Entertainment                       | equity       |             266.50 |                   0.91 |            1.48 | no            |
+| High Street Buyer, Inc. and High Street Holdco LLC                                                 | Insurance                                             | preferred    |             260.40 |                   0.89 |            1.00 | no            |
+| Plaskolite PPC Intermediate II LLC and Plaskolite PPC Blocker LLC                                  | Materials                                             | first lien   |             249.40 |                   0.85 |            0.93 | no            |
+| Auctane, Inc                                                                                       | Software and Services                                 | first lien   |             241.60 |                   0.82 |            0.98 | no            |
+| Himalaya TopCo LLC and BCPE Hyperlink Holdings, LP                                                 | Healthcare Equipment and Services                     | first lien   |             232.30 |                   0.79 |            0.98 | no            |
+| Adonis Bidco Inc                                                                                   | Software and Services                                 | first lien   |             226.70 |                   0.77 |            0.95 | no            |
+| Apex Clean Energy TopCo, LLC                                                                       | Independent Power and Renewable Electricity Producers | equity       |             212.50 |                   0.72 |            1.58 | no            |
+| Creek Parent, Inc. and Creek Feeder, L.P                                                           | Pharmaceuticals, Biotechnology and Life Sciences      | first lien   |             206.10 |                   0.70 |            1.00 | no            |
+| Apex Service Partners, LLC and Apex Service Partners Holdings, LLC                                 | Consumer Services                                     | first lien   |             198.90 |                   0.68 |            1.00 | no            |
+| Retained Vantage Data Centers Intermediate Holdco, LP and Retained Vantage Data Centers Assets, LP | Data Centers                                          | subordinated |             195.90 |                   0.67 |            1.00 | no            |
+
+*Note: FV/cost is blank where reported cost is zero or missing. Share denominator is the whole book's fair value in that quarter.*
+
+*Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.*

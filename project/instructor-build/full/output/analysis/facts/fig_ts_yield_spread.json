@@ -1,0 +1,42 @@
+{
+  "kind": "fig",
+  "slug": "ts_yield_spread",
+  "title": "All-in rate and spread on the debt book, fair-value weighted",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "investment-panel, debt-like positions",
+    "rows_used": 21891,
+    "rows_total": 31067,
+    "note": "The panel holds 30 of the 32 calendar quarters in the window: 2019Q3 and 2022Q1 are absent and are shown as breaks; no value is interpolated or bridged across them. Debt-like rows are 70.5% of in-window panel rows and 77.5% of in-window panel fair value; the shares plotted are fair-value shares, never position counts. Grey bars are the share of that quarter's debt-book fair value for which the field was parsed; the FV-weighted mean is taken over that share only, so rows with a null rate or spread are dropped from both numerator and denominator (19,009 of 21,891 debt rows carry a spread). The spread peak falls in 2020Q3, the worst-covered quarter (81.4% of debt-book FV). Bars are drawn on a 0-100% scale compressed into the lower quarter of the panel.",
+    "share_pct": 70.46,
+    "sentence": "Computed on 21,891 of 31,067 investment-panel, debt-like positions rows (70.5% of the window panel). The panel holds 30 of the 32 calendar quarters in the window: 2019Q3 and 2022Q1 are absent and are shown as breaks; no value is interpolated or bridged across them. Debt-like rows are 70.5% of in-window panel rows and 77.5% of in-window panel fair value; the shares plotted are fair-value shares, never position counts. Grey bars are the share of that quarter's debt-book fair value for which the field was parsed; the FV-weighted mean is taken over that share only, so rows with a null rate or spread are dropped from both numerator and denominator (19,009 of 21,891 debt rows carry a spread). The spread peak falls in 2020Q3, the worst-covered quarter (81.4% of debt-book FV). Bars are drawn on a 0-100% scale compressed into the lower quarter of the panel."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "basis": "FV-weighted over debt-like positions with the field present",
+    "all_in_rate_2018Q3_pct": 9.58,
+    "all_in_rate_2026Q2_pct": 9.49,
+    "all_in_rate_trough_pct": 7.82,
+    "all_in_rate_trough_quarter": "2021Q4",
+    "all_in_rate_peak_pct": 12.2,
+    "all_in_rate_peak_quarter": "2023Q3",
+    "all_in_rate_trough_to_peak_bps": 438.0,
+    "spread_bps_2018Q3": 707.0,
+    "spread_bps_2026Q2": 570.0,
+    "spread_bps_peak": 720.0,
+    "spread_bps_peak_quarter": "2020Q3",
+    "spread_bps_trough": 568.0,
+    "spread_bps_trough_quarter": "2026Q1",
+    "rate_fv_coverage_min_pct": 96.3,
+    "rate_fv_coverage_min_quarter": "2020Q3",
+    "spread_fv_coverage_min_pct": 81.4,
+    "spread_fv_coverage_min_quarter": "2020Q3",
+    "spread_fv_coverage_2026Q2_pct": 92.6,
+    "spread_fv_coverage_at_peak_quarter_pct": 81.4,
+    "rate_fv_coverage_at_peak_quarter_pct": 99.1,
+    "debt_rows_with_all_in_rate": 20466,
+    "debt_rows_with_spread": 19009,
+    "debt_rows_total": 21891,
+    "weighting": "fair-value weighted; rows with the field null are excluded from both numerator and denominator of that quarter's mean"
+  }
+}

@@ -1,0 +1,126 @@
+% Step 3: analysis and report. 9 frames, hands-on, session 1:45-2:08.
+\section{Step 3. Analysis and report}\subsection{}
+
+% Step 3 opener. Step table, this row tinted.
+\begin{frame}{Step 3. Analysis and report}
+\begin{center}
+\tabfont
+\begin{tabular}{cll}
+\toprule
+Step & What we build & The concept it forces \\
+\midrule
+0 & Naive baseline: one prompt & A passing check is only as good as its \ybb{scope} \\
+1 & Write a spec, then build & \ybb{Plan mode}, \ybb{sub-agents} for independent verification \\
+2 & Generalize across quarters & \ybb{Skills}, and the tie-out as a test suite \\
+\rowcolor{yo!10}\yob{3} & \yob{Analysis and report} & \yob{Analysis as verification; grounding in your references} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\vs
+\begin{itemize}
+    \item After Step 2, we have a panel ready for analysis.
+    \item One prompt, one turn, no follow-ups, no debugging.
+    \item And using the data turns out to be \ybb{a check of its own}.
+\end{itemize}
+\end{frame}
+
+% The prompt, verbatim. One turn, no follow-ups.
+\begin{frame}[fragile]{The prompt}
+\begin{prompt}[basicstyle=\scriptsize\ttfamily\color{white}]
+ultracode
+Based on the 2018-2026 data in output/panel/bdc_quarter.csv and output/panel/bdc_quarter_investment.csv, produce an industry report on this portfolio. Write the code to analysis and output everything to output/analysis. The analysis report style follows the documents in reference, and should be in both .docx and .pdf, with figures and tables. It should at least include sample coverage, summary statistics, time series, deal terms, and cross-section. Be specific about percentages and periods. Every figure and table states the period it covers and the share of rows it is computed on.
+\end{prompt}
+\end{frame}
+
+% Ultracode, 1 of 2.
+\begin{frame}{Ultracode}
+\yob{Ultracode} is dynamic workflows orchestrate many subagents, skills, and tools, so that it can plan and execute complex tasks.
+\begin{center}
+\includegraphics[width=1\textwidth]{bdc_design_pharse3-2.png}
+\end{center}
+\end{frame}
+
+% Ultracode, 2 of 2.
+\begin{frame}{Ultracode}
+\yob{Ultracode} is dynamic workflows orchestrate many subagents, skills, and tools, so that it can plan and execute complex tasks.
+\begin{center}
+\includegraphics[width=1\textwidth]{bdc_design_pharse3-3.png}
+\end{center}
+\end{frame}
+
+% Grounding: the style comes from documents you supply.
+\begin{frame}{Style in \file{reference/}}
+\begin{itemize}
+  \item Prompt: \ylbb{``the analysis report style follows the
+        documents in reference''}.
+  \item \file{reference/} holds three industry report PDFs I downloaded. No template, no rules -- just the documents.
+  \item \ylbb{What transferred:} exhibit numbering, a source line under every
+        exhibit, a ``Finding.'' sentence opening each section, a limitations section.
+  \item \ylbb{What did not:} any claim or figure from them. Their conventions,
+        your position.
+\end{itemize}
+\ybb{Further usage}
+\begin{itemize}
+  \item \ylbb{Build an index} once the corpus is too big to attach every time:
+        queried rather than pasted, and reusable. Part 4.
+  \item \ylbb{Turn your own style into a skill}, so the next report starts from
+        your conventions.
+\end{itemize}
+\end{frame}
+
+% One prompt, 53 pages.
+\begin{frame}{One prompt, 53 pages}
+\begin{center}
+\includegraphics[width=0.7\textwidth]{bdc_design_pharse3-4.png}
+\end{center}
+\vspace{-0.5cm}
+\begin{itemize}
+    \item Report: 53 pages, 21,006 words, 32 figures and 48 tables.
+    \item Analysis is not the cheap part: 4,086 lines of code. The previous pipeline: 4,009 lines.
+\end{itemize}
+\end{frame}
+
+% The report itself.
+\begin{frame}{The report}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{bdc_design_pharse3_report.png}
+\end{center}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+  \item Eight sections, among them: executive summary, coverage, summary statistics,
+        time series, deal terms, cross-section, limitations.
+  \item Every exhibit carries \ybb{its period and its coverage}, because the prompt
+        said so and the code enforced it.
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+% Example exhibit: balance-sheet growth over time.
+\begin{frame}{Example exhibit: the time series of balance sheet growth}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{ts_growth_levels.png}
+\end{center}
+\end{frame}
+
+% The payoff: the analysis found a bug sixteen checks passed over.
+\begin{frame}{The analysis found a bug that previous checks passed over}
+\vs
+The report, in its own section 4.6, \ybb{unprompted}:
+\begin{quote}
+``The non-accrual series is drawn on 27 of the 30 quarters: 2022Q4, 2023Q4 and
+2024Q4 return exactly zero parsed flags while neighbouring quarters carry 13 to
+22, which is a \yob{footnote-marker parse failure and not a clean book}.''
+\end{quote}
+\vspace{-0.5cm}
+\begin{itemize}\small
+  \item \ybb{Why no check saw it.} \file{is\_non\_accrual} is a boolean, so
+        \yob{no tie-out reaches it} -- and the column is 0.00\% null: fully
+        populated, and in three quarters uniformly wrong.
+\end{itemize}
+\takeaway{Analysis can be viewed as another verification layer.}
+\end{frame}

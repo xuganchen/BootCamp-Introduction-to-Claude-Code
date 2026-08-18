@@ -1,0 +1,431 @@
+[
+  {
+    "kind": "tab",
+    "slug": "m2_a_scale_snapshots",
+    "title": "Portfolio scale at three snapshots",
+    "period": "2018Q3-2026Q2",
+    "coverage": {
+      "basis": "quarter-panel",
+      "rows_used": 3,
+      "rows_total": 30,
+      "note": "Three snapshot quarters out of the 30 in-window quarters. Position and borrower counts come from the 31,067-row investment panel restricted to those same three quarters. NAV per share is derived as net_assets / shares_outstanding because the filed nav_per_share field is 90% null in this panel.",
+      "share_pct": 10.0,
+      "sentence": "Computed on 3 of 30 quarter-panel rows (10.0% of the window panel). Three snapshot quarters out of the 30 in-window quarters. Position and borrower counts come from the 31,067-row investment panel restricted to those same three quarters. NAV per share is derived as net_assets / shares_outstanding because the filed nav_per_share field is 90% null in this panel."
+    },
+    "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+    "values": {
+      "total_investments_fv_2018Q3_usd_bn": 11.22,
+      "total_investments_fv_2026Q2_usd_bn": 29.35,
+      "total_investments_fv_pct_change_2018Q3_2026Q2": 161.6,
+      "net_assets_2026Q2_usd_bn": 13.89,
+      "net_assets_pct_change_2018Q3_2026Q2": 89.9,
+      "nav_per_share_2018Q3_usd_derived": 17.17,
+      "nav_per_share_2026Q2_usd_derived": 19.35,
+      "nav_per_share_pct_change_2018Q3_2026Q2": 12.7,
+      "position_count_2018Q3": 770,
+      "position_count_2026Q2": 1439,
+      "distinct_borrowers_2018Q3": 313,
+      "distinct_borrowers_2026Q2": 593,
+      "shares_outstanding_pct_change_2018Q3_2026Q2": 68.5,
+      "snapshot_quarters": [
+        "2018Q3",
+        "2022Q3",
+        "2026Q2"
+      ],
+      "units_note": "usd_bn = billions of US dollars; mm = millions of shares; pct_change in percent"
+    }
+  },
+  {
+    "kind": "fig",
+    "slug": "m2_a_scale_timeseries",
+    "title": "Balance-sheet scale, ARCC",
+    "period": "2018Q3-2026Q2",
+    "coverage": {
+      "basis": "quarter-panel",
+      "rows_used": 30,
+      "rows_total": 30,
+      "note": "The x axis is the full 32-quarter calendar. 2019Q3 and 2022Q1 are missing from the panel and appear as breaks in every line; they are never interpolated.",
+      "share_pct": 100.0,
+      "sentence": "Computed on 30 of 30 quarter-panel rows (100.0% of the window panel). The x axis is the full 32-quarter calendar. 2019Q3 and 2022Q1 are missing from the panel and appear as breaks in every line; they are never interpolated."
+    },
+    "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+    "values": {
+      "total_assets_2026Q2_usd_bn": 30.5,
+      "total_assets_2018Q3_usd_bn": 12.26,
+      "debt_to_net_assets_2026Q2_x": 1.14,
+      "debt_to_net_assets_2018Q3_x": 0.62,
+      "quarters_plotted": 30
+    }
+  },
+  {
+    "kind": "fig",
+    "slug": "m2_a_nav_per_share",
+    "title": "NAV per share, derived",
+    "period": "2018Q3-2026Q2",
+    "coverage": {
+      "basis": "quarter-panel",
+      "rows_used": 30,
+      "rows_total": 30,
+      "note": "Derived as net_assets / shares_outstanding for all 30 in-window quarters; the filed nav_per_share field is populated in only 3 of them. Plotted on the full 32-quarter calendar, so 2019Q3 and 2022Q1 are breaks in the line, not interpolated points.",
+      "share_pct": 100.0,
+      "sentence": "Computed on 30 of 30 quarter-panel rows (100.0% of the window panel). Derived as net_assets / shares_outstanding for all 30 in-window quarters; the filed nav_per_share field is populated in only 3 of them. Plotted on the full 32-quarter calendar, so 2019Q3 and 2022Q1 are breaks in the line, not interpolated points."
+    },
+    "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+    "values": {
+      "nav_per_share_2018Q3_usd": 17.17,
+      "nav_per_share_min_usd": 15.56,
+      "nav_per_share_min_quarter": "2020Q1",
+      "nav_per_share_max_usd": 20.0,
+      "nav_per_share_max_quarter": "2025Q3",
+      "nav_per_share_2026Q2_usd": 19.35,
+      "filed_nav_per_share_quarters_populated": 3,
+      "quarters": 30
+    }
+  },
+  {
+    "kind": "tab",
+    "slug": "m2_b_position_size_distribution",
+    "title": "Position size at fair value: distribution",
+    "period": "2018Q3-2026Q2",
+    "coverage": {
+      "basis": "investment-panel",
+      "rows_used": 31067,
+      "rows_total": 31067,
+      "note": "Position size is fair_value, which is 0% null, so the pooled row uses every in-window position. The latest-quarter row uses the 1,439 positions dated 2026Q2. These are equal-weight distributional statistics of position size; the concentration exhibits below are fair-value-weighted.",
+      "share_pct": 100.0,
+      "sentence": "Computed on 31,067 of 31,067 investment-panel rows (100.0% of the window panel). Position size is fair_value, which is 0% null, so the pooled row uses every in-window position. The latest-quarter row uses the 1,439 positions dated 2026Q2. These are equal-weight distributional statistics of position size; the concentration exhibits below are fair-value-weighted."
+    },
+    "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+    "values": {
+      "pooled_positions_n": 31067,
+      "pooled_mean_position_usd_mm": 19.86,
+      "pooled_median_position_usd_mm": 5.3,
+      "pooled_p90_position_usd_mm": 50.6,
+      "pooled_p99_position_usd_mm": 171.07,
+      "pooled_max_position_usd_mm": 1932.7,
+      "latest_positions_n": 1439,
+      "latest_mean_position_usd_mm": 20.4,
+      "latest_median_position_usd_mm": 5.7,
+      "latest_p99_position_usd_mm": 191.23,
+      "latest_max_position_usd_mm": 1896.8,
+      "units_note": "usd_mm = millions of US dollars of fair value per position"
+    }
+  },
+  {
+    "kind": "fig",
+    "slug": "m2_b_concentration",
+    "title": "Borrower concentration",
+    "period": "2018Q3-2026Q2",
+    "coverage": {
+      "basis": "investment-panel",
+      "rows_used": 31067,
+      "rows_total": 31067,
+      "note": "Shares are fair-value-weighted; the denominator each quarter is that quarter's total position fair value, which ties to the filed total_investments_fv within 0.01%. Borrowers are grouped on the raw borrower string, which is internally consistent within a quarter but is not reconciled across quarters, so a borrower renamed between filings would be double-counted. Plotted on the full 32-quarter calendar; 2019Q3 and 2022Q1 are breaks.",
+      "share_pct": 100.0,
+      "sentence": "Computed on 31,067 of 31,067 investment-panel rows (100.0% of the window panel). Shares are fair-value-weighted; the denominator each quarter is that quarter's total position fair value, which ties to the filed total_investments_fv within 0.01%. Borrowers are grouped on the raw borrower string, which is internally consistent within a quarter but is not reconciled across quarters, so a borrower renamed between filings would be double-counted. Plotted on the full 32-quarter calendar; 2019Q3 and 2022Q1 are breaks."
+    },
+    "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+    "values": {
+      "top10_share_2018Q3_pct": 25.6,
+      "top10_share_2026Q2_pct": 22.4,
+      "top25_share_2018Q3_pct": 45.8,
+      "top25_share_2026Q2_pct": 34.1,
+      "top10_share_min_pct": 18.5,
+      "top10_share_max_pct": 27.0,
+      "largest_borrower_share_2026Q2_pct": 9.7,
+      "largest_borrower_2026Q2": "Ivy Hill Asset Management, L.P",
+      "borrowers_2018Q3": 313,
+      "borrowers_2026Q2": 593,
+      "denominator": "quarter's total position fair value"
+    }
+  },
+  {
+    "kind": "tab",
+    "slug": "m2_b_concentration_by_quarter",
+    "title": "Borrower concentration by quarter",
+    "period": "2018Q3-2026Q2",
+    "coverage": {
+      "basis": "investment-panel",
+      "rows_used": 31067,
+      "rows_total": 31067,
+      "note": "Shares are fair-value-weighted; the denominator each quarter is that quarter's total position fair value, which ties to the filed total_investments_fv within 0.01%. Borrowers are grouped on the raw borrower string, which is internally consistent within a quarter but is not reconciled across quarters, so a borrower renamed between filings would be double-counted. Plotted on the full 32-quarter calendar; 2019Q3 and 2022Q1 are breaks.",
+      "share_pct": 100.0,
+      "sentence": "Computed on 31,067 of 31,067 investment-panel rows (100.0% of the window panel). Shares are fair-value-weighted; the denominator each quarter is that quarter's total position fair value, which ties to the filed total_investments_fv within 0.01%. Borrowers are grouped on the raw borrower string, which is internally consistent within a quarter but is not reconciled across quarters, so a borrower renamed between filings would be double-counted. Plotted on the full 32-quarter calendar; 2019Q3 and 2022Q1 are breaks."
+    },
+    "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+    "values": {
+      "top10_share_2018Q3_pct": 25.6,
+      "top10_share_2026Q2_pct": 22.4,
+      "top25_share_2018Q3_pct": 45.8,
+      "top25_share_2026Q2_pct": 34.1,
+      "top10_share_min_pct": 18.5,
+      "top10_share_max_pct": 27.0,
+      "largest_borrower_share_2026Q2_pct": 9.7,
+      "largest_borrower_2026Q2": "Ivy Hill Asset Management, L.P",
+      "borrowers_2018Q3": 313,
+      "borrowers_2026Q2": 593,
+      "denominator": "quarter's total position fair value"
+    }
+  },
+  {
+    "kind": "fig",
+    "slug": "m2_c_fv_over_cost",
+    "title": "Aggregate mark: fair value over cost",
+    "period": "2018Q3-2026Q2",
+    "coverage": {
+      "basis": "investment-panel",
+      "rows_used": 31067,
+      "rows_total": 31067,
+      "note": "Aggregate mark uses every in-window position: both cost and fair_value are 0% null. Denominator each quarter is that quarter's total cost. Plotted on the full 32-quarter calendar; 2019Q3 and 2022Q1 are breaks in the line.",
+      "share_pct": 100.0,
+      "sentence": "Computed on 31,067 of 31,067 investment-panel rows (100.0% of the window panel). Aggregate mark uses every in-window position: both cost and fair_value are 0% null. Denominator each quarter is that quarter's total cost. Plotted on the full 32-quarter calendar; 2019Q3 and 2022Q1 are breaks in the line."
+    },
+    "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+    "values": {
+      "fv_over_cost_2018Q3_pct": 97.8,
+      "fv_over_cost_2026Q2_pct": 98.9,
+      "fv_over_cost_min_pct": 92.8,
+      "fv_over_cost_min_quarter": "2020Q1",
+      "fv_over_cost_max_pct": 101.4,
+      "fv_over_cost_max_quarter": "2024Q1",
+      "quarters_above_100pct": 14,
+      "quarters_total": 30,
+      "denominator": "aggregate cost of all positions in the quarter"
+    }
+  },
+  {
+    "kind": "fig",
+    "slug": "m2_c_markdown_tails",
+    "title": "Markdown tails: positions carried below cost",
+    "period": "2018Q3-2026Q2",
+    "coverage": {
+      "basis": "investment-panel",
+      "rows_used": 28432,
+      "rows_total": 31067,
+      "note": "2,635 in-window positions carry a zero cost basis (unfunded commitments and undrawn revolvers) and are excluded because FV/cost is undefined for them; no position has a negative cost. Position shares are equal-weight; fair-value shares are fair-value-weighted, with each quarter's included fair value as the denominator. 989 of the included positions are marked at exactly zero fair value and therefore fall in the below-70% band by construction; they lift the position-count tail far more than the fair-value tail, which is why the two lines diverge in the deep tail.",
+      "share_pct": 91.52,
+      "sentence": "Computed on 28,432 of 31,067 investment-panel rows (91.5% of the window panel). 2,635 in-window positions carry a zero cost basis (unfunded commitments and undrawn revolvers) and are excluded because FV/cost is undefined for them; no position has a negative cost. Position shares are equal-weight; fair-value shares are fair-value-weighted, with each quarter's included fair value as the denominator. 989 of the included positions are marked at exactly zero fair value and therefore fall in the below-70% band by construction; they lift the position-count tail far more than the fair-value tail, which is why the two lines diverge in the deep tail."
+    },
+    "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+    "values": {
+      "positions_with_positive_cost": 28432,
+      "positions_excluded_nonpositive_cost": 2635,
+      "share_fv_below_90_2020Q2_pct": 16.0,
+      "share_positions_below_90_2020Q2_pct": 23.6,
+      "share_fv_below_90_2026Q2_pct": 8.2,
+      "share_positions_below_90_2026Q2_pct": 14.8,
+      "share_fv_below_70_2026Q2_pct": 2.7,
+      "share_positions_below_70_2026Q2_pct": 7.5,
+      "share_fv_below_90_max_pct": 16.0,
+      "share_fv_below_90_max_quarter": "2020Q2",
+      "positions_marked_at_zero_fair_value": 989
+    }
+  },
+  {
+    "kind": "tab",
+    "slug": "m2_c_mark_by_quarter",
+    "title": "Cost versus fair value by quarter",
+    "period": "2018Q3-2026Q2",
+    "coverage": {
+      "basis": "investment-panel",
+      "rows_used": 28432,
+      "rows_total": 31067,
+      "note": "2,635 in-window positions carry a zero cost basis (unfunded commitments and undrawn revolvers) and are excluded because FV/cost is undefined for them; no position has a negative cost. Position shares are equal-weight; fair-value shares are fair-value-weighted, with each quarter's included fair value as the denominator. 989 of the included positions are marked at exactly zero fair value and therefore fall in the below-70% band by construction; they lift the position-count tail far more than the fair-value tail, which is why the two lines diverge in the deep tail.",
+      "share_pct": 91.52,
+      "sentence": "Computed on 28,432 of 31,067 investment-panel rows (91.5% of the window panel). 2,635 in-window positions carry a zero cost basis (unfunded commitments and undrawn revolvers) and are excluded because FV/cost is undefined for them; no position has a negative cost. Position shares are equal-weight; fair-value shares are fair-value-weighted, with each quarter's included fair value as the denominator. 989 of the included positions are marked at exactly zero fair value and therefore fall in the below-70% band by construction; they lift the position-count tail far more than the fair-value tail, which is why the two lines diverge in the deep tail."
+    },
+    "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+    "values": {
+      "fv_over_cost_2018Q3_pct": 97.8,
+      "fv_over_cost_2026Q2_pct": 98.9,
+      "fv_over_cost_min_pct": 92.8,
+      "fv_over_cost_min_quarter": "2020Q1",
+      "fv_over_cost_max_pct": 101.4,
+      "fv_over_cost_max_quarter": "2024Q1",
+      "quarters_above_100pct": 14,
+      "quarters_total": 30,
+      "denominator": "aggregate cost of all positions in the quarter",
+      "positions_with_positive_cost": 28432,
+      "positions_excluded_nonpositive_cost": 2635,
+      "share_fv_below_90_2020Q2_pct": 16.0,
+      "share_positions_below_90_2020Q2_pct": 23.6,
+      "share_fv_below_90_2026Q2_pct": 8.2,
+      "share_positions_below_90_2026Q2_pct": 14.8,
+      "share_fv_below_70_2026Q2_pct": 2.7,
+      "share_positions_below_70_2026Q2_pct": 7.5,
+      "share_fv_below_90_max_pct": 16.0,
+      "share_fv_below_90_max_quarter": "2020Q2",
+      "positions_marked_at_zero_fair_value": 989
+    }
+  },
+  {
+    "kind": "fig",
+    "slug": "m2_d_non_accruals",
+    "title": "Non-accrual positions",
+    "period": "2018Q3-2026Q2",
+    "coverage": {
+      "basis": "investment-panel",
+      "rows_used": 27588,
+      "rows_total": 31067,
+      "note": "is_non_accrual is a parsed flag with no nulls, so every position in the quarters shown is classified. Denominators are, per quarter, that quarter's position count, total fair value and total cost. Dropped: 2022Q4, 2023Q4, 2024Q4 return exactly zero non-accrual flags while the surrounding 10-Qs report 1% to 2% of cost on non-accrual, so the flag was not captured in those three 10-K filings; they are omitted rather than shown as zeros, and appear as breaks in the lines, alongside the breaks at 2019Q3 and 2022Q1. Any pooled non-accrual share quoted from this exhibit is over the 27,588 positions in the 27 usable quarters, not over all 31,067 in-window positions.",
+      "share_pct": 88.8,
+      "sentence": "Computed on 27,588 of 31,067 investment-panel rows (88.8% of the window panel). is_non_accrual is a parsed flag with no nulls, so every position in the quarters shown is classified. Denominators are, per quarter, that quarter's position count, total fair value and total cost. Dropped: 2022Q4, 2023Q4, 2024Q4 return exactly zero non-accrual flags while the surrounding 10-Qs report 1% to 2% of cost on non-accrual, so the flag was not captured in those three 10-K filings; they are omitted rather than shown as zeros, and appear as breaks in the lines, alongside the breaks at 2019Q3 and 2022Q1. Any pooled non-accrual share quoted from this exhibit is over the 27,588 positions in the 27 usable quarters, not over all 31,067 in-window positions."
+    },
+    "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+    "values": {
+      "non_accrual_positions_pooled": 562,
+      "non_accrual_positions_denominator": 27588,
+      "non_accrual_share_of_positions_pooled_pct": 2.04,
+      "non_accrual_share_of_positions_pooled_all_rows_pct": 1.81,
+      "pooled_denominator_note": "Pooled share is 562 of the 27,588 positions in the 27 quarters with a usable non-accrual flag. The 31,067-row denominator (1.81%) is shown only for reconciliation and understates the rate, because the three parse-gap 10-Ks contribute rows but no flags.",
+      "non_accrual_share_of_cost_2026Q2_pct": 2.38,
+      "non_accrual_share_of_fv_2026Q2_pct": 1.38,
+      "non_accrual_share_of_positions_2026Q2_pct": 2.22,
+      "non_accrual_share_of_cost_max_pct": 5.06,
+      "non_accrual_share_of_cost_max_quarter": "2020Q3",
+      "non_accrual_share_of_fv_max_pct": 3.18,
+      "non_accrual_share_of_fv_max_quarter": "2020Q3",
+      "non_accrual_fv_2026Q2_usd_mm": 404.4,
+      "non_accrual_cost_2026Q2_usd_mm": 707.6,
+      "non_accrual_recovery_mark_2026Q2_pct_of_cost": 57.2,
+      "denominator": "per quarter: position count, total fair value, total cost",
+      "quarters_shown": 27,
+      "quarters_dropped_zero_flag": [
+        "2022Q4",
+        "2023Q4",
+        "2024Q4"
+      ]
+    }
+  },
+  {
+    "kind": "tab",
+    "slug": "m2_d_non_accruals_by_quarter",
+    "title": "Non-accruals by quarter",
+    "period": "2018Q3-2026Q2",
+    "coverage": {
+      "basis": "investment-panel",
+      "rows_used": 27588,
+      "rows_total": 31067,
+      "note": "is_non_accrual is a parsed flag with no nulls, so every position in the quarters shown is classified. Denominators are, per quarter, that quarter's position count, total fair value and total cost. Dropped: 2022Q4, 2023Q4, 2024Q4 return exactly zero non-accrual flags while the surrounding 10-Qs report 1% to 2% of cost on non-accrual, so the flag was not captured in those three 10-K filings; they are omitted rather than shown as zeros, and appear as breaks in the lines, alongside the breaks at 2019Q3 and 2022Q1. Any pooled non-accrual share quoted from this exhibit is over the 27,588 positions in the 27 usable quarters, not over all 31,067 in-window positions.",
+      "share_pct": 88.8,
+      "sentence": "Computed on 27,588 of 31,067 investment-panel rows (88.8% of the window panel). is_non_accrual is a parsed flag with no nulls, so every position in the quarters shown is classified. Denominators are, per quarter, that quarter's position count, total fair value and total cost. Dropped: 2022Q4, 2023Q4, 2024Q4 return exactly zero non-accrual flags while the surrounding 10-Qs report 1% to 2% of cost on non-accrual, so the flag was not captured in those three 10-K filings; they are omitted rather than shown as zeros, and appear as breaks in the lines, alongside the breaks at 2019Q3 and 2022Q1. Any pooled non-accrual share quoted from this exhibit is over the 27,588 positions in the 27 usable quarters, not over all 31,067 in-window positions."
+    },
+    "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+    "values": {
+      "non_accrual_positions_pooled": 562,
+      "non_accrual_positions_denominator": 27588,
+      "non_accrual_share_of_positions_pooled_pct": 2.04,
+      "non_accrual_share_of_positions_pooled_all_rows_pct": 1.81,
+      "pooled_denominator_note": "Pooled share is 562 of the 27,588 positions in the 27 quarters with a usable non-accrual flag. The 31,067-row denominator (1.81%) is shown only for reconciliation and understates the rate, because the three parse-gap 10-Ks contribute rows but no flags.",
+      "non_accrual_share_of_cost_2026Q2_pct": 2.38,
+      "non_accrual_share_of_fv_2026Q2_pct": 1.38,
+      "non_accrual_share_of_positions_2026Q2_pct": 2.22,
+      "non_accrual_share_of_cost_max_pct": 5.06,
+      "non_accrual_share_of_cost_max_quarter": "2020Q3",
+      "non_accrual_share_of_fv_max_pct": 3.18,
+      "non_accrual_share_of_fv_max_quarter": "2020Q3",
+      "non_accrual_fv_2026Q2_usd_mm": 404.4,
+      "non_accrual_cost_2026Q2_usd_mm": 707.6,
+      "non_accrual_recovery_mark_2026Q2_pct_of_cost": 57.2,
+      "denominator": "per quarter: position count, total fair value, total cost",
+      "quarters_shown": 27,
+      "quarters_dropped_zero_flag": [
+        "2022Q4",
+        "2023Q4",
+        "2024Q4"
+      ]
+    }
+  },
+  {
+    "kind": "fig",
+    "slug": "m2_e_effective_yield",
+    "title": "Effective yield and its coverage",
+    "period": "2018Q3-2026Q2",
+    "coverage": {
+      "basis": "investment-panel",
+      "rows_used": 21776,
+      "rows_total": 31067,
+      "note": "all_in_rate_pct is null on 29.9% of in-window positions, concentrated in equity and preferred positions that carry no coupon. Rates are weighted by the fair value of the rate-bearing positions only, which is 84.1% of in-window fair value. Positions with a null rate are dropped from the numerator and the weight, never treated as a zero rate; the lower panel of the figure and the coverage columns of the table state exactly how much fair value is behind each point. Plotted on the full 32-quarter calendar, so 2019Q3 and 2022Q1 are breaks.",
+      "share_pct": 70.09,
+      "sentence": "Computed on 21,776 of 31,067 investment-panel rows (70.1% of the window panel). all_in_rate_pct is null on 29.9% of in-window positions, concentrated in equity and preferred positions that carry no coupon. Rates are weighted by the fair value of the rate-bearing positions only, which is 84.1% of in-window fair value. Positions with a null rate are dropped from the numerator and the weight, never treated as a zero rate; the lower panel of the figure and the coverage columns of the table state exactly how much fair value is behind each point. Plotted on the full 32-quarter calendar, so 2019Q3 and 2022Q1 are breaks."
+    },
+    "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+    "values": {
+      "pooled_fv_weighted_all_in_rate_pct": 10.02,
+      "pooled_equal_weighted_all_in_rate_pct": 9.61,
+      "pooled_rate_coverage_share_of_positions_pct": 70.1,
+      "pooled_rate_coverage_share_of_fv_pct": 84.1,
+      "fv_weighted_rate_2019_pct": 9.57,
+      "fv_weighted_rate_2021_pct": 8.13,
+      "fv_weighted_rate_2023_pct": 11.93,
+      "fv_weighted_rate_2026_pct": 9.61,
+      "fv_weighted_rate_2026Q2_pct": 9.63,
+      "rate_coverage_share_of_fv_2026Q2_pct": 83.0,
+      "fv_weighted_rate_peak_pct": 12.07,
+      "fv_weighted_rate_peak_quarter": "2023Q3",
+      "fv_weighted_rate_trough_pct": 8.05,
+      "fv_weighted_rate_trough_quarter": "2021Q4",
+      "denominator": "fair value of rate-bearing positions in the period"
+    }
+  },
+  {
+    "kind": "tab",
+    "slug": "m2_e_yield_by_year",
+    "title": "Effective yield by year",
+    "period": "2018Q3-2026Q2",
+    "coverage": {
+      "basis": "investment-panel",
+      "rows_used": 21776,
+      "rows_total": 31067,
+      "note": "all_in_rate_pct is null on 29.9% of in-window positions, concentrated in equity and preferred positions that carry no coupon. Rates are weighted by the fair value of the rate-bearing positions only, which is 84.1% of in-window fair value. Positions with a null rate are dropped from the numerator and the weight, never treated as a zero rate; the lower panel of the figure and the coverage columns of the table state exactly how much fair value is behind each point. Plotted on the full 32-quarter calendar, so 2019Q3 and 2022Q1 are breaks.",
+      "share_pct": 70.09,
+      "sentence": "Computed on 21,776 of 31,067 investment-panel rows (70.1% of the window panel). all_in_rate_pct is null on 29.9% of in-window positions, concentrated in equity and preferred positions that carry no coupon. Rates are weighted by the fair value of the rate-bearing positions only, which is 84.1% of in-window fair value. Positions with a null rate are dropped from the numerator and the weight, never treated as a zero rate; the lower panel of the figure and the coverage columns of the table state exactly how much fair value is behind each point. Plotted on the full 32-quarter calendar, so 2019Q3 and 2022Q1 are breaks."
+    },
+    "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+    "values": {
+      "pooled_fv_weighted_all_in_rate_pct": 10.02,
+      "pooled_equal_weighted_all_in_rate_pct": 9.61,
+      "pooled_rate_coverage_share_of_positions_pct": 70.1,
+      "pooled_rate_coverage_share_of_fv_pct": 84.1,
+      "fv_weighted_rate_2019_pct": 9.57,
+      "fv_weighted_rate_2021_pct": 8.13,
+      "fv_weighted_rate_2023_pct": 11.93,
+      "fv_weighted_rate_2026_pct": 9.61,
+      "fv_weighted_rate_2026Q2_pct": 9.63,
+      "rate_coverage_share_of_fv_2026Q2_pct": 83.0,
+      "fv_weighted_rate_peak_pct": 12.07,
+      "fv_weighted_rate_peak_quarter": "2023Q3",
+      "fv_weighted_rate_trough_pct": 8.05,
+      "fv_weighted_rate_trough_quarter": "2021Q4",
+      "denominator": "fair value of rate-bearing positions in the period"
+    }
+  },
+  {
+    "kind": "tab",
+    "slug": "m2_f_missingness",
+    "title": "Missingness by field and by position type",
+    "period": "2018Q3-2026Q2",
+    "coverage": {
+      "basis": "investment-panel",
+      "rows_used": 31067,
+      "rows_total": 31067,
+      "note": "All in-window positions. Denominators: 31,067 positions overall, 8,210 equity or preferred positions, 21,891 debt-like (first lien, second lien, subordinated) positions.",
+      "share_pct": 100.0,
+      "sentence": "Computed on 31,067 of 31,067 investment-panel rows (100.0% of the window panel). All in-window positions. Denominators: 31,067 positions overall, 8,210 equity or preferred positions, 21,891 debt-like (first lien, second lien, subordinated) positions."
+    },
+    "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+    "values": {
+      "raw_industry_labels": 68,
+      "normalized_industry_labels": 57,
+      "all_in_rate_null_share_pct": 29.9,
+      "all_in_rate_null_share_within_equity_preferred_pct": 84.1,
+      "all_in_rate_null_share_within_debt_like_pct": 6.5,
+      "maturity_null_share_within_equity_preferred_pct": 98.5,
+      "maturity_null_share_within_debt_like_pct": 1.5,
+      "pct_of_net_assets_null_share_pct": 100.0,
+      "equity_and_preferred_positions": 8210,
+      "debt_like_positions": 21891,
+      "in_window_positions": 31067
+    }
+  }
+]

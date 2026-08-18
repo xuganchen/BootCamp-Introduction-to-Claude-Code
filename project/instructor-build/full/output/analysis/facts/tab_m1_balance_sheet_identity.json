@@ -1,0 +1,25 @@
+{
+  "kind": "tab",
+  "slug": "m1_balance_sheet_identity",
+  "title": "Balance-sheet identity check: total assets - total liabilities vs net assets",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "quarter-panel",
+    "rows_used": 30,
+    "rows_total": 30,
+    "note": "All in-window quarters carry the three balance-sheet fields, so the check runs on every one of them.",
+    "share_pct": 100.0,
+    "sentence": "Computed on 30 of 30 quarter-panel rows (100.0% of the window panel). All in-window quarters carry the three balance-sheet fields, so the check runs on every one of them."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "quarters_checked": 30,
+    "quarters_exact_to_under_1_usd": 30,
+    "max_abs_discrepancy_usd": 0.0,
+    "max_abs_discrepancy_quarter": "2018Q3",
+    "max_abs_discrepancy_bps_of_net_assets": 0.0,
+    "identity_ties": true,
+    "verdict": "The identity total_assets - total_liabilities = net_assets ties in all 30 in-window quarters; the largest absolute discrepancy is $0.00 (0.0000 bps of net assets, in 2018Q3).",
+    "note_units": "USD and basis points of net assets"
+  }
+}

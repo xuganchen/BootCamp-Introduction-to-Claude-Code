@@ -1,0 +1,28 @@
+{
+  "kind": "fig",
+  "slug": "m1_spread_missingness_by_vintage",
+  "title": "The other axis of missingness: filing vintage",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "investment-panel",
+    "rows_used": 31067,
+    "rows_total": 31067,
+    "note": "Split into debt-like and non-debt groups; the two groups partition the panel. 2019Q3 and 2022Q1 are gaps.",
+    "share_pct": 100.0,
+    "sentence": "Computed on 31,067 of 31,067 investment-panel rows (100.0% of the window panel). Split into debt-like and non-debt groups; the two groups partition the panel. 2019Q3 and 2022Q1 are gaps."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "debt_like_rows": 21891,
+    "debt_spread_null_pct_2018Q3": 15.0,
+    "debt_spread_null_pct_2026Q2": 10.6,
+    "debt_spread_null_pct_mean_pre2021": 19.0,
+    "debt_spread_null_pct_mean_2024_onward": 9.5,
+    "nondebt_spread_null_pct_mean": 98.5,
+    "debt_spread_null_pct_peak": 27.9,
+    "debt_spread_null_pct_peak_quarter": "2020Q4",
+    "debt_spread_null_pct_trough": 8.2,
+    "debt_spread_null_pct_trough_quarter": "2025Q2",
+    "note_units": "percent of that quarter's positions in the stated group with a null spread_bps"
+  }
+}

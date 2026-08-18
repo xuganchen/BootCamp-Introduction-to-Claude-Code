@@ -1,0 +1,269 @@
+[
+  {
+    "kind": "fig",
+    "slug": "m5_industry_share_change",
+    "title": "Where the book moved: change in industry share of fair value",
+    "period": "2018Q3-2026Q2",
+    "coverage": {
+      "basis": "investment-panel",
+      "rows_used": 2184,
+      "rows_total": 31067,
+      "note": "Selection rule: the top 12 industries by 2026Q2 fair value, PLUS every other industry whose share moved by at least 1.0pp either way (6 added, marked * and outlined). Ranking on latest size alone would censor industries that shrank to nothing, which is exactly where the book moved. Anchored on 2019Q4, the first quarter after ARCC's 2019 taxonomy change; only 15.9% of 2018Q3 fair value carries a label still used in the latest quarter, so 2018Q3-2019Q2 is not spliced on. A second, name-only GICS rename between 2024Q3 and 2025Q1 is bridged by a 7-entry crosswalk (for example Diversified Financials to Financial Services); that mapping is an inference by the analyst, not a filing disclosure. A bar reading 'no such label' is a label that does not exist in that quarter's taxonomy, which is NOT the same as zero exposure: the exposure may sit under a different label the crosswalk does not bridge.",
+      "share_pct": 7.03,
+      "sentence": "Computed on 2,184 of 31,067 investment-panel rows (7.0% of the window panel). Selection rule: the top 12 industries by 2026Q2 fair value, PLUS every other industry whose share moved by at least 1.0pp either way (6 added, marked * and outlined). Ranking on latest size alone would censor industries that shrank to nothing, which is exactly where the book moved. Anchored on 2019Q4, the first quarter after ARCC's 2019 taxonomy change; only 15.9% of 2018Q3 fair value carries a label still used in the latest quarter, so 2018Q3-2019Q2 is not spliced on. A second, name-only GICS rename between 2024Q3 and 2025Q1 is bridged by a 7-entry crosswalk (for example Diversified Financials to Financial Services); that mapping is an inference by the analyst, not a filing disclosure. A bar reading 'no such label' is a label that does not exist in that quarter's taxonomy, which is NOT the same as zero exposure: the exposure may sit under a different label the crosswalk does not bridge."
+    },
+    "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+    "values": {
+      "latest_quarter": "2026Q2",
+      "base_quarter": "2019Q4",
+      "selection_rule": "top 12 by 2026Q2 FV union movers >= 1.0pp",
+      "n_industries_plotted": 18,
+      "n_added_beyond_top12": 6,
+      "top12_share_of_latest_fv_pct": 89.48,
+      "first_quarter_fv_share_on_surviving_labels_pct": 15.95,
+      "largest_gain_industry": "Software and Services",
+      "largest_gain_pp": 9.09,
+      "largest_loss_industry": "Healthcare Equipment and Services",
+      "largest_loss_pp": -10.42,
+      "largest_loss_industry_within_top12": "Healthcare Equipment and Services",
+      "largest_loss_pp_within_top12": -10.42,
+      "largest_loss_outside_top12": "Utilities",
+      "largest_loss_outside_top12_pp": -7.08,
+      "top1_industry": "Software and Services",
+      "top1_share_latest_pct": 21.98,
+      "denominator": "each quarter's own total fair value; the 2026Q2 book is $29.35bn and the 2019Q4 book $14.43bn"
+    }
+  },
+  {
+    "kind": "tab",
+    "slug": "m5_industry_composition",
+    "title": "Industry composition of the ARCC book, 2019Q4 vs 2026Q2",
+    "period": "2018Q3-2026Q2",
+    "coverage": {
+      "basis": "investment-panel",
+      "rows_used": 2184,
+      "rows_total": 31067,
+      "note": "1,439 2026Q2 rows and 745 2019Q4 rows. Shares are of each quarter's own total fair value.",
+      "share_pct": 7.03,
+      "sentence": "Computed on 2,184 of 31,067 investment-panel rows (7.0% of the window panel). 1,439 2026Q2 rows and 745 2019Q4 rows. Shares are of each quarter's own total fair value."
+    },
+    "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+    "values": {
+      "top12_share_of_latest_fv_pct": 89.48,
+      "n_industries_latest": 24,
+      "n_industries_base": 23,
+      "n_industries_window_normalized": 57,
+      "crosswalk_entries": 7,
+      "excluded_exits": {
+        "Utilities": -7.08,
+        "Consumer Durables and Apparel": -4.11,
+        "Automobiles and Components": -3.64,
+        "Energy": -2.18,
+        "Food and Beverage": -1.25
+      },
+      "denominator": "2026Q2 total fair value $29.35bn for the latest column; 2019Q4 total fair value $14.43bn for the base column"
+    }
+  },
+  {
+    "kind": "fig",
+    "slug": "m5_industry_concentration",
+    "title": "Industry concentration through time",
+    "period": "2018Q3-2026Q2",
+    "coverage": {
+      "basis": "investment-panel",
+      "rows_used": 31067,
+      "rows_total": 31067,
+      "note": "2019Q3 and 2022Q1 are absent from the panel and are drawn with a dashed amber rule; the x axis is the panel-quarter index, so the line spans the gap without any value being interpolated. The dotted grey line marks the 2019 industry-taxonomy change. THE LEVEL IS NOT COMPARABLE ACROSS THAT LINE: the bucket count falls from 27 labels in 2019Q2 to 23 in 2019Q4, yet the measured HHI moves -116 points across the same break, because the re-bucketing split as well as merged sectors. Read the pre-2019Q4 segment and the post-2019Q4 segment as two separate series, not as one trend. A second, name-only GICS rename between 2024Q3 and 2025Q1 leaves the bucket count broadly unchanged (23 to 22) and so does not move these series.",
+      "share_pct": 100.0,
+      "sentence": "Computed on 31,067 of 31,067 investment-panel rows (100.0% of the window panel). 2019Q3 and 2022Q1 are absent from the panel and are drawn with a dashed amber rule; the x axis is the panel-quarter index, so the line spans the gap without any value being interpolated. The dotted grey line marks the 2019 industry-taxonomy change. THE LEVEL IS NOT COMPARABLE ACROSS THAT LINE: the bucket count falls from 27 labels in 2019Q2 to 23 in 2019Q4, yet the measured HHI moves -116 points across the same break, because the re-bucketing split as well as merged sectors. Read the pre-2019Q4 segment and the post-2019Q4 segment as two separate series, not as one trend. A second, name-only GICS rename between 2024Q3 and 2025Q1 leaves the bucket count broadly unchanged (23 to 22) and so does not move these series."
+    },
+    "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+    "values": {
+      "hhi_latest_pts": 1028.8,
+      "hhi_2019q4_pts": 935.9,
+      "hhi_min_pts": 843.2,
+      "hhi_min_quarter": "2021Q1",
+      "hhi_max_pts": 1161.1,
+      "hhi_max_quarter": "2024Q3",
+      "top5_share_latest_pct": 61.56,
+      "top5_share_2019q4_pct": 55.76,
+      "n_industries_latest": 24,
+      "denominator": "each quarter's own total portfolio fair value"
+    }
+  },
+  {
+    "kind": "fig",
+    "slug": "m5_borrower_concentration",
+    "title": "Borrower breadth and borrower concentration",
+    "period": "2018Q3-2026Q2",
+    "coverage": {
+      "basis": "investment-panel",
+      "rows_used": 31067,
+      "rows_total": 31067,
+      "note": "Borrower identity is the raw borrower string in the filing; no fuzzy matching is applied, so a renamed obligor counts as a new borrower and the borrower count is an upper bound on distinct obligors. The bars are an equal-weighted count of names and carry no size information. 2019Q3 and 2022Q1 are marked with dashed amber rules; the x axis is the panel-quarter index and nothing is interpolated across the gaps.",
+      "share_pct": 100.0,
+      "sentence": "Computed on 31,067 of 31,067 investment-panel rows (100.0% of the window panel). Borrower identity is the raw borrower string in the filing; no fuzzy matching is applied, so a renamed obligor counts as a new borrower and the borrower count is an upper bound on distinct obligors. The bars are an equal-weighted count of names and carry no size information. 2019Q3 and 2022Q1 are marked with dashed amber rules; the x axis is the panel-quarter index and nothing is interpolated across the gaps."
+    },
+    "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+    "values": {
+      "n_borrowers_first": 313,
+      "first_quarter": "2018Q3",
+      "n_borrowers_latest": 593,
+      "latest_quarter": "2026Q2",
+      "top10_share_first_pct": 25.55,
+      "top10_share_latest_pct": 22.43,
+      "top10_share_max_pct": 26.97,
+      "top10_share_max_quarter": "2023Q1",
+      "hhi_borrower_first_pts": 135.8,
+      "hhi_borrower_latest_pts": 145.4,
+      "denominator": "each quarter's own total portfolio fair value; borrower counts are equal-weighted counts of distinct names"
+    }
+  },
+  {
+    "kind": "tab",
+    "slug": "m5_top15_positions_latest",
+    "title": "Largest 15 positions by fair value, 2026Q2",
+    "period": "2018Q3-2026Q2",
+    "coverage": {
+      "basis": "investment-panel",
+      "rows_used": 15,
+      "rows_total": 31067,
+      "note": "The window share above rounds to 0.0% by construction: this is a top-15 cut of one quarter. The meaningful coverage is 15 of the 1,439 positions held in 2026Q2 (1.0% of that quarter's rows), which carry 23.73% of its fair value. Rows are single positions, not borrower aggregates, so one borrower can appear more than once and a borrower's total exposure is larger than any single row shown.",
+      "share_pct": 0.05,
+      "sentence": "Computed on 15 of 31,067 investment-panel rows (0.0% of the window panel). The window share above rounds to 0.0% by construction: this is a top-15 cut of one quarter. The meaningful coverage is 15 of the 1,439 positions held in 2026Q2 (1.0% of that quarter's rows), which carry 23.73% of its fair value. Rows are single positions, not borrower aggregates, so one borrower can appear more than once and a borrower's total exposure is larger than any single row shown."
+    },
+    "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+    "values": {
+      "latest_quarter": "2026Q2",
+      "book_fv_usd_bn": 29.349,
+      "top15_fv_usd_bn": 6.964,
+      "top15_share_of_book_pct": 23.73,
+      "largest_position_borrower": "Ivy Hill Asset Management, L.P",
+      "largest_position_fv_usd_mm": 1896.8,
+      "largest_position_share_pct": 6.46,
+      "largest_position_type": "equity",
+      "largest_borrower_all_positions_n": 2,
+      "largest_borrower_all_positions_share_pct": 9.69,
+      "n_positions_latest": 1439,
+      "n_borrowers_latest": 593,
+      "denominator": "2026Q2 total fair value $29.349bn"
+    }
+  },
+  {
+    "kind": "fig",
+    "slug": "m5_marks_by_industry",
+    "title": "Cross-section of marks: fair value against cost by industry",
+    "period": "2018Q3-2026Q2",
+    "coverage": {
+      "basis": "investment-panel",
+      "rows_used": 1163,
+      "rows_total": 31067,
+      "note": "2026Q2 only, top 12 industries by fair value (these 12 hold 89.5% of priced fair value in the quarter). 97 of 1,439 positions in the quarter report zero or missing cost and are excluded from every ratio, including the whole-book line; they carry $17.6mm (0.06% of book fair value), so the line is a whole-book mark for practical purposes. The dot is FV-weighted and the bar is an EQUAL-WEIGHTED position-level IQR: the two answer different questions and need not agree. Industry n is shown on each label because several IQRs rest on very few positions.",
+      "share_pct": 3.74,
+      "sentence": "Computed on 1,163 of 31,067 investment-panel rows (3.7% of the window panel). 2026Q2 only, top 12 industries by fair value (these 12 hold 89.5% of priced fair value in the quarter). 97 of 1,439 positions in the quarter report zero or missing cost and are excluded from every ratio, including the whole-book line; they carry $17.6mm (0.06% of book fair value), so the line is a whole-book mark for practical purposes. The dot is FV-weighted and the bar is an EQUAL-WEIGHTED position-level IQR: the two answer different questions and need not agree. Industry n is shown on each label because several IQRs rest on very few positions."
+    },
+    "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+    "values": {
+      "latest_quarter": "2026Q2",
+      "book_fv_over_cost_x": 0.9884,
+      "highest_mark_industry": "Sports, Media and Entertainment",
+      "highest_mark_x": 1.0978,
+      "lowest_mark_industry": "Healthcare Equipment and Services",
+      "lowest_mark_x": 0.8832,
+      "highest_mark_n": 55,
+      "lowest_mark_n": 137,
+      "widest_iqr_industry": "Investment Funds and Vehicles",
+      "widest_iqr_x": 0.5788,
+      "widest_iqr_n": 10,
+      "narrowest_iqr_industry": "Financial Services",
+      "narrowest_iqr_x": 0.0,
+      "narrowest_iqr_n": 95,
+      "narrowest_iqr_at_cost_share_pct": 65.26,
+      "narrowest_iqr_note": "interquartile range is exactly 0.0x because the majority of that industry's positions are marked at cost",
+      "iqr_weighting": "equal-weighted across positions; the dot is FV-weighted",
+      "share_positions_marked_at_cost_pct": 47.69,
+      "n_priced_positions": 1342,
+      "positions_excluded_zero_or_missing_cost": 97,
+      "excluded_fv_usd_mm": 17.6,
+      "excluded_fv_share_of_book_pct": 0.06,
+      "denominator": "aggregate reported cost of the positions in each industry with strictly positive cost; the at-cost share is out of the 1,342 priced positions in 2026Q2"
+    }
+  },
+  {
+    "kind": "fig",
+    "slug": "m5_nonaccrual_by_industry",
+    "title": "Which industries carry the non-accruals",
+    "period": "2018Q3-2026Q2",
+    "coverage": {
+      "basis": "investment-panel",
+      "rows_used": 562,
+      "rows_total": 31067,
+      "note": "Rows flagged is_non_accrual, pooled across the 30 panel quarters. Pooling repeats a position once per quarter it stays on non-accrual, so these are quarter-position dollars and not a single-date exposure. Labels here are the normalized filing labels with NO legacy crosswalk applied, so the pre-2025 and post-2025 names for one sector (for example Healthcare Services and Healthcare Equipment and Services) appear as separate rows.",
+      "share_pct": 1.81,
+      "sentence": "Computed on 562 of 31,067 investment-panel rows (1.8% of the window panel). Rows flagged is_non_accrual, pooled across the 30 panel quarters. Pooling repeats a position once per quarter it stays on non-accrual, so these are quarter-position dollars and not a single-date exposure. Labels here are the normalized filing labels with NO legacy crosswalk applied, so the pre-2025 and post-2025 names for one sector (for example Healthcare Services and Healthcare Equipment and Services) appear as separate rows."
+    },
+    "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+    "values": {
+      "na_rows": 562,
+      "na_row_share_of_panel_pct": 1.81,
+      "na_cost_usd_bn_pooled": 11.636,
+      "na_fv_usd_bn_pooled": 6.12,
+      "na_recovery_x_pooled": 0.5259,
+      "na_cost_share_of_panel_cost_pct": 1.88,
+      "top_na_industry_by_cost": "Healthcare Services",
+      "top_na_industry_cost_usd_mm": 2695.0,
+      "highest_na_rate_industry": "Energy",
+      "highest_na_rate_pct": 9.05,
+      "denominator": "pooled reported cost of all quarter-position rows in that industry over the 30 panel quarters"
+    }
+  },
+  {
+    "kind": "tab",
+    "slug": "m5_nonaccrual_by_industry",
+    "title": "Non-accrual exposure by industry, pooled 2018Q3-2026Q2",
+    "period": "2018Q3-2026Q2",
+    "coverage": {
+      "basis": "investment-panel",
+      "rows_used": 432,
+      "rows_total": 31067,
+      "note": "Top 12 industries by pooled non-accrual cost: 432 of the 562 non-accrual rows in the window, carrying 85.04% of pooled non-accrual cost, spread over 30 industries that ever show a non-accrual.",
+      "share_pct": 1.39,
+      "sentence": "Computed on 432 of 31,067 investment-panel rows (1.4% of the window panel). Top 12 industries by pooled non-accrual cost: 432 of the 562 non-accrual rows in the window, carrying 85.04% of pooled non-accrual cost, spread over 30 industries that ever show a non-accrual."
+    },
+    "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+    "values": {
+      "n_industries_with_nonaccruals": 30,
+      "pooled_na_cost_usd_bn": 11.636,
+      "top12_share_of_pooled_na_cost_pct": 85.04
+    }
+  },
+  {
+    "kind": "fig",
+    "slug": "m5_borrower_persistence",
+    "title": "How long a borrower stays in the book",
+    "period": "2018Q3-2026Q2",
+    "coverage": {
+      "basis": "investment-panel",
+      "rows_used": 31067,
+      "rows_total": 31067,
+      "note": "Spells are runs of consecutive PANEL quarters (the 30 quarters actually present), not calendar quarters. 2019Q3 and 2022Q1 are missing, so a borrower present either side of a gap is counted as continuous; the measure is therefore an upper bound on true continuous tenure. Borrower identity is the raw filing string, so a rename breaks a spell and inflates the count. Both panels bin on the LONGEST-EVER spell in the window, not on tenure as at the latest quarter: a borrower with a long early run who returned recently sits in a high band. The left panel is an equal-weighted count of names over all 1,331 borrowers ever in the window; the right panel is fair-value weighted over the 593 borrowers held in 2026Q2 only.",
+      "share_pct": 100.0,
+      "sentence": "Computed on 31,067 of 31,067 investment-panel rows (100.0% of the window panel). Spells are runs of consecutive PANEL quarters (the 30 quarters actually present), not calendar quarters. 2019Q3 and 2022Q1 are missing, so a borrower present either side of a gap is counted as continuous; the measure is therefore an upper bound on true continuous tenure. Borrower identity is the raw filing string, so a rename breaks a spell and inflates the count. Both panels bin on the LONGEST-EVER spell in the window, not on tenure as at the latest quarter: a borrower with a long early run who returned recently sits in a high band. The left panel is an equal-weighted count of names over all 1,331 borrowers ever in the window; the right panel is fair-value weighted over the 593 borrowers held in 2026Q2 only."
+    },
+    "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+    "values": {
+      "n_distinct_borrowers_window": 1331,
+      "median_longest_spell_quarters": 8.0,
+      "mean_longest_spell_quarters": 9.53,
+      "share_borrowers_spell_le_2_pct": 16.6,
+      "share_borrowers_spell_ge_21_pct": 9.47,
+      "n_borrowers_full_30_quarters": 33,
+      "latest_fv_share_borrowers_since_2018q3_pct": 15.93,
+      "n_borrowers_since_2018q3_still_present": 38,
+      "n_borrowers_2018q3": 313,
+      "n_borrowers_latest": 593,
+      "latest_fv_usd_bn": 29.349,
+      "denominator": "2026Q2 total fair value for the FV shares; 1,331 distinct borrowers for the count shares"
+    }
+  }
+]

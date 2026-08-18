@@ -1,0 +1,236 @@
+% Step 1: write a spec, then build. 17 frames, hands-on, session 0:35-1:05.
+\section{Step 1. Write a spec, then build}\subsection{}
+
+% Step 1 opener. Step table, this row tinted.
+\begin{frame}{Step 1. Write a spec, then build}
+\begin{center}
+\tabfont
+\begin{tabular}{cll}
+\toprule
+Step & What we build & The concept it forces \\
+\midrule
+0 & Naive baseline: one prompt & A passing check is only as good as its \ybb{scope} \\
+\rowcolor{yo!10}\yob{1} & \yob{Write a spec, then build} & \yob{Plan mode, sub-agents for independent verification} \\
+2 & Generalize across quarters & \ybb{Skills}, and the tie-out as a test suite \\
+3 & Analysis and report & Analysis as verification; \ybb{grounding} in your references \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\vs
+\begin{itemize}
+    \item \ybb{This one you type.} Your own BDC, your own filing, your own criteria.
+    \item You write one short file and the agent writes everything else.
+    \item By the end you have a parser that foots to the balance sheet, plus a
+          test suite that proves it.
+\end{itemize}
+\end{frame}
+
+% Diagnosis: a longer prompt is not the fix.
+\begin{frame}{The fix is not a longer prompt}
+\begin{wideitemize}
+  \item Step 0: one line of instruction, three runs, three schemas. All three
+        reported passing their own checks.
+  \item The instinct is to \yo{write more instruction}. That leaves you exactly
+        where step 0 left you: prose is not checkable.
+  \item \ybb{Put the human input where a machine can enforce it.}
+        For example, ``zero nulls in the type field, tie-out within
+        0.1 percent'' either holds or it does not.
+\end{wideitemize}
+\takeaway{Write down how you will know it worked before you write down what to build.}
+\end{frame}
+
+% Acceptance criteria come first.
+\begin{frame}{Write down how you will know it worked, first}
+\begin{columns}
+\begin{column}{0.45\textwidth}
+\includegraphics[width=\textwidth]{bdc_design_pharse1_planv0.png}
+\end{column}
+\begin{column}{0.55\textwidth}
+Create an empty project folder and write your first document, \file{plan\_v0.md}.
+It answers one question: \yob{what must be true of the output for me to believe it?}
+\vs
+\begin{itemize}
+  \item Objective and scope
+  \item Deliverables and folder structure
+  \item \yob{Acceptance criteria}
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+% plan_v0.md, 1 of 3: objective and deliverables.
+\begin{frame}[fragile]{Example of plan\_v0.md}
+\yob{Objective and scope:}
+\begin{prompt}
+* Goal: build a private credit BDC dataset from SEC filings for the most recent filing of one large BDC.
+\end{prompt}
+
+\yob{Deliverables:}
+\begin{prompt}
+* Deliverable:
+    * BDC-quarter panel: one row per BDC per quarter, fund-level financial statements.
+    * BDC-quarter-investment panel: one row per investment position per quarter, deal-level terms.
+    * Two consistent panel schemas.
+\end{prompt}
+\end{frame}
+
+% plan_v0.md, 2 of 3: folder structure.
+\begin{frame}[fragile]{Example of plan\_v0.md}
+\yob{Folder structure:}
+\begin{prompt}
+* Folder structure
+    * README.md
+    * code: filename should be in order, such as "bdc_01_XXX.py", "bdc_09_utils.py", etc.
+    * data: 
+        * raw: organized raw files.
+        * interim: temporary processing files.
+    * output: final output.
+    * note: other misc notes.
+\end{prompt}
+\end{frame}
+
+% plan_v0.md, 3 of 3: acceptance criteria. This is the part that does the work.
+\begin{frame}[fragile]{Example of plan\_v0.md}
+\yob{Acceptance criteria:} 
+\begin{prompt}
+* BDC-quarter panel:
+    * Each row must be a BDC-quarter observation.
+    * These fields are never null: BDC, CIK, period end, filing date.
+    * total liabilities + net assets = total assets, or other basic accounting rules.
+* BDC-quarter-investment panel:
+    * Each row must be an investment position.
+    * These fields are never null: BDC, period end, borrower, investment type, amount, fair value.
+    * The sum of extracted fair value equals total investment in the filing, within 0.1%.
+    * Unique borrower names should be fewer than rows, because a BDC holds multiple loans per borrowers.
+* The units should be consistent across rows and tables.
+* If any check fails, exit non-zero and write no output file. 
+\end{prompt}
+\end{frame}
+
+% The prompt: plan mode, and stay in this folder.
+\begin{frame}[fragile]{The prompt}
+You write \file{plan\_v0.md} yourself. Then, note the two constraints packed into
+one sentence:
+\begin{prompt}
+Only work on current folder. Based on @plan_v0.md, propose a working plan in @plan_v1.md.
+\end{prompt}
+\vs
+\begin{wideitemize}
+  \item \file{Only work on current folder} bounds the working directory.
+  \item \file{propose ... in @plan\_v1.md} makes the plan a \ybb{file you can edit},
+        not a message you skim.
+\end{wideitemize}
+\end{frame}
+
+% 26 lines in, 210 lines out.
+\begin{frame}{26 lines in, 210 lines out}
+\begin{center}
+\includegraphics[width=0.85\textwidth]{bdc_design_pharse1_planv1.png}
+\end{center}
+\begin{itemize}
+    \item It came back with 2 schemas, 16 verification checks, 12 named traps,
+        a 7-step build order, and a table of decisions to lock before coding.
+    \item Because the plan is a file, you can edit one line of it and hand it back.
+\end{itemize}
+\end{frame}
+
+% What the plan added, and where it pushed back on the spec.
+\begin{frame}{The plan gave verification gates, and it pushed back on my spec}
+\begin{center}
+\includegraphics[width=\textwidth]{bdc_design_pharse1-2.png}
+\end{center}
+\end{frame}
+
+% Sub-agents: the prompt, and why B's test is independent.
+\begin{frame}[fragile]{Run it with sub-agents}
+\begin{prompt}
+Execute @plan_v1.md. Sub-agent A writes the parser; sub-agent B writes the test from the criteria, never seeing the parser.
+\end{prompt}
+\vs
+\begin{wideitemize}
+  \item A sub-agent is a \ybb{fresh context} given one task. It does not see the
+        main conversation, and it disappears when the task is done.
+  \item That is what makes B's test independent -- but only because the criteria
+        live in a file. If they lived in the chat, B would be reading A's homework.
+\end{wideitemize}
+\takeaway{Never let the thing that wrote the answer also write the check on the answer.}
+\end{frame}
+
+% Sub-agents: the run.
+\begin{frame}[fragile]{Run it with sub-agents}
+\begin{center}
+\includegraphics[width=0.9\textwidth]{bdc_design_pharse1-8.png}
+\includegraphics[width=0.9\textwidth]{bdc_design_pharse1-10.png}
+\end{center}
+\end{frame}
+
+% Sub-agent A wrote the parser.
+\begin{frame}[fragile]{Sub-Agent A: the parser}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{bdc_design_pharse1-11.png}
+\end{center}
+\end{frame}
+
+% Sub-agent B wrote the test, 1 of 2.
+\begin{frame}[fragile]{Sub-Agent B: the test}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{bdc_design_pharse1-12.png}
+\end{center}
+\end{frame}
+
+% Sub-agent B wrote the test, 2 of 2.
+\begin{frame}[fragile]{Sub-Agent B: the test}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{bdc_design_pharse1-13.png}
+\end{center}
+\end{frame}
+
+% The folder structure the spec asked for.
+\begin{frame}{Organized because the spec said so}
+\begin{columns}
+\begin{column}{0.3\textwidth}
+\begin{center}
+\includegraphics[width=\textwidth]{bdc_design_pharse1_folder_structure.png}
+\end{center}
+\end{column}
+\begin{column}{0.65\textwidth}
+\begin{itemize}
+  \item \file{code/} the pipeline, \file{tests/} the checks, \file{output/}
+        the deliverable.
+  \item \file{note/} is the one folder that was not in plan\_v0.md, and it is the most useful:
+        \file{trap\_log.md}, \file{parsing\_decisions.md}, \file{coverage.md}.
+  \item \ybb{None of this is the agent being tidy.} It is the folder structure that
+        was in plan\_v0.md.
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+% What the spec bought, and what it did not.
+\begin{frame}{What it bought, and what it did not}
+\begin{wideitemize}
+    \item What it bought:
+    \begin{itemize}
+        \item A structured and staged pipeline: 2,757 lines, 10 scripts
+        \item An independent test suite: 1,067 lines, reusable next quarter
+        \item Criteria that catch the step 0 break: type never null, borrowers fewer than rows
+        \item A gate that writes nothing on failure: on any failed check it exits non-zero and writes no output file.
+    \end{itemize}
+    \item What it did not buy:
+    \begin{itemize}
+        \item A better answer: the output is almost identical to step 0's
+        \item Speed: 28 min against 15 to 23 min
+    \end{itemize}
+\end{wideitemize}
+\end{frame}
+
+% Hand-off to Step 2: this works for one filing, and there are 88.
+\begin{frame}{This works for one filing. There are 88.}
+\begin{wideitemize}
+  \item You now have a parser that foots to the balance sheet, plus a test suite
+        that proves it, on \ybb{one} 10-Q.
+  \item ARCC has \ybb{88 filings} on EDGAR, back to 2004.
+  \item Run this parser, unchanged, across all 88: \yob{5 pass}.
+\end{wideitemize}
+\end{frame}

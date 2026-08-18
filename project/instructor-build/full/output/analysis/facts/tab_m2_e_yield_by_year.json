@@ -1,0 +1,32 @@
+{
+  "kind": "tab",
+  "slug": "m2_e_yield_by_year",
+  "title": "Effective yield by year",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "investment-panel",
+    "rows_used": 21776,
+    "rows_total": 31067,
+    "note": "all_in_rate_pct is null on 29.9% of in-window positions, concentrated in equity and preferred positions that carry no coupon. Rates are weighted by the fair value of the rate-bearing positions only, which is 84.1% of in-window fair value. Positions with a null rate are dropped from the numerator and the weight, never treated as a zero rate; the lower panel of the figure and the coverage columns of the table state exactly how much fair value is behind each point. Plotted on the full 32-quarter calendar, so 2019Q3 and 2022Q1 are breaks.",
+    "share_pct": 70.09,
+    "sentence": "Computed on 21,776 of 31,067 investment-panel rows (70.1% of the window panel). all_in_rate_pct is null on 29.9% of in-window positions, concentrated in equity and preferred positions that carry no coupon. Rates are weighted by the fair value of the rate-bearing positions only, which is 84.1% of in-window fair value. Positions with a null rate are dropped from the numerator and the weight, never treated as a zero rate; the lower panel of the figure and the coverage columns of the table state exactly how much fair value is behind each point. Plotted on the full 32-quarter calendar, so 2019Q3 and 2022Q1 are breaks."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "pooled_fv_weighted_all_in_rate_pct": 10.02,
+    "pooled_equal_weighted_all_in_rate_pct": 9.61,
+    "pooled_rate_coverage_share_of_positions_pct": 70.1,
+    "pooled_rate_coverage_share_of_fv_pct": 84.1,
+    "fv_weighted_rate_2019_pct": 9.57,
+    "fv_weighted_rate_2021_pct": 8.13,
+    "fv_weighted_rate_2023_pct": 11.93,
+    "fv_weighted_rate_2026_pct": 9.61,
+    "fv_weighted_rate_2026Q2_pct": 9.63,
+    "rate_coverage_share_of_fv_2026Q2_pct": 83.0,
+    "fv_weighted_rate_peak_pct": 12.07,
+    "fv_weighted_rate_peak_quarter": "2023Q3",
+    "fv_weighted_rate_trough_pct": 8.05,
+    "fv_weighted_rate_trough_quarter": "2021Q4",
+    "denominator": "fair value of rate-bearing positions in the period"
+  }
+}

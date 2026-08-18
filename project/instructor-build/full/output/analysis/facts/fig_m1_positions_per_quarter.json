@@ -1,0 +1,28 @@
+{
+  "kind": "fig",
+  "slug": "m1_positions_per_quarter",
+  "title": "Position count per quarter",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "investment-panel",
+    "rows_used": 31067,
+    "rows_total": 31067,
+    "note": "All in-window position rows. 2019Q3 and 2022Q1 are shaded as gaps; no value is interpolated across them.",
+    "share_pct": 100.0,
+    "sentence": "Computed on 31,067 of 31,067 investment-panel rows (100.0% of the window panel). All in-window position rows. 2019Q3 and 2022Q1 are shaded as gaps; no value is interpolated across them."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "positions_2018Q3": 770,
+    "positions_2026Q2": 1439,
+    "positions_pct_change_2018Q3_to_2026Q2_pct": 86.9,
+    "positions_cagr_pct_per_year": 8.4,
+    "elapsed_years": 7.75,
+    "positions_min_quarter": "2019Q4",
+    "positions_min": 745,
+    "positions_max_quarter": "2026Q2",
+    "positions_max": 1439,
+    "total_in_window_positions": 31067,
+    "note_units": "counts of position-rows; percentage change and CAGR are computed on the 2018Q3 and 2026Q2 endpoints only"
+  }
+}

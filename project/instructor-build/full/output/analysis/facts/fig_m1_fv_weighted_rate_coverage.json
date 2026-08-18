@@ -1,0 +1,36 @@
+{
+  "kind": "fig",
+  "slug": "m1_fv_weighted_rate_coverage",
+  "title": "Fair-value-weighted coverage of the rate fields",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "investment-panel",
+    "rows_used": 31067,
+    "rows_total": 31067,
+    "note": "No rows are dropped: all 31,067 in-window positions enter the fair-value denominator, and 19,136 of them (61.6% of rows, equal-weight) carry both a usable spread and a usable all-in rate. The plotted series are fair-value weighted, which is the relevant credibility measure for rate exhibits. 3,283 rows carry a fair value of exactly $0 and therefore get zero weight in every plotted series while still counting in the equal-weight line.",
+    "share_pct": 100.0,
+    "sentence": "Computed on 31,067 of 31,067 investment-panel rows (100.0% of the window panel). No rows are dropped: all 31,067 in-window positions enter the fair-value denominator, and 19,136 of them (61.6% of rows, equal-weight) carry both a usable spread and a usable all-in rate. The plotted series are fair-value weighted, which is the relevant credibility measure for rate exhibits. 3,283 rows carry a fair value of exactly $0 and therefore get zero weight in every plotted series while still counting in the equal-weight line."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "denominator": "quarter-end total portfolio fair value of all positions in that quarter",
+    "fv_share_both_usable_min_pct": 67.6,
+    "fv_share_both_usable_min_quarter": "2024Q1",
+    "fv_share_both_usable_max_pct": 82.9,
+    "fv_share_both_usable_max_quarter": "2018Q4",
+    "fv_share_both_usable_2018Q3_pct": 80.6,
+    "fv_share_both_usable_2026Q2_pct": 71.3,
+    "fv_share_both_usable_mean_of_30_quarters_unweighted_pct": 72.6,
+    "fv_share_both_usable_pooled_over_window_pct": 71.7,
+    "fv_share_both_usable_mean_2023_onward_unweighted_pct": 69.4,
+    "fv_share_usable_all_in_rate_mean_of_30_quarters_unweighted_pct": 84.9,
+    "equal_weight_share_both_usable_mean_of_30_quarters_pct": 60.7,
+    "positions_with_usable_spread": 19136,
+    "positions_with_usable_all_in_rate": 21776,
+    "positions_with_spread_but_no_all_in_rate": 0,
+    "rows_entering_fv_denominator": 31067,
+    "rows_with_zero_fair_value": 3283,
+    "rows_with_zero_fair_value_share_pct": 10.6,
+    "note_units": "percent of quarter-end portfolio fair value; 'usable' means non-null and strictly positive. Every 'mean' key above is an unweighted average of the 30 quarterly shares, not a fair-value-weighted average over the window; the pooled fair-value-weighted figure is reported separately."
+  }
+}

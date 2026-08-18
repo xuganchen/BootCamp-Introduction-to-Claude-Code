@@ -1,0 +1,16 @@
+Borrower,Industry (normalized),Type,Fair value ($mm),FV share of book (%),FV / cost (x),Non-accrual
+"Ivy Hill Asset Management, L.P",Financial Services,equity,1896.8,6.462845791892822,1.115436636283446,no
+"Senior Direct Lending Program, LLC",Investment Funds and Vehicles,subordinated,1153.7,3.93092850596096,1.0116625745352508,no
+"Ivy Hill Asset Management, L.P",Financial Services,subordinated,946.0,3.2232455288541804,1.0,no
+"Denali Intermediate Holdings, Inc. and Denali Parent Holdings, L.P",Commercial and Professional Services,first lien,359.6,1.2252421693192002,0.9523305084745762,no
+"AthenaHealth Group Inc., Minerva Holdco, Inc. and BCPE Co-Invest (A), LP",Healthcare Equipment and Services,preferred,317.8,1.0828196924628526,1.0003147623544224,no
+"FEH Group, LLC","Sports, Media and Entertainment",equity,266.5,0.9080284708664261,1.4764542936288088,no
+"High Street Buyer, Inc. and High Street Holdco LLC",Insurance,preferred,260.4,0.8872443295070068,1.0,no
+Plaskolite PPC Intermediate II LLC and Plaskolite PPC Blocker LLC,Materials,first lien,249.4,0.8497647303342839,0.9302499067512121,no
+"Auctane, Inc",Software and Services,first lien,241.6,0.8231882872845349,0.9849164288626172,no
+"Himalaya TopCo LLC and BCPE Hyperlink Holdings, LP",Healthcare Equipment and Services,first lien,232.3,0.7915009898021418,0.9805825242718447,no
+Adonis Bidco Inc,Software and Services,first lien,226.7,0.7724204665869373,0.9501257334450964,no
+"Apex Clean Energy TopCo, LLC",Independent Power and Renewable Electricity Producers,equity,212.5,0.7240377112912403,1.5775798069784708,no
+"Creek Parent, Inc. and Creek Feeder, L.P","Pharmaceuticals, Biotechnology and Life Sciences",first lien,206.1,0.7022313990452924,1.0,no
+"Apex Service Partners, LLC and Apex Service Partners Holdings, LLC",Consumer Services,first lien,198.9,0.6776992977686009,1.0010065425264218,no
+"Retained Vantage Data Centers Intermediate Holdco, LP and Retained Vantage Data Centers Assets, LP",Data Centers,subordinated,195.9,0.6674775889033129,1.0,no

@@ -1,0 +1,39 @@
+{
+  "kind": "fig",
+  "slug": "m2_d_non_accruals",
+  "title": "Non-accrual positions",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "investment-panel",
+    "rows_used": 27588,
+    "rows_total": 31067,
+    "note": "is_non_accrual is a parsed flag with no nulls, so every position in the quarters shown is classified. Denominators are, per quarter, that quarter's position count, total fair value and total cost. Dropped: 2022Q4, 2023Q4, 2024Q4 return exactly zero non-accrual flags while the surrounding 10-Qs report 1% to 2% of cost on non-accrual, so the flag was not captured in those three 10-K filings; they are omitted rather than shown as zeros, and appear as breaks in the lines, alongside the breaks at 2019Q3 and 2022Q1. Any pooled non-accrual share quoted from this exhibit is over the 27,588 positions in the 27 usable quarters, not over all 31,067 in-window positions.",
+    "share_pct": 88.8,
+    "sentence": "Computed on 27,588 of 31,067 investment-panel rows (88.8% of the window panel). is_non_accrual is a parsed flag with no nulls, so every position in the quarters shown is classified. Denominators are, per quarter, that quarter's position count, total fair value and total cost. Dropped: 2022Q4, 2023Q4, 2024Q4 return exactly zero non-accrual flags while the surrounding 10-Qs report 1% to 2% of cost on non-accrual, so the flag was not captured in those three 10-K filings; they are omitted rather than shown as zeros, and appear as breaks in the lines, alongside the breaks at 2019Q3 and 2022Q1. Any pooled non-accrual share quoted from this exhibit is over the 27,588 positions in the 27 usable quarters, not over all 31,067 in-window positions."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "non_accrual_positions_pooled": 562,
+    "non_accrual_positions_denominator": 27588,
+    "non_accrual_share_of_positions_pooled_pct": 2.04,
+    "non_accrual_share_of_positions_pooled_all_rows_pct": 1.81,
+    "pooled_denominator_note": "Pooled share is 562 of the 27,588 positions in the 27 quarters with a usable non-accrual flag. The 31,067-row denominator (1.81%) is shown only for reconciliation and understates the rate, because the three parse-gap 10-Ks contribute rows but no flags.",
+    "non_accrual_share_of_cost_2026Q2_pct": 2.38,
+    "non_accrual_share_of_fv_2026Q2_pct": 1.38,
+    "non_accrual_share_of_positions_2026Q2_pct": 2.22,
+    "non_accrual_share_of_cost_max_pct": 5.06,
+    "non_accrual_share_of_cost_max_quarter": "2020Q3",
+    "non_accrual_share_of_fv_max_pct": 3.18,
+    "non_accrual_share_of_fv_max_quarter": "2020Q3",
+    "non_accrual_fv_2026Q2_usd_mm": 404.4,
+    "non_accrual_cost_2026Q2_usd_mm": 707.6,
+    "non_accrual_recovery_mark_2026Q2_pct_of_cost": 57.2,
+    "denominator": "per quarter: position count, total fair value, total cost",
+    "quarters_shown": 27,
+    "quarters_dropped_zero_flag": [
+      "2022Q4",
+      "2023Q4",
+      "2024Q4"
+    ]
+  }
+}

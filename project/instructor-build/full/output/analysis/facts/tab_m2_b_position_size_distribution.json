@@ -1,0 +1,29 @@
+{
+  "kind": "tab",
+  "slug": "m2_b_position_size_distribution",
+  "title": "Position size at fair value: distribution",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "investment-panel",
+    "rows_used": 31067,
+    "rows_total": 31067,
+    "note": "Position size is fair_value, which is 0% null, so the pooled row uses every in-window position. The latest-quarter row uses the 1,439 positions dated 2026Q2. These are equal-weight distributional statistics of position size; the concentration exhibits below are fair-value-weighted.",
+    "share_pct": 100.0,
+    "sentence": "Computed on 31,067 of 31,067 investment-panel rows (100.0% of the window panel). Position size is fair_value, which is 0% null, so the pooled row uses every in-window position. The latest-quarter row uses the 1,439 positions dated 2026Q2. These are equal-weight distributional statistics of position size; the concentration exhibits below are fair-value-weighted."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "pooled_positions_n": 31067,
+    "pooled_mean_position_usd_mm": 19.86,
+    "pooled_median_position_usd_mm": 5.3,
+    "pooled_p90_position_usd_mm": 50.6,
+    "pooled_p99_position_usd_mm": 171.07,
+    "pooled_max_position_usd_mm": 1932.7,
+    "latest_positions_n": 1439,
+    "latest_mean_position_usd_mm": 20.4,
+    "latest_median_position_usd_mm": 5.7,
+    "latest_p99_position_usd_mm": 191.23,
+    "latest_max_position_usd_mm": 1896.8,
+    "units_note": "usd_mm = millions of US dollars of fair value per position"
+  }
+}

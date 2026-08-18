@@ -1,0 +1,27 @@
+{
+  "kind": "fig",
+  "slug": "m4_fixed_vs_floating",
+  "title": "Fixed versus floating share of the debt book",
+  "period": "2018Q3-2026Q2",
+  "coverage": {
+    "basis": "investment-panel",
+    "rows_used": 21891,
+    "rows_total": 31067,
+    "note": "All debt-like positions. 'floating' = a named reference rate other than 'fixed'; 'undisclosed' = reference_rate null, which is a parse gap and not an economic category. Shares are fair-value weighted and sum to 100% of the debt book. 2019Q3, 2022Q1 are absent from the panel and are drawn as shaded breaks on a calendar-continuous axis; no value is interpolated across them.",
+    "share_pct": 70.46,
+    "sentence": "Computed on 21,891 of 31,067 investment-panel rows (70.5% of the window panel). All debt-like positions. 'floating' = a named reference rate other than 'fixed'; 'undisclosed' = reference_rate null, which is a parse gap and not an economic category. Shares are fair-value weighted and sum to 100% of the debt book. 2019Q3, 2022Q1 are absent from the panel and are drawn as shaded breaks on a calendar-continuous axis; no value is interpolated across them."
+  },
+  "source": "Source: author's calculations on the ARCC BDC panel built from SEC EDGAR 10-K/10-Q filings.",
+  "values": {
+    "floating_fv_share_pct_2018Q3": 90.5,
+    "floating_fv_share_pct_2026Q2": 92.6,
+    "fixed_fv_share_pct_2018Q3": 8.7,
+    "fixed_fv_share_pct_2026Q2": 5.6,
+    "undisclosed_fv_share_pct_2026Q2": 1.8,
+    "floating_fv_share_pct_min": 81.4,
+    "floating_fv_share_pct_min_quarter": "2020Q3",
+    "floating_fv_share_pct_mean": 90.5,
+    "units": "percent of debt-book fair value",
+    "denominator_note": "denominator is total fair value of debt-like positions in that quarter"
+  }
+}
