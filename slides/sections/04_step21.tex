@@ -41,7 +41,7 @@ Step & What we build & The concept it forces \\
 \end{frame}
 
 % Acceptance criteria come first.
-\begin{frame}{Write down how you will know it worked, first}
+\begin{frame}{\yob{LAB}: Write down how you will know it worked, first}
 \begin{columns}
 \begin{column}{0.45\textwidth}
 \includegraphics[width=\textwidth]{bdc_design_pharse1_planv0.png}
@@ -111,12 +111,14 @@ It answers one question: \yob{what must be true of the output for me to believe 
 \end{frame}
 
 % The prompt: plan mode, and stay in this folder.
-\begin{frame}[fragile]{The prompt}
-You write \file{plan\_v0.md} yourself:
-\begin{itemize}
-    \item Objective and scope
-    \item Deliverables and folder structure
-    \item Acceptance criteria
+\begin{frame}[fragile]{\yob{LAB}: The prompt}
+You write \file{plan\_v0.md} yourself -- \yob{6 minutes}, under 30 lines:
+\begin{itemize}\small
+    \item \ybb{Objective and scope}: which BDC, which filing, one line.
+    \item \ybb{Deliverables and folder structure}: two panels, one consistent schema.
+    \item \ybb{Acceptance criteria}: which fields are never null; tie-out within
+          0.1\%; borrowers fewer than rows; on any failure, exit non-zero and
+          write no output.
 \end{itemize}
 \vs
 Then prompt the agent:
@@ -151,7 +153,7 @@ Only work on current folder. Based on @plan_v0.md, propose a working plan in @pl
 \end{frame}
 
 % Sub-agents: the prompt, and why B's test is independent.
-\begin{frame}[fragile]{Run it with sub-agents}
+\begin{frame}[fragile]{\yob{LAB}: Run it with sub-agents}
 \begin{prompt}
 Execute @plan_v1.md. Sub-agent A writes the parser; sub-agent B writes the test from the criteria, never seeing the parser.
 \end{prompt}
@@ -192,25 +194,6 @@ Execute @plan_v1.md. Sub-agent A writes the parser; sub-agent B writes the test 
 \begin{center}
 \includegraphics[width=0.8\textwidth]{bdc_design_pharse1-13.png}
 \end{center}
-\end{frame}
-
-% The folder structure the spec asked for.
-\begin{frame}{Organized because the spec said so}
-\begin{columns}
-\begin{column}{0.3\textwidth}
-\begin{center}
-\includegraphics[width=\textwidth]{bdc_design_pharse1_folder_structure.png}
-\end{center}
-\end{column}
-\begin{column}{0.65\textwidth}
-\begin{itemize}
-    \item \file{code/} the pipeline, \file{tests/} the checks, \file{output/}
-        the deliverable.
-    \item \file{note/} is the one folder that was not in \file{plan\_v0.md}, and it is quite useful:
-        \file{trap\_log.md}, \file{parsing\_decisions.md}, \file{coverage.md}.
-\end{itemize}
-\end{column}
-\end{columns}
 \end{frame}
 
 % What the spec bought, and what it did not.

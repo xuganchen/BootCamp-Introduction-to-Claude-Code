@@ -38,44 +38,31 @@ Find a large publicly traded BDC, download its most recent 10-Q from SEC EDGAR, 
 \end{wideitemize}
 \end{frame}
 
-% It chose the BDC and the filing on its own.
-\begin{frame}{It picked its own target}
-\begin{columns}
-\begin{column}{0.6\textwidth}
-\begin{center}
-\includegraphics[width=\textwidth]{bdc_design_pharse0-1.png}
-\end{center}
-\end{column}
-\begin{column}{0.4\textwidth}
-\begin{itemize}
-  \item \ybb{Ares Capital (ARCC)}, reasoned from the words ``large publicly
-        traded BDC''. 
-  \item Its \ybb{most recent 10-Q}, quarter ended 2026-06-30: a 24.8 MB
-        inline-XBRL document.
-\end{itemize}
-\end{column}
-\end{columns}
-\end{frame}
-
-% It inspects the document before parsing it.
-\begin{frame}{It reads the document before parsing it}
+% It picked its own target and surveyed the filing before parsing it.
+% MERGED 2026-08-19 (clock): was two frames, 'It picked its own target' and
+% 'It reads the document before parsing it'.  Split them again if the block
+% ever gets its time back; both screenshots are still here.
+\begin{frame}{It picked its own target, and looked before it parsed}
 \begin{columns}
 \begin{column}{0.5\textwidth}
 \begin{center}
-\includegraphics[width=\textwidth]{bdc_design_pharse0-2.png}
+\includegraphics[width=0.9\textwidth]{bdc_design_pharse0-1.png}
 \end{center}
 \end{column}
 \begin{column}{0.5\textwidth}
-\begin{itemize}
-  \item It \ybb{surveyed the filing} first: how many
-        tables, where the schedule starts, how the columns repeat.
-  \item Then it chose the \ybb{XBRL tags} over the rendered tables -- a real
-        judgment call, the right one for a 2026 filing.
-  \item ``\ybb{Look before you act}'' costs the agent a couple of minutes here, and
-        it is the reason the parse works at all.
-\end{itemize}
+\begin{center}
+\includegraphics[width=0.9\textwidth]{bdc_design_pharse0-2.png}
+\end{center}
 \end{column}
 \end{columns}
+\vs
+\begin{itemize}\small
+  \item \ybb{Ares Capital (ARCC)}, reasoned from ``large publicly traded BDC'',
+        and its \ybb{most recent 10-Q} (2026-06-30): a 24.8 MB inline-XBRL document.
+  \item It then \ybb{surveyed the filing} before parsing -- how many tables, where
+        the schedule starts, how the columns repeat.
+  \item ``\ybb{Look before you act}'' costs a couple of minutes, and it is why the parse works.
+\end{itemize}
 \end{frame}
 
 % What one sentence produced.
@@ -93,6 +80,25 @@ Find a large publicly traded BDC, download its most recent 10-Q from SEC EDGAR, 
     (1,439 at 2026-06-30, 1,408 at 2025-12-31).
     \item Plus a footnote legend, a subtotals file, a README, and a
     \ybb{re-runnable Python parser} -- 803 lines of it.
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+% The 948 percent coupon: the filing is wrong, not the agent.
+\begin{frame}[fragile]{948.00\% coupon -- and the filing is wrong, not the agent}
+\begin{columns}
+\begin{column}{0.4\textwidth}
+\begin{center}
+\includegraphics[width=\textwidth]{bdc_design_pharse0-7.png}
+\end{center}
+\end{column}
+\begin{column}{0.6\textwidth}
+\begin{itemize}
+  \item \yob{It also found an obvious bug}: Adonis Bidco shows a coupon of 948.00\%.
+  \item Then it dug in: three of the 1,846 coupon facts (Adonis Bidco, Covert HoldCo, Mountaineer Merger) are tagged \file{scale="0"} where every other rate carries \file{scale="-2"}. Taking the XBRL value at face value turns a 9.48\% coupon into 948\%.
+  \item The mis-tagging is \yob{ARCC's, sitting live at SEC}. 
+  \item The agent noticed it, worked around it, and wrote it down.
 \end{itemize}
 \end{column}
 \end{columns}
@@ -116,37 +122,9 @@ E. investments / equity vs the printed \% of net assets & 211.28 vs 211.32 & 205
 \end{center}
 \vs
 The word ``verify'' appears \ybb{nowhere} in the prompt, and it invented
-a balance-sheet tie-out anyway. But, remember that \ybb{it} chose the check.
-\end{frame}
-
-% The 948 percent coupon: the filing is wrong, not the agent.
-\begin{frame}[fragile]{948.00\% coupon -- and the filing is wrong, not the agent}
-\begin{columns}
-\begin{column}{0.4\textwidth}
-\begin{center}
-\includegraphics[width=\textwidth]{bdc_design_pharse0-7.png}
-\end{center}
-\end{column}
-\begin{column}{0.6\textwidth}
-\begin{itemize}
-  \item \yob{It also found an obvious bug}: Adonis Bidco shows a coupon of 948.00\%.
-  \item Then it dug in: three of the 1,846 coupon facts (Adonis Bidco, Covert HoldCo, Mountaineer Merger) are tagged \file{scale="0"} where every other rate carries \file{scale="-2"}. Taking the XBRL value at face value turns a 9.48\% coupon into 948\%.
-  \item The mis-tagging is \yob{ARCC's, sitting live at SEC}. 
-  \item The agent noticed it, worked around it, and wrote it down.
-\end{itemize}
-\end{column}
-\end{columns}
-\end{frame}
-
-% Set up the reversal. This is genuinely good work.
-\begin{frame}{This is genuinely good. Hold that thought.}
-\begin{wideitemize}
-  \item One sentence in. A working parser, two clean tables, a documented
-        source-data bug, and a verification report out.
-  \item \ybb{Every claim it made about its own output was true.}
-  \item If we stopped here, we would think the lesson was ``the prompt can be
-        lazy''.
-\end{wideitemize}
+a balance-sheet tie-out.
+\vs
+If we stopped here, we would think the lesson was ``the prompt can be lazy''.
 \end{frame}
 
 % The three-run experiment: same prompt, three configurations.
@@ -165,28 +143,10 @@ a balance-sheet tie-out anyway. But, remember that \ybb{it} chose the check.
 \takeaway{Question: what do you expect to differ -- and what do you expect to stay the same?}
 \end{frame}
 
-% All three passed their own check.
-\begin{frame}{Three models, three successes}
-\tabfont
-\begin{center}
-\begin{tabular}{p{5cm}p{8.0cm}}
-\toprule
-Behavior & Opus 5 xhigh, Opus 5 medium, Sonnet 5 medium \\
-\midrule
-Chose the target & ARCC, all three \\
-Chose the representation & inline XBRL tags, not rendered tables, all three \\
-Parsed both periods & yes, all three \\
-Rows at 2026-06-30 & 1,439, exactly, all three \\
-Invented a balance-sheet tie-out & yes, all three, unasked \\
-Tie-out result & passes both dates, 0.001\%, all three \\
-\bottomrule
-\end{tabular}
-\end{center}
-\takeaway{This is robust behavior, not a lucky run.}
-\end{frame}
-
 % Three schemas that cannot be pooled.
 \begin{frame}{Three right answers with no shared vocabulary}
+All three chose ARCC, parsed both periods, and passed a self-invented tie-out at 0.001\%. \ybb{Every run succeeded.} Then:
+\vs
 \tabfont
 \begin{center}
 \begin{tabular}{llll}

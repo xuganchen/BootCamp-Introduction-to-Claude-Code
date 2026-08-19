@@ -214,18 +214,6 @@ the session assumes a working install.}
 \end{wideitemize}
 \end{frame}
 
-% Context window: what you see against what the model sees.
-\begin{frame}{Context window: We see two things, but the agent sees all of it.}
-\begin{center}
-\includegraphics[width=0.7\textwidth]{context_window1.jpg}
-\end{center}
-\vspace{-0.6em}
-{\small A ``chat'' is one long document passed back and forth. System prompt, tool
-definitions, thinking, tool calls, results -- \ybb{all of it counts against your
-window}, and we see almost none of it.}
-\source{Source: A Series on Claude Code by Paul Goldsmith-Pinkham.}
-\end{frame}
-
 % Context window: long sessions degrade, so plan for it.
 \begin{frame}{Context window: Long sessions degrade, so plan for it.}
 \vspace{-0.2em}
@@ -233,16 +221,18 @@ window}, and we see almost none of it.}
 \begin{column}{0.4\textwidth}
 \includegraphics[width=1\textwidth]{context_window2.png}
 \end{column}
-\begin{column}{0.59\textwidth}
+\begin{column}{0.6\textwidth}
 \vs
-\begin{wideitemize}
+\begin{itemize}\small
+  \item A ``chat'' is \ybb{one long document} passed back and forth: system
+        prompt, tool definitions, thinking, tool calls, results. All of it
+        counts against the window, and we only see the output.
   \item \ybb{Write state to files.} A decision that lives only in the
         conversation is gone. Files persist.
   \item \ybb{Work in chunks.} Five to ten turns with one objective, then start
         fresh. Your agent at turn 30 is noticeably worse than at turn 3.
-  \item \ybb{Compact deliberately.} \file{/compact} summarizes and continues;
-        better still, have it write progress to disk first.
-\end{wideitemize}
+  \item \ybb{Compact.} \file{/compact} summarizes, writes to files, and continues.
+\end{itemize}
 \end{column}
 \end{columns}
 \source{Source: A Series on Claude Code by Paul Goldsmith-Pinkham.}
@@ -252,10 +242,8 @@ window}, and we see almost none of it.}
 \begin{frame}{Housekeeping}
 \begin{wideitemize}
   \item \ybb{No homework, no grading.} Nothing is submitted.
-  \item \ybb{Everything ships:} every prompt as it was run, every transcript,
-        every plan -- and the failures.
-  \item \yob{No code is provided} -- not a downloader, not a parser, not a test.
-        You build all of it with the agent.
+  \item \ybb{Everything ships:} every prompt as it was run, every plan -- and the failures.
+  \item \yob{No code is provided} -- We will build everything with the agent.
 \end{wideitemize}
 \vs
 \begin{center}
