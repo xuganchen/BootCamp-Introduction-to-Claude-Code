@@ -32,8 +32,9 @@ Find a large publicly traded BDC, download its most recent 10-Q from SEC EDGAR, 
 \end{prompt}
 \vs
 \begin{wideitemize}
-  \item Not in it: a ticker, a schema, a file format, a column list.
-  \item Not in it: \yob{any word about verifying anything.}
+  \item Not in it: a ticker, a schema, a file format, a variable list.
+  \item Not in it: how to download or paste the filing.
+  \item Not in it: any word about verifying anything.
 \end{wideitemize}
 \end{frame}
 
@@ -66,10 +67,10 @@ Find a large publicly traded BDC, download its most recent 10-Q from SEC EDGAR, 
 \end{column}
 \begin{column}{0.5\textwidth}
 \begin{itemize}
-  \item It did not open with a regex. It \ybb{surveyed the filing} first: how many
+  \item It \ybb{surveyed the filing} first: how many
         tables, where the schedule starts, how the columns repeat.
   \item Then it chose the \ybb{XBRL tags} over the rendered tables -- a real
-        judgment call, made unprompted, and the right one for a 2026 filing.
+        judgment call, the right one for a 2026 filing.
   \item ``\ybb{Look before you act}'' costs the agent a couple of minutes here, and
         it is the reason the parse works at all.
 \end{itemize}
@@ -87,12 +88,11 @@ Find a large publicly traded BDC, download its most recent 10-Q from SEC EDGAR, 
 \end{column}
 \begin{column}{0.5\textwidth}
 \begin{itemize}
-  \item Two tables: 435 statement facts; \ybb{2,847} investment rows
-        (1,439 at 2026-06-30, 1,408 at 2025-12-31).
-  \item Plus a footnote legend, a subtotals file, a README, and a
-        \ybb{re-runnable parser} -- 803 lines of it.
-  \item Clean CSVs you could hand to an analyst. \ybb{Twenty-two minutes,
-        one sentence of instruction.}
+    \item It took $\sim$22 minutes. 
+    \item Two tables: 435 statement facts; \ybb{2,847} investment rows
+    (1,439 at 2026-06-30, 1,408 at 2025-12-31).
+    \item Plus a footnote legend, a subtotals file, a README, and a
+    \ybb{re-runnable Python parser} -- 803 lines of it.
 \end{itemize}
 \end{column}
 \end{columns}
@@ -116,8 +116,7 @@ E. investments / equity vs the printed \% of net assets & 211.28 vs 211.32 & 205
 \end{center}
 \vs
 The word ``verify'' appears \ybb{nowhere} in the prompt, and it invented
-a balance-sheet tie-out anyway. Remember that \ybb{it} chose the check, because
-that is where this ends up.
+a balance-sheet tie-out anyway. But, remember that \ybb{it} chose the check.
 \end{frame}
 
 % The 948 percent coupon: the filing is wrong, not the agent.
@@ -145,7 +144,7 @@ that is where this ends up.
   \item One sentence in. A working parser, two clean tables, a documented
         source-data bug, and a verification report out.
   \item \ybb{Every claim it made about its own output was true.}
-  \item If you stopped here you would think the lesson was ``the prompt can be
+  \item If we stopped here, we would think the lesson was ``the prompt can be
         lazy''.
 \end{wideitemize}
 \end{frame}
@@ -153,10 +152,10 @@ that is where this ends up.
 % The three-run experiment: same prompt, three configurations.
 \begin{frame}{Same prompt, three times}
 \begin{wideitemize}
-  \item Identical prompt, identical filing, three configurations:
+  \item Identical prompt, identical filing, three models:
   \begin{itemize}
-    \item Opus 5 at xhigh effort (max > xhigh > high > medium > low)
-    \item Opus 5 at medium effort
+    \item Opus 5 at xhigh effort 
+    \item Opus 5 at medium effort (max > xhigh > high > medium > low)
     \item Sonnet 5 at medium effort (Fable 5 > Opus 5 > Sonnet 5)
   \end{itemize}
   \item Nothing else differs. No extra instruction, no follow-up, no correction.
@@ -167,7 +166,7 @@ that is where this ends up.
 \end{frame}
 
 % All three passed their own check.
-\begin{frame}{Three configurations, three successes}
+\begin{frame}{Three models, three successes}
 \tabfont
 \begin{center}
 \begin{tabular}{p{5cm}p{8.0cm}}
@@ -203,7 +202,7 @@ Parser & 803 lines, 1 file & 526 lines, 2 files & 504 lines, 2 files \\
 \bottomrule
 \end{tabular}
 \end{center}
-\takeaway{There are sixty of you in this room -- that is sixty correct, incompatible datasets and no pooled panel.}
+\takeaway{There are sixty of you in this room. That is sixty correct, but incompatible datasets.}
 \end{frame}
 
 % Row counts, and what the 1,409 means.
@@ -242,7 +241,7 @@ Automotive Keys Group, LLC and Automotive Keys Investor, LLC       Class A commo
 Automotive Keys Group, LLC and Automotive Keys Investor, LLC       First lien senior secured loan
 \end{shellout}
 \begin{itemize}
-    \item The problem: the instrument type text has been concatenated into the borrower name. It parsed the current period correctly and the comparative period wrongly.
+    \item The problem: the instrument type text has been merged into the borrower name. It parsed the current period correctly and the comparative period wrongly.
     \item \yob{And it ties out to the balance sheet exactly, on both dates.} The check was measuring \ybb{dollars} while the thing that broke was \yob{structure}. 
 \end{itemize}
 \end{frame}
@@ -250,13 +249,10 @@ Automotive Keys Group, LLC and Automotive Keys Investor, LLC       First lien se
 % Effort, not model tier. Closes Step 0.
 \begin{frame}{The broken one is Opus. Sonnet at the same effort is clean.}
 \begin{wideitemize}
-  \item \ybb{Sonnet 5 at medium effort is clean}: 593 and 580 distinct companies,
-        one null type field, a third of xhigh's authoring budget.
+  \item \ybb{Sonnet 5 at medium effort is clean}: 593 and 580 distinct companies.
   \item Model tier and reasoning effort \yob{did not predict correctness} here.
   \item What the extra effort bought was \ybb{coverage}, not correctness: 44 columns
         vs 26, 14 decoded footnote flags, a subtotals file, a legend file.
-  \item Richer and more auditable. Not more right on the dollars, which all three
-        got right.
 \end{wideitemize}
-\takeaway{``Use the biggest model'' is not the lesson. Verification you designed is.}
+\takeaway{``Use the biggest model'' is not the lesson. How to design verification is the one.}
 \end{frame}

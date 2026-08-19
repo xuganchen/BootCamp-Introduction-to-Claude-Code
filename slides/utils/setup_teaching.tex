@@ -343,13 +343,13 @@
 %----------------------------------------------------------------------
 % Three tikz node styles for flow diagrams:
 %   flowbox       a neutral step, or one the tool takes
-%   flowbox_you   a step you take -- filled Yale blue
+%   flowbox_us   a step you take -- filled Yale blue
 %   flowbox_warn  the thing that went wrong -- orange
 % The deck uses the colour difference to carry an argument, so pick the
 % style by meaning, not by position. Draw arrows with [flowarrow].
 %
 %   \begin{tikzpicture}[node distance=4mm]
-%     \node[flowbox_you] (a) {instruct};
+%     \node[flowbox_us] (a) {instruct};
 %     \node[flowbox, right=of a] (b) {it acts};
 %     \draw[flowarrow] (a) -- (b);
 %   \end{tikzpicture}
@@ -362,7 +362,7 @@
     fill=yaleblue!5, text=yaleblue!80!black,
     align=center, font=\small,
     text width=2.55cm, inner sep=5pt, minimum height=1.15cm},
-  flowbox_you/.style={
+  flowbox_us/.style={
     flowbox, fill=yaleblue, draw=yaleblue, text=white, font=\small\bfseries},
   flowbox_warn/.style={
     flowbox, fill=yo!8, draw=yo!50, text=yo},

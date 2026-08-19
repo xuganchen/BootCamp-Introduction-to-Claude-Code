@@ -19,25 +19,25 @@ Step & What we build & The concept it forces \\
 
 \vs
 \begin{itemize}
-    \item \ybb{This one you type.} Your own BDC, your own filing, your own criteria.
-    \item You write one short file and the agent writes everything else.
-    \item By the end you have a parser that foots to the balance sheet, plus a
-          test suite that proves it.
+    \item Now let's do it together. 
+    \item You are going to write one short file and the agent writes everything else.
+    \item By the end you have a parser, and a test suite that proves it.
 \end{itemize}
 \end{frame}
 
 % Diagnosis: a longer prompt is not the fix.
 \begin{frame}{The fix is not a longer prompt}
 \begin{wideitemize}
-  \item Step 0: one line of instruction, three runs, three schemas. All three
-        reported passing their own checks.
-  \item The instinct is to \yo{write more instruction}. That leaves you exactly
-        where step 0 left you: prose is not checkable.
-  \item \ybb{Put the human input where a machine can enforce it.}
-        For example, ``zero nulls in the type field, tie-out within
-        0.1 percent'' either holds or it does not.
+    \item So how to instruct the agents to make it produce more accurate output?
+    \item Step 0: one line of instruction, three runs, three schemas. All three
+    reported passing their own checks.
+    \item The instinct is to \yo{write more instruction}. That leaves you exactly
+    where step 0 left you. Asking the agent to ``parse it carefully'' has no failing state.
+    \item What we need to do is to \ybb{put the human input where a machine can enforce it.}
+    For example, ``zero nulls in the type field, tie-out within
+    0.1 percent'' 
 \end{wideitemize}
-\takeaway{Write down how you will know it worked before you write down what to build.}
+\takeaway{Key idea: write down how you will know it worked before you write down what to build.}
 \end{frame}
 
 % Acceptance criteria come first.
@@ -57,6 +57,7 @@ It answers one question: \yob{what must be true of the output for me to believe 
 \end{itemize}
 \end{column}
 \end{columns}
+\takeaway{It is much shorter than you expect. Mine is 26 lines.}
 \end{frame}
 
 % plan_v0.md, 1 of 3: objective and deliverables.
@@ -73,11 +74,12 @@ It answers one question: \yob{what must be true of the output for me to believe 
     * BDC-quarter-investment panel: one row per investment position per quarter, deal-level terms.
     * Two consistent panel schemas.
 \end{prompt}
+\takeaway{The last line is doing quiet work: fixing the incompatible-dataset problem.}
 \end{frame}
 
 % plan_v0.md, 2 of 3: folder structure.
 \begin{frame}[fragile]{Example of plan\_v0.md}
-\yob{Folder structure:}
+\yob{Folder structure:} because I want to be able to find things in three months.
 \begin{prompt}
 * Folder structure
     * README.md
@@ -92,7 +94,7 @@ It answers one question: \yob{what must be true of the output for me to believe 
 
 % plan_v0.md, 3 of 3: acceptance criteria. This is the part that does the work.
 \begin{frame}[fragile]{Example of plan\_v0.md}
-\yob{Acceptance criteria:} 
+\yob{Acceptance criteria:} this is the machine-checkable statement.
 \begin{prompt}
 * BDC-quarter panel:
     * Each row must be a BDC-quarter observation.
@@ -110,17 +112,22 @@ It answers one question: \yob{what must be true of the output for me to believe 
 
 % The prompt: plan mode, and stay in this folder.
 \begin{frame}[fragile]{The prompt}
-You write \file{plan\_v0.md} yourself. Then, note the two constraints packed into
-one sentence:
+You write \file{plan\_v0.md} yourself:
+\begin{itemize}
+    \item Objective and scope
+    \item Deliverables and folder structure
+    \item Acceptance criteria
+\end{itemize}
+\vs
+Then prompt the agent:
 \begin{prompt}
 Only work on current folder. Based on @plan_v0.md, propose a working plan in @plan_v1.md.
 \end{prompt}
-\vs
-\begin{wideitemize}
+\begin{itemize}
   \item \file{Only work on current folder} bounds the working directory.
-  \item \file{propose ... in @plan\_v1.md} makes the plan a \ybb{file you can edit},
-        not a message you skim.
-\end{wideitemize}
+  \item \file{propose$\dots$in @plan\_v1.md} makes the plan a \ybb{file we can edit},
+        not a message we skim.
+\end{itemize}
 \end{frame}
 
 % 26 lines in, 210 lines out.
@@ -138,8 +145,9 @@ Only work on current folder. Based on @plan_v0.md, propose a working plan in @pl
 % What the plan added, and where it pushed back on the spec.
 \begin{frame}{The plan gave verification gates, and it pushed back on my spec}
 \begin{center}
-\includegraphics[width=\textwidth]{bdc_design_pharse1-2.png}
+\includegraphics[width=0.9\textwidth]{bdc_design_pharse1-2.png}
 \end{center}
+\takeaway{The plan file is where a disagreement between you and the agent becomes visible and cheap. After the code is written, that same disagreement is expensive.}
 \end{frame}
 
 % Sub-agents: the prompt, and why B's test is independent.
@@ -196,12 +204,10 @@ Execute @plan_v1.md. Sub-agent A writes the parser; sub-agent B writes the test 
 \end{column}
 \begin{column}{0.65\textwidth}
 \begin{itemize}
-  \item \file{code/} the pipeline, \file{tests/} the checks, \file{output/}
+    \item \file{code/} the pipeline, \file{tests/} the checks, \file{output/}
         the deliverable.
-  \item \file{note/} is the one folder that was not in plan\_v0.md, and it is the most useful:
+    \item \file{note/} is the one folder that was not in \file{plan\_v0.md}, and it is quite useful:
         \file{trap\_log.md}, \file{parsing\_decisions.md}, \file{coverage.md}.
-  \item \ybb{None of this is the agent being tidy.} It is the folder structure that
-        was in plan\_v0.md.
 \end{itemize}
 \end{column}
 \end{columns}
@@ -212,11 +218,14 @@ Execute @plan_v1.md. Sub-agent A writes the parser; sub-agent B writes the test 
 \begin{wideitemize}
     \item What it bought:
     \begin{itemize}
-        \item A structured and staged pipeline: 2,757 lines, 10 scripts
-        \item An independent test suite: 1,067 lines, reusable next quarter
+        \item A \yob{structured and staged pipeline}: 2,757 lines, 10 scripts
+        \item An \yob{independent test suite}: 1,067 lines, reusable next quarter
         \item Criteria that catch the step 0 break: type never null, borrowers fewer than rows
-        \item A gate that writes nothing on failure: on any failed check it exits non-zero and writes no output file.
+        \item A gate that writes nothing on failure
     \end{itemize}
+\end{wideitemize}
+\takeaway{$\Rightarrow$ Now we have the confidence to know the numbers are right.}
+\begin{wideitemize}
     \item What it did not buy:
     \begin{itemize}
         \item A better answer: the output is almost identical to step 0's
@@ -231,6 +240,7 @@ Execute @plan_v1.md. Sub-agent A writes the parser; sub-agent B writes the test 
   \item You now have a parser that foots to the balance sheet, plus a test suite
         that proves it, on \ybb{one} 10-Q.
   \item ARCC has \ybb{88 filings} on EDGAR, back to 2004.
-  \item Run this parser, unchanged, across all 88: \yob{5 pass}.
+  \item Run this parser, unchanged, across all 88: only 5 filings work. 
+  \item But we don't want to write the other 83 parsers manually---so we need to \yob{generalize}.
 \end{wideitemize}
 \end{frame}

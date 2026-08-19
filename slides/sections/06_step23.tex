@@ -20,7 +20,7 @@ Step & What we build & The concept it forces \\
 \vs
 \begin{itemize}
     \item After Step 2, we have a panel ready for analysis.
-    \item One prompt, one turn, no follow-ups, no debugging.
+    \item One prompt to analyze the panel and produce a report.
     \item And using the data turns out to be \ybb{a check of its own}.
 \end{itemize}
 \end{frame}
@@ -35,7 +35,10 @@ Based on the 2018-2026 data in output/panel/bdc_quarter.csv and output/panel/bdc
 
 % Ultracode, 1 of 2.
 \begin{frame}{Ultracode}
-\yob{Ultracode} is dynamic workflows orchestrate many subagents, skills, and tools, so that it can plan and execute complex tasks.
+\begin{itemize}
+    \item \yob{Ultracode} is dynamic workflows orchestrate many subagents, skills, and tools, so that it can plan and execute complex tasks.
+    \item Same mechanism as the sub-agents in step 1, at a larger scale and scheduled by the tool rather than by me.
+\end{itemize}
 \begin{center}
 \includegraphics[width=1\textwidth]{bdc_design_pharse3-2.png}
 \end{center}
@@ -43,7 +46,10 @@ Based on the 2018-2026 data in output/panel/bdc_quarter.csv and output/panel/bdc
 
 % Ultracode, 2 of 2.
 \begin{frame}{Ultracode}
-\yob{Ultracode} is dynamic workflows orchestrate many subagents, skills, and tools, so that it can plan and execute complex tasks.
+\begin{itemize}
+    \item \yob{Ultracode} is dynamic workflows orchestrate many subagents, skills, and tools, so that it can plan and execute complex tasks.
+    \item Same mechanism as the sub-agents in step 1, at a larger scale and scheduled by the tool rather than by me.
+\end{itemize}
 \begin{center}
 \includegraphics[width=1\textwidth]{bdc_design_pharse3-3.png}
 \end{center}
@@ -52,13 +58,12 @@ Based on the 2018-2026 data in output/panel/bdc_quarter.csv and output/panel/bdc
 % Grounding: the style comes from documents you supply.
 \begin{frame}{Style in \file{reference/}}
 \begin{itemize}
-  \item Prompt: \ylbb{``the analysis report style follows the
+    \item Prompt: \ylbb{``the analysis report style follows the
         documents in reference''}.
-  \item \file{reference/} holds three industry report PDFs I downloaded. No template, no rules -- just the documents.
-  \item \ylbb{What transferred:} exhibit numbering, a source line under every
+    \item We want to control the style and format of the report. It can look like an industry report, or an academic paper. But we don't want to type every detail by hand. 
+    \item \file{reference/} holds three industry report PDFs I downloaded.
+    \item \ylbb{What transferred:} exhibit numbering, a source line under every
         exhibit, a ``Finding.'' sentence opening each section, a limitations section.
-  \item \ylbb{What did not:} any claim or figure from them. Their conventions,
-        your position.
 \end{itemize}
 \ybb{Further usage}
 \begin{itemize}

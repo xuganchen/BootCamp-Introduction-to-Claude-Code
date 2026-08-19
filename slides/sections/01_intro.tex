@@ -13,7 +13,7 @@
 \end{wideitemize}
 \vs
 \begin{center}
-\ylbb{Feedback is welcome -- now, or any time after today.}
+\yob{Feedback is welcome -- now, or any time after today.}
 \end{center}
 \end{frame}
 
@@ -43,12 +43,11 @@ whichever side you raised your hand on.
 \toprule
 \textbf{Tool} & \textbf{What you actually do} \\
 \midrule
-Browser chat, inline completion & Copy code out, paste it in, run it, paste the error back \\
+Browser chat & Copy code out, paste it in, run it, paste the error back \\
 Agentic IDE (Cursor)              & Tell it what to do; it edits files inside the editor \\
 \rowcolor{yaleblue!10} \ybb{Terminal agent} (Claude Code, Codex) & \ybb{Full environment}: reads, writes, runs commands, plans \\
-Level 3 plus MCP tools            & Wire it to databases, APIs, other services \\
-Agent in a container              & One instruction, ninety unattended minutes \\
-Your own model                    & Build and train it \\
+Terminal agent plus MCP tools            & Wire it to databases, APIs, other services \\
+Agent in a container              & One instruction, and leave alone \\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -61,11 +60,11 @@ Agent in a container is not better; it is more setup.
 % What the tool was a year ago: chat, copy, paste.
 \begin{frame}{Working with AI, one year ago}
 \begin{wideitemize}
-  \item A \yob{chat window}. You describe the problem in prose, it hands back a
-        snippet, you paste the snippet.
-  \item It could not see your data, your files, or your errors. You were the
+  \item A \yob{chat window}. We describe the problem in prose, it hands back a
+        snippet, we paste the snippet.
+  \item It could not see our data, our files, or our errors. We were the
         clipboard between the model and the project.
-  \item The code was \yob{roughly right and often not runnable}, which meant you
+  \item The code was \yob{roughly right and often not runnable}, which meant we
         still had to be the one who ran it.
 \end{wideitemize}
 \vs
@@ -75,15 +74,15 @@ That is the version most people still have in mind.
 \end{frame}
 
 % What it is now: it acts inside your project.
-\begin{frame}{Working with AI, now: it acts in your project}
-An agent that lives in your terminal, inside your project directory.
+\begin{frame}{Working with AI, now: it acts in our project}
+An agent that lives in our terminal, inside our project directory.
 \vs
 \begin{wideitemize}
-  \item \ybb{Reads and writes files} in the repo -- your data, your code, your notes.
+  \item \ybb{Reads and writes files} in the repo -- our data, our code, our notes.
   \item \ybb{Runs commands} -- installs packages, executes scripts, reads the errors.
-  \item \ybb{Iterates} -- sees its own output fail and tries again, without you retyping.
+  \item \ybb{Iterates} -- sees its own output fail and tries again, without us retyping.
 \end{wideitemize}
-\takeaway{It does not hand you a snippet to paste. It acts in the project and \ybb{lives with the consequences.}}
+\takeaway{It does not hand us a snippet to paste. It acts in the project and \ybb{lives with the consequences.}}
 \end{frame}
 
 % The instruct-and-review loop, as a diagram.
@@ -91,26 +90,26 @@ An agent that lives in your terminal, inside your project directory.
 \vs
 \begin{center}
 \begin{tikzpicture}[node distance=6mm]
-  \node[flowbox_you]                (a) {instruct};
+  \node[flowbox_us]                (a) {instruct};
   \node[flowbox, right=of a]        (b) {it proposes\\and acts};
-  \node[flowbox_you, right=of b]    (c) {you review};
+  \node[flowbox_us, right=of b]    (c) {we review};
   \node[flowbox, right=of c]        (d) {iterate};
   \draw[flowarrow] (a) -- (b);
   \draw[flowarrow] (b) -- (c);
   \draw[flowarrow] (c) -- (d);
   \draw[flowarrow] (d.south) -- ++(0,-0.7) -| (a.south);
-  \node[flowlabel, above=1mm of a] {yours};
-  \node[flowlabel, above=1mm of c] {yours};
+  \node[flowlabel, above=1mm of a] {Human};
+  \node[flowlabel, above=1mm of c] {Human};
 \end{tikzpicture}
 \end{center}
 \vs
 \begin{wideitemize}
-  \item The two boxes with your name on them are \yob{the entire job}.
+  \item The two boxes with our names on them are \yob{the entire job}.
   \item Everything we add today -- planning, verification, generalization --
         makes the instruction sharper, or makes review possible on output
-        \ybb{too large to read}.
+        that is \ybb{too large to read}.
 \end{wideitemize}
-\takeaway{Today you will sign off on a dataset of 37,197 rows without reading one of them.}
+\takeaway{For example, today we will sign off on a dataset of 37,197 rows without reading one of them.}
 \end{frame}
 
 % Why review is the hard half: it checks its own work.
@@ -135,7 +134,7 @@ An agent that lives in your terminal, inside your project directory.
 \vs
 \takeaway{A check that passes tells you about \ybb{the part it looked at}. It says nothing about the rest.}
 \begin{center}
-\yob{You will meet this four times this afternoon}, and it looks different every time.
+\yob{We are going to meet this four times this afternoon}, and it looks different every time.
 \end{center}
 \end{frame}
 
@@ -166,7 +165,7 @@ An agent that lives in your terminal, inside your project directory.
 \rowcolor{yaleblue!10} \quad \ybb{Break}, 10 minutes -- halfway through the project & \\
 \quad \textit{...the project continues}: generalize, then analyse & hands-on \\
 \textbf{3.} More useful concepts and tips & lecture \\
-\textbf{4.} Advanced usage examples & demo and Q\&A \\
+\textbf{4.} Advanced usage examples & demo \\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -176,14 +175,14 @@ laptop out and Claude Code installed. Work on your own or with the person
 next to you -- either is fine.
 \end{frame}
 
-% Install and access. Re-verify against docs.claude.com before teaching.
+% Install and access. 
 \begin{frame}{Basic setup}
 \begin{itemize}
   \item \ybb{Install} it, either way:
   \begin{itemize}
       \item With npm, if you have Node.js: \file{npm install -g @anthropic-ai/claude-code}
       \item Or the standalone installer, for Mac, Linux and Windows:
-            \file{code.claude.com/docs}
+            \yb{\url{code.claude.com/docs}}
   \end{itemize}
   \item \ybb{Then} \file{cd} into a project folder and type \file{claude}. That is all.
 \end{itemize}
@@ -192,7 +191,7 @@ next to you -- either is fine.
 \includegraphics[width=0.86\textwidth]{claude_code.png}
 \end{center}
 \vspace{-0.3em}
-{\small \yob{If your terminal does not look like this, fix it now}. The rest of
+{\small \yob{If your terminal doesn't look like this, fix it now}. The rest of
 the session assumes a working install.}
 \end{frame}
 
@@ -216,14 +215,14 @@ the session assumes a working install.}
 \end{frame}
 
 % Context window: what you see against what the model sees.
-\begin{frame}{Context window: You see two things, but the model sees all of it.}
+\begin{frame}{Context window: We see two things, but the agent sees all of it.}
 \begin{center}
 \includegraphics[width=0.7\textwidth]{context_window1.jpg}
 \end{center}
 \vspace{-0.6em}
 {\small A ``chat'' is one long document passed back and forth. System prompt, tool
 definitions, thinking, tool calls, results -- \ybb{all of it counts against your
-window}, and you see almost none of it.}
+window}, and we see almost none of it.}
 \source{Source: A Series on Claude Code by Paul Goldsmith-Pinkham.}
 \end{frame}
 
@@ -260,6 +259,6 @@ window}, and you see almost none of it.}
 \end{wideitemize}
 \vs
 \begin{center}
-\file{github.com/xuganchen/BootCamp-Introduction-to-Claude-Code}
+\yb{\url{github.com/xuganchen/BootCamp-Introduction-to-Claude-Code}}
 \end{center}
 \end{frame}

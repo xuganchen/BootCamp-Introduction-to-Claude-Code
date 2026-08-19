@@ -19,12 +19,12 @@ Step & What we build & The concept it forces \\
 
 \vs
 \begin{itemize}
-    \item Your parser is proven on \ybb{one} filing. A dataset is many.
+    \item The parser in step 1 works on \ybb{one} filing. A dataset is many.
     \begin{itemize}
         \item Today: generalize across quarters.
         \item Another dimension: generalize across BDCs.
     \end{itemize}
-    \item You package what you learned as a \ybb{skill}, then sweep the whole history.
+    \item We are going to package what we learned as a \ybb{skill}, then sweep the whole history.
     \item The deliverable of this step also includes a \ybb{coverage
           statement} that says what the panel does and does not contain.
 \end{itemize}
@@ -33,13 +33,14 @@ Step & What we build & The concept it forces \\
 % A script computes; a skill carries the judgment.
 \begin{frame}{A script computes. A skill carries the judgment.}
 \begin{wideitemize}
-  \item Wrong definition: \yo{``a script has the implementation, a skill has the prose.''}
+    \item Wrong definition: \yo{``a script has the implementation, a skill has the prose.''}
         Follow it and you rewrite 2,757 working lines for every new filer.
+    \item Right definition:
 \end{wideitemize}
 \takeaway{A skill is the map of (1) what is reusable, (2) what is not, and (3) how to tell the difference on an input it has not seen.}
 \begin{wideitemize}
-  \item It \ybb{points at} the pipeline and carries the boundary -- the thing that does not survive in code and has to be generalized.
-  \item Plus: how to detect which representation a filing uses, the acceptance criteria,
+    \item It \ybb{points at} the pipeline and carries the boundary -- the thing that does not survive in code and has to be generalized.
+    \item Plus: how to detect which representation a filing uses, the acceptance criteria,
         the traps with their signatures, and what it must \yob{never} do to make a check pass.
 \end{wideitemize}
 \end{frame}
@@ -60,7 +61,7 @@ Do not paste the engine into the skill. Point at it.
 % The skill it wrote.
 \begin{frame}[fragile]{The skill}
 \begin{center}
-\includegraphics[width=0.85\textwidth]{bdc_design_pharse2-3.png}
+\includegraphics[width=0.8\textwidth]{bdc_design_pharse2-3.png}
 \end{center}
 \end{frame}
 
@@ -69,9 +70,11 @@ Do not paste the engine into the skill. Point at it.
 \begin{prompt}
 /bdc-soi-parse ARCC prior 10-Q (2026-03-31)
 \end{prompt}
-\vs
+\begin{itemize}
+    \item The skill carries everything we learned in step 1 and transferred to other quarters.
+\end{itemize}
 \begin{center}
-\includegraphics[width=0.85\textwidth]{bdc_design_pharse2-6.png}
+\includegraphics[width=0.8\textwidth]{bdc_design_pharse2-6.png}
 \end{center}
 \end{frame}
 
@@ -84,8 +87,7 @@ Then assemble all successful filings into a single BDC-quarter panel and check t
 \begin{itemize}
     \item I ran it three times; each time it found new failures and fixed some of them.
     \item Pipeline grew 2,757 to 4,009 lines (+45\%); \file{trap\_log.md} reached 491 lines.
-    \item \ybb{50 of 88 filings (57\%)}, 37,197 positions;
-    \ybb{30 of 34} from 2018 onward; \ybb{14 of 14} from 2023 onward.
+    \item 37,197 positions; \ybb{30 of 34} from 2018 onward; \ybb{14 of 14} from 2023 onward.
 \end{itemize}
 
 \begin{center}
@@ -118,9 +120,9 @@ Sum of fair value (USD) & 29,349,300,000 & 29,349,300,000 \\
 \end{center}
 \vs
 \begin{wideitemize}
-  \item Byte-identical through \ybb{45 filings} of edits. It kept
-        a saved copy and diffed after every change.
-  \item It also recorded a bug it \ybb{introduced} during the backfill, and how that surfaced.
+    \item Byte-identical through \ybb{45 filings} of edits. 
+    \item It kept a saved copy and diffed after every change.
+    \item It also recorded a bug it \ybb{introduced} during the backfill.
 \end{wideitemize}
 \vs
 \takeaway{When you extend a model, make sure the thing you already trust does not move.}

@@ -15,7 +15,7 @@ Part 3. More useful concepts
     \item Manage your context window.
     \item Always have a way to verify outputs.
     \item Ask the LLM to take notes.
-    \item Be replicable: 22 minutes to author, 2 seconds to run.
+    \item Be replicable.
     \item Stay organized with your code, data, and notes.
 \end{enumerate}
 \end{frame}
@@ -27,7 +27,7 @@ Part 3. More useful concepts
     \item The best you can do is to allow-list broadly and stop reading.
     \item Which is tip 3 again, for a different reason: \ybb{always have a backup.}
     \item Mine is GitHub for code and Dropbox for data, and my own agents run on \ybb{a separate Mac Mini} -- a machine with limited access to my data that I can wipe.
-    \item The real question is not ``what may it do'' but \ybb{``what can it reach''}.
+    \item The real question is not ``what may it do'' but \yob{``what can it reach''}.
 \end{wideitemize}
 \end{frame}
 
@@ -35,8 +35,7 @@ Part 3. More useful concepts
 \begin{frame}{Dev containers are the real alternative}
 \begin{wideitemize}
     \item Cost: Docker, a config file, and a slower first run. Windows needs WSL2.
-    \item Isolation is about \ybb{what is reachable}. It says nothing about what the
-        agent does with what it can reach.
+    \item Isolation is about \ybb{what is reachable}. 
     \item See ``\#7 Permissions, Sandboxes, and Autonomous Agents'' in \emph{A Series on Claude Code}, by Paul Goldsmith-Pinkham.
 \end{wideitemize}
 \end{frame}

@@ -14,8 +14,8 @@ Part 4. Advanced usage examples
 \toprule
 Demo & Axis it adds & Where Part 2 stopped \\
 \midrule
-GBrain    & Retrieval that is \emph{indexed} & Step 3 attached sample docs by hand \\
 TravelTab + PetTab & The pipeline becomes \emph{software} & We shipped a report, not a system \\
+GBrain    & Retrieval that is \emph{indexed} & Step 3 attached sample docs by hand \\
 NanoClaw  & The agent has an \emph{address}  & You were always at the terminal \\
 \bottomrule
 \end{tabular}
@@ -24,30 +24,10 @@ NanoClaw  & The agent has an \emph{address}  & You were always at the terminal \
 Nothing here is a new tool. It is the same agent, moved one step along one axis.
 \end{frame}
 
-% GBrain: indexed retrieval over a corpus you own.
-\begin{frame}{GBrain: personal-knowledge brain}
-\begin{columns}[T]
-\begin{column}{0.5\textwidth}
-\includegraphics[width=\textwidth]{gbrain1.png}
-\includegraphics[width=\textwidth]{gbrain2.png}
-\includegraphics[width=\textwidth]{gbrain3.png}
-\end{column}
-\begin{column}{0.5\textwidth}
-\vs
-\begin{itemize}
-    \item \ybb{GBrain} indexes a corpus you own -- meeting notes, summaries, Notion --
-        and exposes it to the agent as a tool it can query.
-    \item The key idea: it (1) searches the corpus, (2) reads the hits for you, and (3) writes the answer.
-    \item {\small \url{github.com/garrytan/gbrain}}
-\end{itemize}
-\end{column}
-\end{columns}
-\end{frame}
-
 % TravelTab, 1 of 4: the background, as an annoyance.
 \begin{frame}{TravelTab: personal-database management}
 \begin{wideitemize}
-  \item I travel between New Haven and Philadelphia constantly, and Amtrak is
+  \item Background: I travel between New Haven and Philadelphia constantly, and Amtrak is
         the only workable way to do it. The app is painful, it does not talk to my
         calendar, \ybb{the ticket arrives once by email and sometimes it is gone}, and
         the pricing is dynamic.
@@ -60,6 +40,7 @@ Nothing here is a new tool. It is the same agent, moved one step along one axis.
             manage.
       \item \ylbb{Fare watch} that checks prices and alerts me.
   \end{enumerate}
+  \item I can access it from anywhere, on any device, with a web browser.
 \end{wideitemize}
 \end{frame}
 
@@ -107,7 +88,7 @@ This is what the database bought: it tells me how often I have been travelling.
 \end{columns}
 \vs
 \begin{itemize}
-    \item Background: I have two cats, Winnie and Dory, and I want to track their health and behaviour. Existing tools are too complicated, and I want full control over the data.
+    \item Background: I have two cats, Winnie and Dory, and I want to track their health and bahavior. Existing tools are too complicated, and I want full control over the data.
     \item So I built \ybb{PetTab}, a pet-health logger built on TravelTab's stack.
 \end{itemize}
 \end{frame}
@@ -122,19 +103,37 @@ This is what the database bought: it tells me how often I have been travelling.
 % PetTab, 3 of 3: an agent inside the product, on a read-only snapshot.
 \begin{frame}{PetTab: a chat agent inside the product}
 \begin{columns}[T]
-\begin{column}{0.45\textwidth}
+\begin{column}{0.55\textwidth}
 \begin{center}
-\includegraphics[height=0.75\textheight]{pettab_chat.png}
+\includegraphics[height=\textwidth]{pettab_chat.png}
 \end{center}
 \end{column}
-\begin{column}{0.55\textwidth}
+\begin{column}{0.45\textwidth}
 \vs
 \begin{itemize}
-    \item The key difference: the agent is embedded in the product itself.
+    \item An agent is embedded within the product.
     \item PetTab's Insights chat runs the \file{claude} CLI over a
-        \ybb{read-only snapshot} of the database, so that it can explore the recent behavior and health history of the cats, and give me suggestions on what to do next.
-    \item Each chat gets its own working directory holding that read-only copy, restricted tools, a lock that
-        serialises turns, and admin-only access.
+        \ybb{read-only snapshot} of the database, so that it can explore the database and give me suggestions or help me manage the reminders.
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+% GBrain: indexed retrieval over a corpus you own.
+\begin{frame}{GBrain: personal-knowledge brain}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\includegraphics[width=\textwidth]{gbrain1.png}
+\includegraphics[width=\textwidth]{gbrain2.png}
+\includegraphics[width=\textwidth]{gbrain3.png}
+\end{column}
+\begin{column}{0.5\textwidth}
+\vs
+\begin{itemize}
+    \item \ybb{GBrain} indexes a corpus you own -- meeting notes, summaries, Notion --
+        and exposes it to the agent as a tool it can query.
+    \item The key idea: it (1) searches the corpus, (2) reads the hits for you, and (3) writes the answer.
+    \item {\small \yb{\url{github.com/garrytan/gbrain}}}
 \end{itemize}
 \end{column}
 \end{columns}
@@ -155,7 +154,7 @@ This is what the database bought: it tells me how often I have been travelling.
     \item Every minute so far had you at a terminal, driving. Same tool -- reached
     by sending it a message.
     \item A personal-scale project: one process and a handful of files, running in a Linux container.
-    \item {\small\url{github.com/nanocoai/nanoclaw}}
+    \item {\small\yb{\url{github.com/nanocoai/nanoclaw}}}
 \end{itemize}
 \end{column}
 \end{columns}
@@ -164,8 +163,8 @@ This is what the database bought: it tells me how often I have been travelling.
 % Where to go next, and the repo link.
 \begin{frame}{Where to go next}
 \begin{itemize}
-    \item Try to use it in your own projects and daily life as much as possible. 
-    \item Brainstorm your ideas, and then build them.
+    \item Try to use it in your own projects and daily life \yob{as much as possible}. 
+    \item Brainstorm your ideas, and then \yob{build them}.
 \end{itemize}
 
 Other useful resources:
