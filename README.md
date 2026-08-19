@@ -41,7 +41,7 @@ Each step introduces the concept it needs, at the point the work demands it.
 | Path | What |
 |---|---|
 | `project/` | The hands-on project. **Start here.** |
-| `slides/` | The deck (`slide.pdf`, 82 pages) and its full LaTeX source |
+| `slides/` | The deck (`slide.pdf`) and its full LaTeX source |
 | `syllabus/` | The session syllabus |
 
 ## No code ships here
