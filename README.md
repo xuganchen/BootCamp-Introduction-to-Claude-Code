@@ -26,11 +26,11 @@ build one with the agent in class.
 | Block | What |
 |---|---|
 | Part 1 | Where AI fits in a finance research workflow; a tour of Claude Code |
-| Step 0 | Naive baseline: one prompt, three runs, three passing checks, one broken dataset |
-| Step 1 | Write a spec, then build. Plan mode; sub-agents for independent verification |
+| Part 2 - Step 0 | Naive baseline: one prompt, three runs, three passing checks, one broken dataset |
+| Part 2 - Step 1 | Write a spec, then build. Plan mode; sub-agents for independent verification |
 | Break | |
-| Step 2 | Generalize across quarters. Skills; the tie-out as a test suite |
-| Step 3 | Analysis and report. Grounding in your own references |
+| Part 2 - Step 2 | Generalize across quarters. Skills; the tie-out as a test suite |
+| Part 2 - Step 3 | Analysis and report. Grounding in your own references |
 | Part 3 | Working tips revisited, transfer, AI safety |
 | Part 4 | Advanced usage demos and Q&A |
 
