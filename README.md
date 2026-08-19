@@ -23,16 +23,16 @@ build one with the agent in class.
 
 ## Agenda
 
-| Block | Time | What |
-|---|---|---|
-| Part 1 | 20m | Where AI fits in a finance research workflow; a tour of Claude Code |
-| Step 0 | 15m | Naive baseline: one prompt, three runs, three passing checks, one broken dataset |
-| Step 1 | 30m | Write a spec, then build. Plan mode; sub-agents for independent verification |
-| Break | 10m | |
-| Step 2 | 30m | Generalize across quarters. Skills; the tie-out as a test suite |
-| Step 3 | 23m | Analysis and report. Grounding in your own references |
-| Part 3 | 28m | Working tips revisited, transfer, AI safety |
-| Part 4 | 24m | Advanced usage demos and Q&A |
+| Block | What |
+|---|---|
+| Part 1 | Where AI fits in a finance research workflow; a tour of Claude Code |
+| Step 0 | Naive baseline: one prompt, three runs, three passing checks, one broken dataset |
+| Step 1 | Write a spec, then build. Plan mode; sub-agents for independent verification |
+| Break | |
+| Step 2 | Generalize across quarters. Skills; the tie-out as a test suite |
+| Step 3 | Analysis and report. Grounding in your own references |
+| Part 3 | Working tips revisited, transfer, AI safety |
+| Part 4 | Advanced usage demos and Q&A |
 
 Each step introduces the concept it needs, at the point the work demands it.
 
