@@ -46,7 +46,7 @@ Step & What we build & The concept it forces \\
 \end{frame}
 
 % The prompt that writes the skill, with the repair loop in it.
-\begin{frame}[fragile]{\yob{LAB: }Prompt: package the seam, with a repair loop}
+\begin{frame}[fragile]{\yob{LAB \#4: }Prompt: package the seam, with a repair loop}
 \begin{prompt}[basicstyle=\scriptsize\ttfamily\color{white}]
 Read code/, note/trap_log.md and note/parsing_decisions.md.
 
@@ -66,7 +66,7 @@ Do not paste the engine into the skill. Point at it.
 \end{frame}
 
 % Parameterize: the same skill, a different quarter.
-\begin{frame}[fragile]{Prompt: parameterize, then sweep}
+\begin{frame}[fragile]{\yob{LAB \#5: }Prompt: parameterize, then sweep}
 \begin{prompt}
 /bdc-soi-parse ARCC prior 10-Q (2026-03-31)
 \end{prompt}
@@ -79,7 +79,7 @@ Do not paste the engine into the skill. Point at it.
 \end{frame}
 
 % Sweep every filing. Coverage table and what stopped it.
-\begin{frame}[fragile]{Prompt: parameterize, then sweep}
+\begin{frame}[fragile]{\yob{LAB \#6: }Prompt: parameterize, then sweep}
 \begin{prompt}[basicstyle=\scriptsize\ttfamily\color{white}]
 /bdc-soi-parse every 10-K and 10-Q ARCC has filed with a period end on or after 2023-01-01. Work oldest to newest so failures cluster visibly.
 Then assemble all successful filings into a single BDC-quarter panel and check that (cik, period_end) is unique. Report what you find before fixing it.

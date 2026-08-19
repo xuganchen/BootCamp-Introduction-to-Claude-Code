@@ -26,22 +26,25 @@ Nothing here is a new tool. It is the same agent, moved one step along one axis.
 
 % TravelTab, 1 of 3: the background, as an annoyance.
 \begin{frame}{TravelTab: personal-database management}
-\begin{wideitemize}
-  \item Background: I travel between New Haven and Philadelphia constantly, and Amtrak is
-        the only workable way to do it. The app is painful, it does not talk to my
+\begin{itemize}
+    \item Background: I travel between New Haven and Philadelphia constantly, and Amtrak is
+        the only workable way to do it. The app is clunky, it does not talk to my
         calendar, \ybb{the ticket arrives once by email and sometimes it is gone}, and
         the pricing is dynamic.
-  \item So I built \ybb{TravelTab}, a personal Amtrak ticket tracker:
-  \begin{enumerate}\small
-      \item \ylbb{Ingests tickets automatically from my email.}
-      \item \ylbb{Exports structured records into a database}: one row per
+    \item My old routine: dig each ticket out of my inbox, save it, and copy the trip
+        into my calendar by hand; and often \yob{pay twice what the
+        same seat had cost a week earlier}.
+    \item So I built \ybb{TravelTab}, a personal Amtrak tracker that manages my trips \yob{automatically}:
+    \begin{enumerate}\small
+        \item \ylbb{Ingests tickets automatically from my email.}
+        \item \ylbb{Exports structured records into a database}: one row per
             passenger per ticket.
-      \item \ylbb{Syncs into my calendar}, so a trip is something I can actually
+        \item \ylbb{Syncs into my calendar}, so a trip is something I can actually
             manage.
-      \item \ylbb{Fare watch} that checks prices and alerts me.
-  \end{enumerate}
-  \item I can access it from anywhere, on any device, with a web browser.
-\end{wideitemize}
+        \item \ylbb{Fare watch} that checks prices and alerts me.
+    \end{enumerate}
+    \item Now I just book a trip, and it's done. I can reach it \yob{from anywhere on any device}.
+\end{itemize}
 \end{frame}
 
 % TravelTab, 2 of 3: the tickets dashboard.
@@ -63,7 +66,7 @@ records out.
 \ybb{Fare watchlist} that checks prices on a schedule and alerts me on a threshold.
 \end{frame}
 
-% PetTab, 1 of 3: same stack, another domain.
+% PetTab, 1 of 4: same stack, another domain.
 \begin{frame}{PetTab: another domain, same stack}
 \begin{columns}[T]
 \begin{column}{0.5\textwidth}
@@ -79,19 +82,40 @@ records out.
 \end{columns}
 \vs
 \begin{itemize}
-    \item Background: I have two cats, Winnie and Dory, and I want to track their health and bahavior. Existing tools are too complicated, and I want full control over the data.
+    \item Background: I have two cats, Winnie and Dory, and I want to track their health and behaviour. Existing tools are too complicated, and I want full control over the data.
     \item So I built \ybb{PetTab}, a pet-health logger built on TravelTab's stack.
 \end{itemize}
 \end{frame}
 
-% PetTab, 2 of 3: the data views.
+% PetTab, 2 of 4: logging an event, the whole flow in three taps.
+\begin{frame}{PetTab: easy to use in 3 clicks}
+\begin{columns}[T]
+\begin{column}{0.33\textwidth}
+\centering
+\includegraphics[height=0.8\textheight]{pettab_action1.png}\\[0.3em]
+{\small \ybb{1. Tap what happened.}}
+\end{column}
+\begin{column}{0.33\textwidth}
+\centering
+\includegraphics[height=0.8\textheight]{pettab_action2.png}\\[0.3em]
+{\small \ybb{2. Tap which cat.}}
+\end{column}
+\begin{column}{0.33\textwidth}
+\centering
+\includegraphics[height=0.8\textheight]{pettab_action3.png}\\[0.3em]
+{\small \ybb{3. Logged, and editable.}}
+\end{column}
+\end{columns}
+\end{frame}
+
+% PetTab, 3 of 4: the data views.
 \begin{frame}{PetTab: visualizing the data}
 \begin{center}
-\includegraphics[width=0.9\textwidth]{pettab_list.png}
+\includegraphics[width=0.87\textwidth]{pettab_list.png}
 \end{center}
 \end{frame}
 
-% PetTab, 3 of 3: an agent inside the product, on a read-only snapshot.
+% PetTab, 4 of 4: an agent inside the product, on a read-only snapshot.
 \begin{frame}{PetTab: a chat agent inside the product}
 \begin{columns}[T]
 \begin{column}{0.55\textwidth}
@@ -131,7 +155,7 @@ records out.
 \end{frame}
 
 % NanoClaw: an agent you reach rather than launch.
-\begin{frame}{An agent with an address}
+\begin{frame}{NanoClaw: an agent with an address}
 \begin{columns}[T]
 \begin{column}{0.5\textwidth}
 \begin{center}
@@ -163,7 +187,6 @@ Other useful resources:
     \item \yb{Agent Skills with Anthropic} -- DeepLearning.AI short course
     \item \yb{Finance skill plugins} by Anthropic 
     \item A collection of resources on AI tools: \yb{\url{www.xuganchen.com/public-goods}}
-    \item Alternatively, ask AI to build it for you.
 \end{itemize}
 
 \vs
