@@ -8,7 +8,7 @@ Read code/, note/trap_log.md and note/parsing_decisions.md.
 First, tell me which parts of this pipeline are filer-agnostic and which encode
 something specific to this BDC. Quote the lines.
 
-Then write .claude/skills/bdc-soi-parse/SKILL.md so that an agent facing a BDC or
+Then write skill bdc-soi-parse so that an agent facing a BDC or
 a quarter we have never parsed knows: what to reuse unchanged, what to extend and
 how, how to detect which representation a filing uses, the acceptance criteria,
 and each trap with the signature that detects it. It must also say how to repair
