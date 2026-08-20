@@ -66,6 +66,7 @@ Instructor: & Xugan Chen \\
 Email: & \href{mailto:xugan.chen@yale.edu}{xugan.chen@yale.edu} \\
 Meeting time / location: & TBD. \\
 Duration: & 3 hours, one 10-minute break \\
+Assessment: & None. No homework, no grading. \\
 \end{tabular}
 
 Course materials: \url{https://github.com/xuganchen/BootCamp-Introduction-to-Claude-Code}
@@ -75,12 +76,14 @@ Course materials: \url{https://github.com/xuganchen/BootCamp-Introduction-to-Cla
 
 This is a hands-on, finance-applied working session that introduces students to AI-assisted workflows for finance and data analysis. The goal is to move students from "I have Claude Code installed" to "I can delegate a bounded asset-management task to it and verify the result is correct."
 
-The session builds on the pre-work (DataCamp modules and the Paul Goldsmith-Pinkham series). It opens with a short introduction to AI-assisted workflows and Claude Code, then turns to an in-class mini-project that applies agentic coding to a real asset-management task: building a private credit dataset from raw SEC filings and analyzing it. The project runs in four steps, and each step introduces the concept it needs (plan mode and sub-agents, skills, RAGs) at the point the work demands it, rather than as a separate lecture. From there we generalize those patterns beyond the project and cover AI safety. It closes with a few advanced-usage examples of my own to show what is possible beyond the basics.
+The session builds on the pre-work (DataCamp modules and the Paul Goldsmith-Pinkham series). It opens with a short introduction to AI-assisted workflows and Claude Code, then turns to an in-class mini-project that applies agentic coding to a real asset-management task: building a private credit dataset from raw SEC filings and analyzing it. The project runs in four steps, and each step introduces the concept it needs (plan mode and sub-agents, skills, grounding and retrieval) at the point the work demands it, rather than as a separate lecture. From there we generalize those patterns beyond the project and cover AI safety. It closes with a few advanced-usage examples, most of them my own projects, to show what is possible beyond the basics.
 
 % ---------- Prerequisite ------------------------------------------------------------------------------
 \section*{Prerequisite}
 
-Have Claude Code installed and ready before the session: we will work and experiment on the mini-project described below together. For install details, see \href{https://paulgp.substack.com/p/getting-started-with-claude-code}{Getting Started with Claude Code} in Paul Goldsmith-Pinkham's series.
+Have a terminal agent installed and running before the session: we will work and experiment on the mini-project described below together. \href{https://github.com/xuganchen/BootCamp-Introduction-to-Claude-Code/blob/main/SETUP.md}{SETUP.md} in the course repository walks through it in about ten minutes and gives two options, one of them free for students. Claude Code is what will be on the screen; Google's Antigravity CLI also works. 
+
+Setup instructions: \url{https://github.com/xuganchen/BootCamp-Introduction-to-Claude-Code/blob/main/SETUP.md}
 
 % ---------- Session outline -------------------------------------------------------------------------
 \section*{Session Outline}
@@ -98,6 +101,8 @@ An in-class mini-project that builds a private credit research dataset from raw 
   \item \textbf{Dataset:} SEC EDGAR filings. Free, public, and requiring no credentials or licensing. You pick your own BDC, and parse from 2023-01-01 onward. A reference panel is released at Step 3, so the analysis works regardless of how far your own parser gets.
   \item \textbf{Deliverable, identical for everyone:} a \emph{BDC-quarter} panel (fund level: NAV, leverage, yield, non-accruals, portfolio size) and a \emph{BDC-quarter-investment} panel (position level: borrower, seniority, spread, maturity, cost, fair value), both built from the Schedule of Investments.
 \end{itemize}
+Nothing executable is provided: you write the downloader, the parser and the verification check yourself, with the agent. That is the session. What you get instead is the target schema, the EDGAR ground rules, every prompt used in class, and the reference panels.
+
 The project runs in four steps. Each step introduces the concept it needs, at the point the work demands it.
 \begin{itemize}
   \item \textbf{Step 0. Naive baseline.} One short prompt, run three times across models and effort levels. All three invent a balance-sheet tie-out unasked and pass it, the three schemas cannot be pooled, and one of them is broken in a way its own passing check cannot see. \emph{Concept:} a passing check is only as good as its scope, and you did not choose that scope.
@@ -126,11 +131,11 @@ With the project having made the difficulties concrete, we generalize beyond it.
 \end{itemize}
 
 \subsection*{4. Advanced Usage Examples}
-A sense of what is possible beyond the basics:
+A sense of what is possible beyond the basics, time permitting:
 \begin{itemize}
-  \item \textbf{Personal database management:} \emph{TravelTab}, a self-hosted Amtrak ticket tracker that auto-imports tickets from email, exports structured records to a searchable dashboard, syncs to a calendar, and watches fares on a schedule.
+  \item \textbf{Personalized ``brain'':} indexed retrieval over a corpus you own, picking up where Step 3's grounding left off (GBrain, by Garry Tan, \url{https://github.com/garrytan/gbrain}).
+  \item \textbf{Personal database management:} \emph{TravelTab}, a self-hosted Amtrak ticket tracker that auto-imports tickets from email, exports structured records to a searchable dashboard, syncs to a calendar, and watches fares on a schedule. The ingest is this session's project in miniature: messy documents in, structured records out.
   \item \textbf{The same stack in another domain:} \emph{PetTab}, a pet-health logger built on TravelTab's architecture, with an agent embedded in the product that answers questions over a read-only snapshot of the database.
-  \item \textbf{Personalized ``brain'':} indexed retrieval over a corpus you own (GBrain, \url{https://github.com/garrytan/gbrain}).
   \item \textbf{An agent with an address:} an agent in a Linux container, reached from WhatsApp, Slack, Telegram or email (NanoClaw, \url{https://github.com/nanocoai/nanoclaw}).
 \end{itemize}
 

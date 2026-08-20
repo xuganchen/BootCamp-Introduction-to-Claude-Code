@@ -8,11 +8,11 @@ research panels. The throughline is judgment, not syntax.
 
 ## Before class
 
-1. Install Claude Code and confirm it runs on your own laptop. Follow
-   [docs.claude.com](https://docs.claude.com/en/docs/claude-code/overview), or
-   Paul Goldsmith-Pinkham's
-   [Getting Started with Claude Code](https://paulgp.substack.com/p/getting-started-with-claude-code).
-   Windows needs WSL. Do this early: setup friction is what eats class time.
+1. Get a terminal agent running on your own laptop. **[SETUP.md](SETUP.md)** has
+   two options, and one of them is free for students. Do this early: setup
+   friction is what eats class time. Paul Goldsmith-Pinkham's
+   [Getting Started with Claude Code](https://paulgp.substack.com/p/getting-started-with-claude-code)
+   is good optional background.
 2. Clone this repo:
    ```
    git clone https://github.com/xuganchen/BootCamp-Introduction-to-Claude-Code.git
@@ -40,6 +40,7 @@ Each step introduces the concept it needs, at the point the work demands it.
 
 | Path | What |
 |---|---|
+| `SETUP.md` | Get an agent running before class. **Do this first.** |
 | `project/` | The hands-on project. **Start here.** |
 | `slides/` | The deck (`slide.pdf`) and its full LaTeX source |
 | `syllabus/` | The session syllabus |
