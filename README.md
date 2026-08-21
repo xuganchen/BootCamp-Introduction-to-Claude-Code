@@ -8,18 +8,17 @@ research panels. The throughline is judgment, not syntax.
 
 ## Before class
 
-1. Get a terminal agent running on your own laptop. **[SETUP.md](SETUP.md)** has
-   two options, and one of them is free for students. Do this early: setup
-   friction is what eats class time. Paul Goldsmith-Pinkham's
-   [Getting Started with Claude Code](https://paulgp.substack.com/p/getting-started-with-claude-code)
-   is good optional background.
-2. Clone this repo:
-   ```
-   git clone https://github.com/xuganchen/BootCamp-Introduction-to-Claude-Code.git
-   ```
+Get a terminal agent running on your own laptop. **[SETUP.md](SETUP.md)** has
+two options, including:
+- **Option 1, Antigravity CLI: free for students. Recommended. Start here.** Obtain 
+the student plan of Google AI Pro at [gemini.google/students](https://gemini.google/students/)
+and install it from [Antigravity CLI](https://antigravity.google/download#antigravity-cli).
+- **Option 2, Claude Code: paid subscription.** It is what will be on the screen, and
+it gives you the more advanced models. Install it from [Claude Code](https://code.claude.com/docs/en/setup).
 
-That is the whole pre-work. You do not need a Python environment in advance; we
-build one with the agent in class.
+Paul Goldsmith-Pinkham's
+[Getting Started with Claude Code](https://paulgp.substack.com/p/getting-started-with-claude-code)
+is good optional background.
 
 ## Agenda
 
