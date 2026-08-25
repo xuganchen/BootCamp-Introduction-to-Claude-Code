@@ -20,6 +20,25 @@ Raw filings are not included. They are public on EDGAR and each run re-downloads
 what it needs. Panels ship as `.csv` only: both full runs also wrote `.parquet`
 renders of every panel, which are the same numbers again.
 
+## What is here
+
+| Folder | Approach | Agent |
+|---|---|---|
+| `naive_prompt-opus5-xhigh` | Step 0. One sentence, nothing specified | Claude Code, Opus 5, xhigh effort |
+| `naive_prompt-opus5-medium` | Step 0. The same prompt, unchanged | Claude Code, Opus 5, medium effort |
+| `naive_prompt-sonnet5-medium` | Step 0. The same prompt, unchanged | Claude Code, Sonnet 5, medium effort |
+| **`full_prompt-opus5-xhigh`** | Steps 1 to 3. `plan_v0.md`, then plan mode, sub-agents, a skill, the report | Claude Code, Opus 5, xhigh effort |
+| `full_prompt-gemini-flash` | Steps 1 and 2. The same `plan_v0.md`, byte for byte | Antigravity, Gemini Flash |
+
+**`full_prompt-opus5-xhigh` is the main run**, and the one to read first. It is
+what the slides follow from Step 1 onward, and its Step 2 panel is the reference
+panel shipped in `../output/`.
+
+Two comparisons are set up here, and each holds one thing constant. The three
+Step 0 runs share a prompt and differ only in the agent. The two full runs share
+`plan_v0.md`, byte for byte, and differ only in the agent. The sections below
+take each in turn.
+
 ## `naive_prompt-*/` -- one prompt, three configurations
 
 Run unchanged on 2026-08-16. The prompt is in `../prompts/step0_naive.md`.

@@ -49,22 +49,6 @@ A second free check is worth finding on your own: every 10-Q reports two dates,
 and the prior-period column of one filing must match the current column of the
 filing before it.
 
-## A known bug in the reference panel
-
-`output/bdc_quarter_investment.csv` carries one, on purpose. `is_non_accrual`
-returns **zero flags for the quarters ending 2022-12-31, 2023-12-31 and
-2024-12-31**, where every neighbouring quarter carries 13 to 23. Those three are
-fiscal-year 10-Ks containing a second, earlier footnote legend belonging to a
-joint-venture table, and the parser takes the first legend it finds.
-
-If you plot non-accruals over time from this panel, you will draw three holes and
-they are not real. It is shipped unfixed because it is the best artifact in the
-project: sixteen verification checks passed over it, since the broken field is a
-boolean and no dollar tie-out reaches a boolean. Step 3's analysis is what caught
-it.
-
-Every other field is unaffected. Details in `instructor-build/README.md`.
-
 ## Things that will bite you
 
 Real properties of the filings, not exercises we invented.
@@ -80,15 +64,6 @@ Real properties of the filings, not exercises we invented.
 9. **Equity positions** carry share counts instead of principal.
 10. **Foreign currency loans** priced off SONIA or EURIBOR rather than SOFR.
 
-## EDGAR ground rules
-
-Your downloader must follow these or SEC will refuse it.
-
-- Declare a `User-Agent` header identifying you, e.g. `Your Name your@email`.
-  Requests without one get a 403.
-- Stay under 10 requests per second.
-- Cache locally. Filings never change once filed, so download each one once.
-
 ## Folders
 
 | Path | What |
@@ -97,9 +72,42 @@ Your downloader must follow these or SEC will refuse it.
 | `output/` | The reference panels, so Step 3 works however far your parser got |
 | `instructor-build/` | My own implementation, all four steps, published in full |
 
-The two CSVs in `output/` are the **reference** panels, mine. They are here so
-Step 3 works even if your parser stalled. Overwrite them with your own once yours
-tie out, or keep both and point Step 3 at whichever you trust.
+### `prompts/`
+
+Four files, one per step, in run order: `step0_naive.md`, `step1_spec.md`,
+`step2_skill.md`, `step3_analysis.md`. Each is the prompt as it was actually
+typed, against Ares Capital (ARCC), so substitute your own ticker and dates
+before you run it.
+
+The wording is reproduced verbatim, typos included. These are quotations, not
+templates, and the slides quote the same files, so changing one here means
+changing the slide too. `prompts/README.md` is the index.
+
+### `output/`
+
+The two CSVs here are the **reference** panels, mine. They are here so Step 3
+works even if your parser stalled. Overwrite them with your own once yours tie
+out, or keep both and point Step 3 at whichever you trust.
+
+### `instructor-build/`
+
+Published on purpose, and a trap if you use it wrong. Read
+`full_prompt-opus5-xhigh/note/` -- the trap log and the coverage report --
+before you read a line of its code. Copying the parser gets you a panel and
+teaches you nothing; the notes are where the judgment is.
+
+| Folder | Approach | Agent |
+|---|---|---|
+| `naive_prompt-opus5-xhigh` | Step 0. One sentence, nothing specified | Claude Code, Opus 5, xhigh effort |
+| `naive_prompt-opus5-medium` | Step 0. The same prompt, unchanged | Claude Code, Opus 5, medium effort |
+| `naive_prompt-sonnet5-medium` | Step 0. The same prompt, unchanged | Claude Code, Sonnet 5, medium effort |
+| `full_prompt-opus5-xhigh` | Steps 1 to 3. `plan_v0.md`, then plan mode, sub-agents, a skill, the report | Claude Code, Opus 5, xhigh effort |
+| `full_prompt-gemini-flash` | Steps 1 and 2. The same `plan_v0.md`, byte for byte | Antigravity, Gemini Flash |
+
+The three Step 0 runs differ only in the agent, and so do the two full runs. Both
+comparisons are published for reading, not for copying.
+
+### Your own work
 
 Your own work goes in folders you create alongside them. The Step 1 spec asks for
 this layout, and it is not decoration: the Step 2 prompt reads `note/` back before
@@ -110,14 +118,6 @@ it does anything.
 | `code/` | Numbered modules in run order: `bdc_01_resolve.py` ... `run_all.py` |
 | `output/` | Your panels, then Step 3's figures, tables and report |
 | `note/` | `coverage.md`, `trap_log.md`, `parsing_decisions.md` |
-
-`instructor-build/` is published on purpose and is a trap if you use it wrong.
-Read `instructor-build/full_prompt-opus5-xhigh/note/` -- the trap log and the
-coverage report -- before you read a line of its code. Copying the parser gets
-you a panel and teaches you nothing; the notes are where the judgment is.
-
-It also holds `full_prompt-gemini-flash/`: the same `plan_v0.md` run by a
-different agent, published for comparison rather than for copying.
 
 Step 3 grounds the report's style in three published private-markets research
 reports (McKinsey, NVCA, PitchBook). They are third-party and not redistributed
