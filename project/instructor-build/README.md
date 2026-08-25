@@ -6,26 +6,26 @@ the pipeline from Steps 1 to 3.
 **Every line here was written by the agent, and none of it was edited by hand.**
 The code, the tests, the notes and the report are the agent's output exactly as it
 landed. The only files I wrote myself are the prompts in `../prompts/` and the
-26-line `full/plan_v0.md`. Nothing was cleaned up afterwards: the notes have gaps,
-and a real bug survives in the pipeline (below). That is the artifact -- what this
-workflow actually produces, not a tidied version of it.
+26-line `full-opus5-xhigh/plan_v0.md`. Nothing was cleaned up afterwards: the
+notes have gaps, and a real bug survives in the pipeline (below). That is the
+artifact -- what this workflow actually produces, not a tidied version of it.
 
 **Read the outputs and the notes. Leave the code alone until you have written your
-own.** Copying `full/code/` costs you the two things the session teaches: noticing
-that a check is needed, and building it.
+own.** Copying `full-opus5-xhigh/code/` costs you the two things the session
+teaches: noticing that a check is needed, and building it.
 
 Raw filings are not included. They are public on EDGAR and each run re-downloads
 what it needs.
 
-## `phase0/` -- one prompt, three configurations
+## `naive-*/` -- one prompt, three configurations
 
 Run unchanged on 2026-08-16. The prompt is in `../prompts/step0_naive.md`.
 
 | Run | Model | Effort | Parser | Columns in the investment table |
 |---|---|---|---|---|
-| `opus5-xhigh` | Opus 5 | xhigh | 803 lines, 1 file | 44 |
-| `opus5-medium` | Opus 5 | medium | 526 lines, 2 files | 22 |
-| `sonnet5-medium` | Sonnet 5 | medium | 504 lines, 2 files | 26 |
+| `naive-opus5-xhigh` | Opus 5 | xhigh | 803 lines, 1 file | 44 |
+| `naive-opus5-medium` | Opus 5 | medium | 526 lines, 2 files | 22 |
+| `naive-sonnet5-medium` | Sonnet 5 | medium | 504 lines, 2 files | 26 |
 
 All three picked Ares Capital (ARCC), parsed the inline XBRL rather than the
 rendered tables, invented a balance-sheet tie-out nobody asked for, and passed it
@@ -33,13 +33,13 @@ at 0.001 percent on both dates.
 
 Open the three investment CSVs side by side. The column names barely overlap, so
 the three cannot be pooled. Then count distinct borrowers at 2025-12-31: two runs
-give 580, `opus5-medium` gives **1,409, one per row**, with the instrument type
-concatenated into the borrower name and the type field empty. It still ties out
-exactly.
+give 580, `naive-opus5-medium` gives **1,409, one per row**, with the
+instrument type concatenated into the borrower name and the type field empty.
+It still ties out exactly.
 
 Each run's `README.md` is what that agent wrote about its own output, unedited.
 
-## `full/` -- the pipeline, Steps 1 to 3
+## `full-opus5-xhigh/` -- the pipeline, Steps 1 to 3
 
 | Path | What |
 |---|---|
@@ -57,11 +57,11 @@ for every exclusion. The panels are in `../output/`, not duplicated here.
 
 ## What this report is not
 
-`full/output/analysis/` is a 53-page report on one BDC's portfolio, and it looks
-like equity research. It is not. No human analyst wrote, reviewed or checked it;
-an agent produced it in one turn from the panels in `../output/`, and it inherits
-the parsing bug described below. It is here as evidence of what the workflow
-produces, nothing more.
+`full-opus5-xhigh/output/analysis/` is a 53-page report on one BDC's portfolio,
+and it looks like equity research. It is not. No human analyst wrote, reviewed
+or checked it; an agent produced it in one turn from the panels in `../output/`,
+and it inherits the parsing bug described below. It is here as evidence of what
+the workflow produces, nothing more.
 
 It is not investment advice, not a recommendation, and not affiliated with or
 endorsed by Ares Capital Corporation or Yale University. Do not cite it, forward
