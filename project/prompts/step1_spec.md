@@ -3,7 +3,7 @@
 ## 1. Write `plan_v0.md` yourself, before prompting anything
 
 26 lines: objective, deliverables, folder structure, acceptance criteria. Verbatim
-at `../instructor-build/full-opus5-xhigh/plan_v0.md`.
+at `../instructor-build/full_prompt-opus5-xhigh/plan_v0.md`.
 
 The acceptance criteria are the part that does the work:
 

@@ -112,7 +112,7 @@ it does anything.
 | `note/` | `coverage.md`, `trap_log.md`, `parsing_decisions.md` |
 
 `instructor-build/` is published on purpose and is a trap if you use it wrong.
-Read `instructor-build/full-opus5-xhigh/note/` -- the trap log and the
+Read `instructor-build/full_prompt-opus5-xhigh/note/` -- the trap log and the
 coverage report -- before you read a line of its code. Copying the parser gets
 you a panel and teaches you nothing; the notes are where the judgment is.
 
