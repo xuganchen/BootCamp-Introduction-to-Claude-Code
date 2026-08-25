@@ -116,6 +116,9 @@ Read `instructor-build/full_prompt-opus5-xhigh/note/` -- the trap log and the
 coverage report -- before you read a line of its code. Copying the parser gets
 you a panel and teaches you nothing; the notes are where the judgment is.
 
+It also holds `full_prompt-gemini-flash/`: the same `plan_v0.md` run by a
+different agent, published for comparison rather than for copying.
+
 Step 3 grounds the report's style in three published private-markets research
 reports (McKinsey, NVCA, PitchBook). They are third-party and not redistributed
 here; download your own, or substitute any writing whose style you want copied.

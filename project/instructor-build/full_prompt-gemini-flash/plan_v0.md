@@ -1,0 +1,30 @@
+# BDC Dataset
+
+* Goal: build a private credit BDC dataset from SEC filings for the most recent filing of one large BDC.
+* Deliverable:
+    * BDC-quarter panel: one row per BDC per quarter, fund-level financial statements.
+    * BDC-quarter-investment panel: one row per investment position per quarter, deal-level terms.
+    * Two consistent panel schemas.
+* Acceptance criteria:
+    * BDC-quarter panel:
+        * Each row must be a BDC-quarter observation.
+        * These fields are never null: BDC, CIK, period end, filing date.
+        * total liabilities + net assets = total assets, or other basic accounting rules.
+    * BDC-quarter-investment panel:
+        * Each row must be an investment position.
+        * These fields are never null: BDC, period end, borrower, investment type, amount, fair value.
+        * The sum of extracted fair value equals total investment in the filing, within 0.1%.
+        * Unique borrower names should be fewer than rows, because a BDC holds multiple loans per borrowers.
+    * The units should be consistent across rows and tables.
+    * If any check fails, exit non-zero and write no output file. 
+* Folder structure
+    * README.md
+    * code: filename should be in order, such as "bdc_01_XXX.py", "bdc_09_utils.py", etc.
+    * data: 
+        * raw: organized raw files.
+        * interim: temporary processing files.
+    * output: final output.
+    * note: other misc notes.
+
+
+

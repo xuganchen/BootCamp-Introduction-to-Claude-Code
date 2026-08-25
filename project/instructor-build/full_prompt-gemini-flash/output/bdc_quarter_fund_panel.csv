@@ -1,0 +1,2 @@
+bdc_name,bdc_ticker,cik,filing_type,fiscal_year,fiscal_quarter,period_end_date,filing_date,unit,total_investments_fair_value,total_investments_amortized_cost,cash_and_cash_equivalents,other_assets,total_assets,debt_outstanding,other_liabilities,total_liabilities,net_assets,shares_outstanding,net_asset_value_per_share
+Ares Capital Corporation,ARCC,1287750,10-Q,2026,Q1,2026-03-31,2026-04-28,USD_THOUSANDS,29499300.0,5000.0,505000.0,674700.0,30679000.0,15848000.0,766000.0,16614000.0,14065000.0,1000.0,19.59
